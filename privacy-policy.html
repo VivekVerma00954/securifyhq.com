@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | SecurifyHQ Business</title>
+    <meta name="description" content="Privacy Policy for SecurifyHQ — how we collect, use, and protect your data when providing remote CCTV monitoring services to New Zealand businesses.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://securifyhq.com/privacy-policy">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #2c3e50; background: #f8f9fa; }
+/* ===== NAV ===== */
+        nav { position: fixed; top: 0; width: 100%; background: #0d1f2d; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 0.5rem; }
+        .nav-logo:hover { color: white; }
+        .nav-logo span { color: #FFA500; }
+        nav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; }
+        nav ul > li { position: relative; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        nav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; }
+        .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
+        .nav-portal { color: rgba(255,255,255,0.55) !important; font-size: 0.85rem !important; border: 1px solid rgba(255,255,255,0.2); padding: 0.3rem 0.85rem !important; border-radius: 20px; }
+        .nav-portal:hover { color: rgba(255,255,255,0.85) !important; border-color: rgba(255,255,255,0.4); }
+        .has-dropdown { position: relative; }
+        .has-dropdown > a { cursor: pointer; }
+        .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; padding-top: 12px; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
+        .has-dropdown::before { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; z-index: 201; }
+        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
+        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
+        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (max-width: 1024px) { nav ul { gap: 0; } nav a { font-size: 0.87rem; padding: 0.4rem 0.55rem; } }
+        @media (max-width: 900px) { .burger { display: flex; } nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; } nav ul.nav-open { display: flex; } nav ul > li { width: 100%; } nav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; } .nav-cta { display: inline-block; margin-top: 0.5rem; border-bottom: none !important; } .nav-portal { border-bottom: none !important; } .has-dropdown { width: 100%; } .has-dropdown > a::after { content: ' '; } .dropdown { position: static; opacity: 1; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; } .has-dropdown.mob-open .dropdown { display: block; } .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; } }
+        .page-header { background: linear-gradient(135deg, #0d1f2d 0%, #1a3a52 100%); color: white; padding: 7rem 2rem 4rem; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-header p { opacity: 0.8; font-size: 1.1rem; }
+        .company-badge { display: inline-block; background: rgba(255,165,0,0.2); border: 1px solid #FFA500; color: #FFA500; padding: 0.5rem 1.5rem; border-radius: 30px; font-size: 0.9rem; margin-top: 1rem; font-weight: 600; }
+        .content { max-width: 900px; margin: 3rem auto; padding: 0 2rem 4rem; }
+        .toc { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 3rem; }
+        .toc h3 { color: #0d1f2d; margin-bottom: 1rem; font-size: 1.1rem; }
+        .toc ol { padding-left: 1.5rem; }
+        .toc li { padding: 0.3rem 0; }
+        .toc a { color: #FFA500; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        .section { background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .section h2 { color: #0d1f2d; font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 0.8rem; border-bottom: 2px solid #f0f0f0; }
+        .section h3 { color: #0d1f2d; font-size: 1.1rem; margin: 1.5rem 0 0.8rem; }
+        .section p { margin-bottom: 1rem; color: #4a5568; }
+        .section ul, .section ol { padding-left: 1.5rem; margin-bottom: 1rem; color: #4a5568; }
+        .section li { padding: 0.3rem 0; }
+        .highlight-box { background: #fff8e6; border-left: 4px solid #FFA500; padding: 1.2rem 1.5rem; border-radius: 0 10px 10px 0; margin: 1.5rem 0; }
+        .highlight-box p { margin: 0; font-weight: 600; color: #0d1f2d; }
+        .ipp-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        .ipp-table th { background: #0d1f2d; color: white; padding: 0.8rem 1rem; text-align: left; }
+        .ipp-table td { padding: 0.8rem 1rem; border-bottom: 1px solid #f0f0f0; color: #4a5568; vertical-align: top; }
+        .ipp-table tr:nth-child(even) td { background: #f8f9fa; }
+        .contact-box { background: linear-gradient(135deg, #0d1f2d, #1a3a52); color: white; padding: 2rem; border-radius: 15px; margin-top: 2rem; }
+        .contact-box h3 { margin-bottom: 1rem; color: #FFA500; }
+        .contact-box p { color: rgba(255,255,255,0.9); margin-bottom: 0.5rem; }
+        .contact-box a { color: #FFA500; }
+/* ===== FOOTER ===== */
+        footer { background: #0a1825; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; }
+        .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
+        .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .page-header h1 { font-size: 1.8rem; } .section { padding: 1.5rem; } }
+    
+        /* Standard nav CSS */
+        nav { position: fixed; top: 0; width: 100%; background: #0d1f2d; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; flex-shrink: 0; }
+        .nav-logo span { color: #FFA500; }
+        .nav-logo:hover { color: #FFA500; }
+        nav ul { list-style: none; display: flex; gap: 0.25rem; margin: 0; align-items: center; padding: 0; }
+        nav ul > li { position: relative; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        nav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; }
+        .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
+        .nav-portal { border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 30px; font-size: 0.88rem !important; white-space: nowrap; }
+        .nav-portal:hover { border-color: #FFA500 !important; color: #FFA500 !important; }
+        .has-dropdown { position: relative; }
+        .has-dropdown > a { cursor: pointer; }
+        .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; padding-top: 12px; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
+        .has-dropdown::before { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; z-index: 201; }
+        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
+        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
+        .burger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (min-width: 901px) { .burger { display: none; } }
+        @media (max-width: 900px) {
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
+            nav ul.nav-open { display: flex; }
+            nav ul > li { width: 100%; }
+            nav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
+            .nav-cta { display: inline-block; margin-top: 0.5rem; border-bottom: none !important; }
+            .has-dropdown { width: 100%; }
+            .dropdown { position: static; opacity: 1; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; }
+            .has-dropdown.mob-open .dropdown { display: block; }
+            .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
+        }        /* Footer */
+        footer { background: #0a1825; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+    
+        /* ===== NAV OVERRIDE (fix_business_all) ===== */
+        nav#mainNav { position: fixed !important; top: 0; width: 100%; background: #0d1f2d !important; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white !important; font-weight: 800 !important; font-size: 1.3rem !important; text-decoration: none; letter-spacing: -0.5px !important; display: flex !important; align-items: center; gap: 0 !important; flex-shrink: 0; }
+        .nav-logo:hover { color: white !important; }
+        .nav-logo span { color: #FFA500; }
+        nav#mainNav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; margin: 0; padding: 0; }
+        nav#mainNav ul > li { position: relative; }
+        nav#mainNav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        nav#mainNav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500 !important; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; text-decoration: none; }
+        .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
+        .nav-portal { border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 30px; font-size: 0.88rem !important; white-space: nowrap; color: rgba(255,255,255,0.55) !important; padding: 0.3rem 0.85rem !important; }
+        .nav-portal:hover { border-color: rgba(255,255,255,0.4) !important; color: rgba(255,255,255,0.85) !important; }
+        .has-dropdown { position: relative; }
+        .has-dropdown > a { cursor: pointer; }
+        .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; padding-top: 12px; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
+        .has-dropdown::before { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; z-index: 201; }
+        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
+        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
+        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (max-width: 900px) {
+            .burger { display: flex !important; }
+            nav#mainNav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
+            nav#mainNav ul.nav-open { display: flex !important; }
+            nav#mainNav ul > li { width: 100%; }
+            nav#mainNav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
+            .nav-cta { display: inline-block !important; margin-top: 0.5rem; border-bottom: none !important; }
+            .nav-portal { border-bottom: none !important; }
+            .has-dropdown { width: 100%; }
+            .dropdown { position: static !important; opacity: 1 !important; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; }
+            .has-dropdown.mob-open .dropdown { display: block !important; }
+            .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
+        }
+        /* ===== FOOTER OVERRIDE (fix_business_all) ===== */
+        footer#footer { background: #0a1825 !important; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; color: rgba(255,255,255,0.7); }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
+        .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Securify<span>HQ</span></a>
+            <ul id="navMenu">
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Services &#9662;</a>
+                    <div class="dropdown">
+                        <a href="how-it-works.html">How It Works</a>
+                        <a href="index.html#industries">Industries We Serve</a>
+                        <a href="camera-guide.html">Camera Compatibility</a>
+                    </div>
+                </li>
+                <li><a href="plans.html">Plans</a></li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Company &#9662;</a>
+                    <div class="dropdown">
+                        <a href="about.html">About SecurifyHQ</a>
+                        <a href="index.html#trust">Why SecurifyHQ</a>
+                        <a href="blog/index.html">Blog</a>
+                        <a href="residential.html">Residential</a>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Support &#9662;</a>
+                    <div class="dropdown">
+                        <a href="faq.html">FAQ</a>
+                        <a href="index.html#contact">Contact Us</a>
+                    </div>
+                </li>
+                <li><a href="https://crm.securifyhq.com/portal" target="_blank" rel="noopener" class="nav-portal">Client Portal</a></li>
+                <li><a href="signup.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="burger" onclick="toggleNav()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Privacy Policy</h1>
+        <p>How SecurifyHQ collects, uses, stores, and protects your information</p>
+        <div class="company-badge">SECURIFYHQ LIMITED · NZ Company #9405543</div>
+        <p style="margin-top: 1rem; opacity: 0.7; font-size: 0.9rem;">Effective Date: 9 April 2026 · Last Updated: 9 April 2026</p>
+    </div>
+
+    <div class="content">
+
+        <div class="toc">
+            <h3>📋 Table of Contents</h3>
+            <ol>
+                <li><a href="#p1">Who We Are</a></li>
+                <li><a href="#p2">What Information We Collect</a></li>
+                <li><a href="#p3">How We Use Your Information</a></li>
+                <li><a href="#p4">Video Footage &amp; Camera Feeds</a></li>
+                <li><a href="#p5">Who Can Access Your Information</a></li>
+                <li><a href="#p6">Cross-Border Information Handling</a></li>
+                <li><a href="#p7">Payment Information</a></li>
+                <li><a href="#p8">How We Store and Protect Information</a></li>
+                <li><a href="#p9">How Long We Keep Information</a></li>
+                <li><a href="#p10">Your Rights</a></li>
+                <li><a href="#p11">Cookies and Website Analytics</a></li>
+                <li><a href="#p12">Third-Party Services</a></li>
+                <li><a href="#p13">T&amp;C and Policy Acceptance Records</a></li>
+                <li><a href="#p14">Your Obligations as a Camera Operator</a></li>
+                <li><a href="#p15">Changes to This Policy</a></li>
+                <li><a href="#p16">Contact &amp; Complaints</a></li>
+            </ol>
+        </div>
+
+        <!-- P1 -->
+        <div class="section" id="p1">
+            <h2>1. Who We Are</h2>
+            <p>SecurifyHQ Limited ("SecurifyHQ," "we," "us," "our") is a New Zealand registered company (Company Number 9405543) providing remote CCTV monitoring and alert escalation services to businesses in New Zealand.</p>
+            <p>We are an "agency" as defined by the Privacy Act 2020 (NZ) and are bound by the 13 Information Privacy Principles (IPPs) set out in that Act. This Privacy Policy explains how we comply with those obligations.</p>
+            <p>This policy applies to our business monitoring services. If you are a residential customer (NRI property monitoring), a separate privacy policy applies.</p>
+        </div>
+
+        <!-- P2 -->
+        <div class="section" id="p2">
+            <h2>2. What Information We Collect</h2>
+
+            <h3>2.1 Account and Business Information</h3>
+            <ul>
+                <li>Business name, trading name, and business address</li>
+                <li>Contact person name, email address, and phone number</li>
+                <li>New Zealand Business Number (NZBN) where provided</li>
+                <li>Billing address and GST number where applicable</li>
+            </ul>
+
+            <h3>2.2 Site and Camera Information</h3>
+            <ul>
+                <li>Property address(es) being monitored</li>
+                <li>Camera locations, types, and access credentials (RTSP URLs, login details)</li>
+                <li>Network configuration details necessary to establish camera connectivity</li>
+                <li>Camera positioning descriptions provided during onboarding</li>
+            </ul>
+
+            <h3>2.3 Escalation Contact Information</h3>
+            <ul>
+                <li>Names, phone numbers, and email addresses of your designated escalation contacts</li>
+                <li>Your guard company or security contractor's contact details (if provided)</li>
+                <li>Your predefined escalation instructions and plan</li>
+            </ul>
+
+            <h3>2.4 Onboarding and Questionnaire Data</h3>
+            <ul>
+                <li>Responses to our onboarding questionnaire</li>
+                <li>Your monitoring preferences, plan selection, and authorisation settings</li>
+                <li>Timestamp and IP address at which you accepted our Terms of Service and this Privacy Policy</li>
+            </ul>
+
+            <h3>2.5 Operational and Alert Data</h3>
+            <ul>
+                <li>Alert event records including timestamps, camera identifiers, and operator actions taken</li>
+                <li>Incident reports and escalation logs</li>
+                <li>Camera connectivity and offline event logs</li>
+                <li>Operator notes and verification outcomes</li>
+            </ul>
+
+            <h3>2.6 Payment Information</h3>
+            <p>See Section 7 for details on how payment information is handled.</p>
+
+            <h3>2.7 Website Usage Information</h3>
+            <ul>
+                <li>IP address, browser type, and device information when you visit our website</li>
+                <li>Pages visited and actions taken on our website (via analytics — see Section 11)</li>
+            </ul>
+        </div>
+
+        <!-- P3 -->
+        <div class="section" id="p3">
+            <h2>3. How We Use Your Information</h2>
+            <p>We collect and use your information only for purposes directly related to providing our monitoring and alert escalation service. Specifically:</p>
+            <table class="ipp-table">
+                <thead>
+                    <tr><th>Purpose</th><th>Information Used</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Setting up and configuring your monitoring service</td><td>Account, site, camera, and onboarding data</td></tr>
+                    <tr><td>Monitoring your cameras and verifying alerts</td><td>Camera feeds, site information</td></tr>
+                    <tr><td>Notifying and escalating to your contacts</td><td>Escalation contact information, alert data</td></tr>
+                    <tr><td>Generating incident reports and portal access</td><td>Alert records, operator notes</td></tr>
+                    <tr><td>Billing and invoicing</td><td>Account, billing, and payment information</td></tr>
+                    <tr><td>Providing customer support</td><td>Account and operational data</td></tr>
+                    <tr><td>Complying with our legal obligations</td><td>All relevant information as required by law</td></tr>
+                    <tr><td>Improving our service</td><td>Anonymised and aggregated operational data only</td></tr>
+                </tbody>
+            </table>
+            <p>We do not sell your personal information to third parties. We do not use your information for advertising or marketing to third parties.</p>
+        </div>
+
+        <!-- P4 -->
+        <div class="section" id="p4">
+            <h2>4. Video Footage &amp; Camera Feeds</h2>
+
+            <h3>4.1 Nature of Access</h3>
+            <p>You provide SecurifyHQ with access to your camera feeds for the sole purpose of monitoring and alert verification. We do not continuously record or store your camera feeds. Our AI detection system processes live video streams to identify activity meeting detection thresholds. When activity is detected, a short video clip is captured and retained for operator review.</p>
+
+            <h3>4.2 Clip Retention</h3>
+            <p>Video clips associated with verified or reviewed alerts are retained for <strong>30 days</strong> from the date of the alert, then permanently deleted. Clips are accessible to you during this period via your client portal (where included in your plan) and via the secure link provided in alert notifications.</p>
+
+            <h3>4.3 Who May Appear in Footage</h3>
+            <p>Your camera feeds may capture images of identifiable individuals — employees, contractors, visitors, trespassers, or members of the public. This footage constitutes personal information under the Privacy Act 2020. You, as the camera operator, are primarily responsible for the lawful collection of this footage. Our processing of it is limited to what is necessary for alert verification and escalation.</p>
+
+            <h3>4.4 Footage Ownership</h3>
+            <p>You retain ownership of all footage captured by your cameras. SecurifyHQ holds a limited licence to access and process footage solely for service delivery. We will not use your footage for any other purpose, share it with any third party, or retain it beyond the periods stated in this policy.</p>
+
+            <div class="highlight-box">
+                <p>💡 SecurifyHQ does not make footage of individuals available to any third party except: (a) as part of your escalation plan (e.g. providing a clip reference to police where you have authorised us to contact them); or (b) where required by a valid legal order or court process.</p>
+            </div>
+        </div>
+
+        <!-- P5 -->
+        <div class="section" id="p5">
+            <h2>5. Who Can Access Your Information</h2>
+
+            <h3>5.1 Our Authorised Personnel</h3>
+            <p>Your account information, site details, and footage are accessible only to SecurifyHQ's authorised monitoring personnel and management, on a need-to-know basis strictly limited to their role in delivering your service. All personnel are bound by confidentiality obligations.</p>
+
+            <h3>5.2 Your Escalation Contacts</h3>
+            <p>Alert notifications, including clip links, are sent to the contacts you have designated in your escalation plan. You are responsible for ensuring those contacts understand their obligations regarding any footage or information they receive.</p>
+
+            <h3>5.3 Legal Disclosure</h3>
+            <p>We may disclose your information where required by applicable New Zealand law — for example, in response to a valid court order, warrant, or request from a law enforcement agency with lawful authority. We will notify you of such requests where we are legally permitted to do so.</p>
+
+            <h3>5.4 Business Transfers</h3>
+            <p>In the event of a sale, merger, or acquisition of SecurifyHQ, your information may be transferred to the acquiring entity. We will notify you of any such transfer and your options at that time.</p>
+
+            <h3>5.5 We Do Not Sell Data</h3>
+            <p>We do not sell, rent, or otherwise commercially exploit your personal information or your footage. Ever.</p>
+        </div>
+
+        <!-- P6 -->
+        <div class="section" id="p6">
+            <h2>6. Cross-Border Information Handling</h2>
+            <p>SecurifyHQ's monitoring operations are performed by our authorised personnel. Our monitoring platform is hosted on DigitalOcean cloud infrastructure, with servers located in Singapore and/or other regions. Your account data and alert records may be stored on servers outside New Zealand.</p>
+            <p>Under Information Privacy Principle 12 (IPP 12) of the Privacy Act 2020, we take reasonable steps to ensure that any transfer of your personal information outside New Zealand is protected by comparable privacy safeguards. Specifically:</p>
+            <ul>
+                <li>Our hosting provider (DigitalOcean) operates under internationally recognised security standards and contractual data protection obligations</li>
+                <li>All personnel with access to your data are bound by confidentiality obligations and our internal data handling policies, which require treatment of your information consistent with the IPPs</li>
+                <li>Your video footage is processed in real time for alert detection and is not stored in full — only clips related to alerts are retained, as described in Section 4</li>
+            </ul>
+            <p>By using our services, you acknowledge that your information may be processed and stored outside New Zealand under the safeguards described above, and you consent to this processing as necessary for service delivery.</p>
+        </div>
+
+        <!-- P7 -->
+        <div class="section" id="p7">
+            <h2>7. Payment Information</h2>
+
+            <h3>7.1 Direct Debit (GoCardless)</h3>
+            <p>Where you choose to pay by direct debit, your bank account details are collected and processed by <strong>GoCardless Ltd</strong>, a UK-based payment processor authorised to operate in New Zealand under a Direct Debit Authority. SecurifyHQ does not store your bank account details on our systems. GoCardless processes your payment and remits funds to us. GoCardless's privacy policy and data handling practices apply to the processing of your bank account information.</p>
+
+            <h3>7.2 Card Payments (Stripe)</h3>
+            <p>Where you choose to pay by credit or debit card, payment is processed by <strong>Stripe Inc.</strong>, a PCI-DSS compliant payment processor. SecurifyHQ does not store your card number, expiry date, or CVV on our systems. Stripe's privacy policy applies to the processing of your card information.</p>
+            <p>A payment processing surcharge is applied to card transactions, representing the exact cost charged to SecurifyHQ by Stripe. This surcharge is disclosed clearly before you confirm payment and appears as a separate line item on your invoice.</p>
+
+            <h3>7.3 Billing Records</h3>
+            <p>We retain billing and payment records (invoice amounts, dates, payment status) for a minimum of 7 years as required by New Zealand tax law. These records do not include full card or bank account details.</p>
+        </div>
+
+        <!-- P8 -->
+        <div class="section" id="p8">
+            <h2>8. How We Store and Protect Your Information</h2>
+            <p>We take the security of your information seriously and implement appropriate technical and organisational measures, including:</p>
+            <ul>
+                <li>Encrypted storage of sensitive credentials and account data</li>
+                <li>Encrypted transmission of data between your cameras, our platform, and your devices (HTTPS/TLS)</li>
+                <li>Access controls limiting data access to authorised personnel only</li>
+                <li>Secure authentication for staff accessing our monitoring platform</li>
+                <li>Regular security reviews of our platform and infrastructure</li>
+            </ul>
+            <p>No system is completely secure. While we take all reasonable steps, we cannot guarantee that your information will be free from all unauthorised access. In the event of a security breach affecting your personal information, we will notify you as soon as practicable in accordance with our obligations under the Privacy Act 2020.</p>
+        </div>
+
+        <!-- P9 -->
+        <div class="section" id="p9">
+            <h2>9. How Long We Keep Information</h2>
+            <table class="ipp-table">
+                <thead>
+                    <tr><th>Information Type</th><th>Retention Period</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Alert video clips</td><td>30 days from alert date, then permanently deleted</td></tr>
+                    <tr><td>Alert event records and logs</td><td>Duration of your subscription + 12 months after termination</td></tr>
+                    <tr><td>Account and onboarding information</td><td>Duration of your subscription + 12 months after termination</td></tr>
+                    <tr><td>T&amp;C and privacy policy acceptance records</td><td>7 years (legal compliance requirement)</td></tr>
+                    <tr><td>Billing and invoice records</td><td>7 years (NZ tax law requirement)</td></tr>
+                    <tr><td>Escalation contact records</td><td>Duration of subscription + 12 months</td></tr>
+                    <tr><td>Camera access credentials</td><td>Deleted within 14 days of account termination</td></tr>
+                </tbody>
+            </table>
+            <p>On account termination, we will delete your information within the periods above. You may request earlier deletion of specific information — see Section 10.</p>
+        </div>
+
+        <!-- P10 -->
+        <div class="section" id="p10">
+            <h2>10. Your Rights</h2>
+            <p>Under the Privacy Act 2020, you have the right to:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of the personal information we hold about you or your business</li>
+                <li><strong>Correction:</strong> Request correction of any inaccurate or outdated personal information</li>
+                <li><strong>Complaint:</strong> Make a complaint about our handling of your information to us, and if unresolved, to the Office of the Privacy Commissioner</li>
+                <li><strong>Deletion:</strong> Request deletion of your personal information where we have no legal obligation to retain it — subject to our retention obligations above</li>
+                <li><strong>Objection:</strong> Object to our processing of your personal information in specific circumstances</li>
+            </ul>
+            <p>To exercise any of these rights, contact us at <a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a>. We will respond within 20 working days as required by the Privacy Act 2020. We may need to verify your identity before processing a request.</p>
+        </div>
+
+        <!-- P11 -->
+        <div class="section" id="p11">
+            <h2>11. Cookies and Website Analytics</h2>
+            <p>Our website (securifyhq.com) uses cookies and analytics tools to understand how visitors use our site. This helps us improve our content and user experience.</p>
+            <ul>
+                <li><strong>Essential cookies:</strong> Required for the website and client portal to function. Cannot be disabled.</li>
+                <li><strong>Analytics cookies:</strong> We use Google Analytics (GA4) to collect anonymised usage data (pages visited, session duration, general location). This data does not identify you personally. You may opt out of Google Analytics via browser settings or the Google Analytics opt-out browser add-on.</li>
+            </ul>
+            <p>We do not use advertising, retargeting, or third-party tracking cookies.</p>
+        </div>
+
+        <!-- P12 -->
+        <div class="section" id="p12">
+            <h2>12. Third-Party Services</h2>
+            <p>We use the following third-party services in delivering our platform. Each operates under its own privacy policy:</p>
+            <table class="ipp-table">
+                <thead>
+                    <tr><th>Service</th><th>Purpose</th><th>Data Shared</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>DigitalOcean</td><td>Cloud hosting and infrastructure</td><td>All platform data (encrypted at rest)</td></tr>
+                    <tr><td>GoCardless</td><td>Direct debit payment processing</td><td>Bank account details (you provide directly to GoCardless)</td></tr>
+                    <tr><td>Stripe</td><td>Card payment processing</td><td>Card details (you provide directly to Stripe)</td></tr>
+                    <tr><td>Google Analytics</td><td>Website usage analytics</td><td>Anonymised website usage data</td></tr>
+                </tbody>
+            </table>
+            <p>We select third-party providers carefully and require that they maintain appropriate data protection standards. We are not responsible for the privacy practices of third-party services beyond what is described here.</p>
+        </div>
+
+        <!-- P13 -->
+        <div class="section" id="p13">
+            <h2>13. T&amp;C and Policy Acceptance Records</h2>
+            <p>When you accept our Terms of Service and this Privacy Policy — whether during online signup, onboarding, or any other acceptance mechanism — we record:</p>
+            <ul>
+                <li>The date and time of acceptance</li>
+                <li>The IP address from which acceptance was made</li>
+                <li>The version of the Terms and Privacy Policy accepted</li>
+            </ul>
+            <p>These records are stored securely in our systems and retained for 7 years. They are accessible to you and to our authorised staff via the client portal and our CRM. These records exist to protect both you and SecurifyHQ and to ensure clarity about the agreement in place at any point in time.</p>
+        </div>
+
+        <!-- P14 -->
+        <div class="section" id="p14">
+            <h2>14. Your Obligations as a Camera Operator</h2>
+            <p>You are the operator of your CCTV cameras and are responsible for your own compliance with the Privacy Act 2020 in relation to the footage you collect. In particular:</p>
+            <ul>
+                <li><strong>Signage:</strong> You must display clear signage at your monitored property informing visitors and staff that CCTV monitoring is in operation, who operates it, and how to make enquiries</li>
+                <li><strong>Lawful purpose:</strong> Cameras must be used for a lawful purpose — monitoring your own property for security purposes is generally lawful. Cameras must not be positioned to monitor areas where people have a reasonable expectation of privacy (e.g., toilets, changing rooms) without specific lawful authority</li>
+                <li><strong>Access requests:</strong> If an individual requests access to footage in which they appear, you are the controller of that footage and responsible for responding to that request</li>
+                <li><strong>Retention:</strong> You are responsible for any footage retained on your own NVR or recording system beyond what SecurifyHQ holds</li>
+            </ul>
+            <p>SecurifyHQ can assist you in understanding your privacy obligations as a camera operator but is not able to provide legal advice. For specific legal guidance, consult a New Zealand privacy lawyer or the Office of the Privacy Commissioner (privacy.org.nz).</p>
+        </div>
+
+        <!-- P15 -->
+        <div class="section" id="p15">
+            <h2>15. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal obligations. Where changes are material, we will notify you via email at least 14 days before the updated policy takes effect. The current version of this policy is always available at securifyhq.com/privacy-policy. The "Last Updated" date at the top of this page indicates when the most recent changes were made.</p>
+            <p>Your continued use of our services after the effective date of any updated policy constitutes your acceptance of the changes.</p>
+        </div>
+
+        <!-- P16 -->
+        <div class="section" id="p16">
+            <h2>16. Contact &amp; Complaints</h2>
+            <div class="contact-box">
+                <h3>Privacy enquiries and requests</h3>
+                <p>SecurifyHQ Limited — Privacy</p>
+                <p>Email: <a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></p>
+                <p>Phone: <a href="tel:+6437328743">+64 3 732 8743</a></p>
+                <p>Registered Address: 13B Fryer Street, Queenstown 9300, New Zealand</p>
+            </div>
+            <p style="margin-top: 1.5rem;">If you believe we have not handled your personal information in accordance with the Privacy Act 2020 and your concern has not been resolved after contacting us, you may make a complaint to the <strong>Office of the Privacy Commissioner</strong>:</p>
+            <ul>
+                <li>Website: <a href="https://www.privacy.org.nz" target="_blank" rel="noopener">privacy.org.nz</a></li>
+                <li>Phone: 0800 803 909</li>
+                <li>Post: PO Box 10094, The Terrace, Wellington 6143</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-display" aria-label="SecurifyHQ logo"></div>
+                    <div class="f-logo">Securify<span>HQ</span></div>
+                    <p>AI-powered CCTV monitoring and human-verified alert escalation for small to mid-size NZ businesses with existing cameras &mdash; monitored 24/7.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://www.facebook.com/profile.php?id=61570974383165" target="_blank" rel="noopener" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.instagram.com/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://wa.me/642108144777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="index.html#industries">Industries</a></li>
+                        <li><a href="plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="index.html#pilot">Pilot Offer</a></li>
+                        <li><a href="signup.html">Get Started</a></li>
+                        <li><a href="https://crm.securifyhq.com/portal" target="_blank" rel="noopener">Client Portal</a></li>
+                        <li><a href="camera-guide.html">Camera Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About SecurifyHQ</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></li>
+                        <li><a href="tel:+6437328743">03 732 8743</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; 2026 SecurifyHQ Limited. All rights reserved.</p>
+                    <p>NZ Company #9405543 &mdash; 13B Fryer Street, Queenstown 9300</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html" class="footer-legal-pill">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-legal-pill">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleNav() { document.getElementById('navMenu').classList.toggle('nav-open'); }
+        function toggleDropdownMob(el, e) {
+            if (window.innerWidth > 900) return;
+            e.preventDefault();
+            var li = el.closest('.has-dropdown');
+            li.classList.toggle('mob-open');
+        }
+        document.addEventListener('click', function(e) {
+            var nav = document.getElementById('mainNav');
+            if (nav && !nav.contains(e.target)) { document.getElementById('navMenu').classList.remove('nav-open'); }
+        });
+    </script>
+</body>
+</html>

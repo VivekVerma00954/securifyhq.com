@@ -1,0 +1,820 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | SecurifyHQ Business</title>
+    <meta name="description" content="Terms of Service for SecurifyHQ — remote CCTV monitoring and alert escalation service for New Zealand businesses.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://securifyhq.com/terms-of-service">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; line-height: 1.8; color: #2c3e50; background: #f8f9fa; }
+        nav { background: #0d1f2d; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+        .nav-logo:hover { color: #FFA500; }
+        .back-link { color: #FFA500; text-decoration: none; font-weight: 600; }
+        .back-link:hover { color: white; }
+        .page-header { background: linear-gradient(135deg, #0d1f2d 0%, #1a3a52 100%); color: white; padding: 7rem 2rem 4rem; text-align: center; }
+        .page-header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .page-header p { opacity: 0.8; font-size: 1.1rem; }
+        .company-badge { display: inline-block; background: rgba(255,165,0,0.2); border: 1px solid #FFA500; color: #FFA500; padding: 0.5rem 1.5rem; border-radius: 30px; font-size: 0.9rem; margin-top: 1rem; font-weight: 600; }
+        .content { max-width: 900px; margin: 3rem auto; padding: 0 2rem 4rem; }
+        .warning-box { background: #fff3cd; border-left: 4px solid #FFA500; padding: 1.2rem 1.5rem; border-radius: 0 10px 10px 0; margin-bottom: 2rem; }
+        .warning-box p { font-weight: 600; color: #0d1f2d; margin: 0; }
+        .toc { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 3rem; }
+        .toc h3 { color: #0d1f2d; margin-bottom: 1rem; font-size: 1.1rem; }
+        .toc ol { padding-left: 1.5rem; }
+        .toc li { padding: 0.3rem 0; }
+        .toc a { color: #FFA500; text-decoration: none; }
+        .toc a:hover { text-decoration: underline; }
+        .section { background: white; padding: 2.5rem; border-radius: 15px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .section h2 { color: #0d1f2d; font-size: 1.5rem; margin-bottom: 1.5rem; padding-bottom: 0.8rem; border-bottom: 2px solid #f0f0f0; }
+        .section h3 { color: #0d1f2d; font-size: 1.1rem; margin: 1.5rem 0 0.8rem; }
+        .section p { margin-bottom: 1rem; color: #4a5568; }
+        .section ul, .section ol { padding-left: 1.5rem; margin-bottom: 1rem; color: #4a5568; }
+        .section li { padding: 0.3rem 0; }
+        .highlight-box { background: #fff8e6; border-left: 4px solid #FFA500; padding: 1.2rem 1.5rem; border-radius: 0 10px 10px 0; margin: 1.5rem 0; }
+        .highlight-box p { margin: 0; font-weight: 600; color: #0d1f2d; }
+        .critical-box { background: #fef2f2; border-left: 4px solid #ef4444; padding: 1.2rem 1.5rem; border-radius: 0 10px 10px 0; margin: 1.5rem 0; }
+        .critical-box p { margin: 0; font-weight: 600; color: #7f1d1d; }
+        .plan-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        .plan-table th { background: #0d1f2d; color: white; padding: 0.8rem 1rem; text-align: left; }
+        .plan-table td { padding: 0.8rem 1rem; border-bottom: 1px solid #f0f0f0; color: #4a5568; }
+        .plan-table tr:nth-child(even) td { background: #f8f9fa; }
+        .contact-box { background: linear-gradient(135deg, #0d1f2d, #1a3a52); color: white; padding: 2rem; border-radius: 15px; margin-top: 2rem; }
+        .contact-box h3 { margin-bottom: 1rem; color: #FFA500; }
+        .contact-box p { color: rgba(255,255,255,0.9); margin-bottom: 0.5rem; }
+        .contact-box a { color: #FFA500; }
+        .ack-box { background: #e8f5e9; border: 2px solid #4caf50; padding: 2rem; border-radius: 15px; margin-top: 2rem; }
+        .ack-box h3 { color: #2e7d32; margin-bottom: 1rem; }
+        .ack-box ul { color: #2e7d32; padding-left: 1.5rem; }
+        .ack-box li { padding: 0.3rem 0; font-weight: 600; }
+/* ===== FOOTER ===== */
+        footer { background: #0a1825; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; }
+        .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
+        .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) { .page-header h1 { font-size: 1.8rem; } .section { padding: 1.5rem; } }
+    
+        /* Standard nav CSS */
+        nav { position: fixed; top: 0; width: 100%; background: #0d1f2d; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; flex-shrink: 0; }
+        .nav-logo span { color: #FFA500; }
+        .nav-logo:hover { color: #FFA500; }
+        nav ul { list-style: none; display: flex; gap: 0.25rem; margin: 0; align-items: center; padding: 0; }
+        nav ul > li { position: relative; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        nav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; }
+        .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
+        .nav-portal { border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 30px; font-size: 0.88rem !important; white-space: nowrap; }
+        .nav-portal:hover { border-color: #FFA500 !important; color: #FFA500 !important; }
+        .has-dropdown { position: relative; }
+        .has-dropdown > a { cursor: pointer; }
+        .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; padding-top: 12px; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
+        .has-dropdown::before { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; z-index: 201; }
+        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
+        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
+        .burger { display: flex; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (min-width: 901px) { .burger { display: none; } }
+        @media (max-width: 900px) {
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
+            nav ul.nav-open { display: flex; }
+            nav ul > li { width: 100%; }
+            nav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
+            .nav-cta { display: inline-block; margin-top: 0.5rem; border-bottom: none !important; }
+            .has-dropdown { width: 100%; }
+            .dropdown { position: static; opacity: 1; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; }
+            .has-dropdown.mob-open .dropdown { display: block; }
+            .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
+        }        /* Footer */
+        footer { background: #0a1825; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+    
+        /* ===== NAV OVERRIDE (fix_business_all) ===== */
+        nav#mainNav { position: fixed !important; top: 0; width: 100%; background: #0d1f2d !important; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white !important; font-weight: 800 !important; font-size: 1.3rem !important; text-decoration: none; letter-spacing: -0.5px !important; display: flex !important; align-items: center; gap: 0 !important; flex-shrink: 0; }
+        .nav-logo:hover { color: white !important; }
+        .nav-logo span { color: #FFA500; }
+        nav#mainNav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; margin: 0; padding: 0; }
+        nav#mainNav ul > li { position: relative; }
+        nav#mainNav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        nav#mainNav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500 !important; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; text-decoration: none; }
+        .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
+        .nav-portal { border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 30px; font-size: 0.88rem !important; white-space: nowrap; color: rgba(255,255,255,0.55) !important; padding: 0.3rem 0.85rem !important; }
+        .nav-portal:hover { border-color: rgba(255,255,255,0.4) !important; color: rgba(255,255,255,0.85) !important; }
+        .has-dropdown { position: relative; }
+        .has-dropdown > a { cursor: pointer; }
+        .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; padding-top: 12px; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
+        .has-dropdown::before { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; z-index: 201; }
+        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
+        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
+        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (max-width: 900px) {
+            .burger { display: flex !important; }
+            nav#mainNav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
+            nav#mainNav ul.nav-open { display: flex !important; }
+            nav#mainNav ul > li { width: 100%; }
+            nav#mainNav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
+            .nav-cta { display: inline-block !important; margin-top: 0.5rem; border-bottom: none !important; }
+            .nav-portal { border-bottom: none !important; }
+            .has-dropdown { width: 100%; }
+            .dropdown { position: static !important; opacity: 1 !important; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; }
+            .has-dropdown.mob-open .dropdown { display: block !important; }
+            .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
+        }
+        /* ===== FOOTER OVERRIDE (fix_business_all) ===== */
+        footer#footer { background: #0a1825 !important; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; color: rgba(255,255,255,0.7); }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
+        .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav id="mainNav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Securify<span>HQ</span></a>
+            <ul id="navMenu">
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Services &#9662;</a>
+                    <div class="dropdown">
+                        <a href="how-it-works.html">How It Works</a>
+                        <a href="index.html#industries">Industries We Serve</a>
+                        <a href="camera-guide.html">Camera Compatibility</a>
+                    </div>
+                </li>
+                <li><a href="plans.html">Plans</a></li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Company &#9662;</a>
+                    <div class="dropdown">
+                        <a href="about.html">About SecurifyHQ</a>
+                        <a href="index.html#trust">Why SecurifyHQ</a>
+                        <a href="blog/index.html">Blog</a>
+                        <a href="residential.html">Residential</a>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Support &#9662;</a>
+                    <div class="dropdown">
+                        <a href="faq.html">FAQ</a>
+                        <a href="index.html#contact">Contact Us</a>
+                    </div>
+                </li>
+                <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener" class="nav-portal">Client Portal</a></li>
+                <li><a href="signup.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="burger" onclick="toggleNav()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Terms of Service</h1>
+        <p>Agreement for SecurifyHQ remote CCTV monitoring and alert escalation services</p>
+        <div class="company-badge">SECURIFYHQ LIMITED · NZ Company #9405543</div>
+        <p style="margin-top: 1rem; opacity: 0.7; font-size: 0.9rem;">Effective Date: 9 April 2026 · Last Updated: 9 April 2026</p>
+    </div>
+
+    <div class="content">
+
+        <div class="warning-box">
+            <p>⚠️ IMPORTANT: By signing up for, paying for, or using our services, you confirm you have read and agree to these Terms. Read Section 2 (what we are and are not), Section 5 (escalation and police authorisation), Section 8 (payment and surcharges), and Section 10 (limitations of liability) carefully before proceeding.</p>
+        </div>
+
+        <div class="toc">
+            <h3>📋 Table of Contents</h3>
+            <ol>
+                <li><a href="#s1">Company Details &amp; Agreement</a></li>
+                <li><a href="#s2">What SecurifyHQ Is — and Is Not</a></li>
+                <li><a href="#s3">Service Description</a></li>
+                <li><a href="#s4">Your Responsibilities</a></li>
+                <li><a href="#s5">Escalation Authorisation</a></li>
+                <li><a href="#s6">Service Plans</a></li>
+                <li><a href="#s7">Setup and Onboarding</a></li>
+                <li><a href="#s8">Payment, Billing &amp; GST</a></li>
+                <li><a href="#s9">Service Availability &amp; System Health</a></li>
+                <li><a href="#s10">Limitations of Liability</a></li>
+                <li><a href="#s11">Data, Privacy &amp; Video Footage</a></li>
+                <li><a href="#s12">Cancellation &amp; Termination</a></li>
+                <li><a href="#s12a">Pilot Programme Terms</a></li>
+                <li><a href="#s12b">Contract Term Discounts</a></li>
+                <li><a href="#s13">Intellectual Property</a></li>
+                <li><a href="#s14">Dispute Resolution &amp; Governing Law</a></li>
+                <li><a href="#s15">General Provisions</a></li>
+                <li><a href="#s16">Contact Information</a></li>
+                <li><a href="#s17">Acknowledgement</a></li>
+            </ol>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="section" id="s1">
+            <h2>1. Company Details &amp; Agreement</h2>
+            <p>These Terms of Service ("Terms") form a legally binding agreement between you ("Client," "you," "your") and SecurifyHQ Limited ("SecurifyHQ," "we," "us," "our"), a company registered in New Zealand (Company Number 9405543), with its registered address at 13B Fryer Street, Queenstown 9300, New Zealand.</p>
+            <p>By creating an account, completing our onboarding questionnaire, making a payment, or otherwise using our services, you confirm you have read, understood, and agree to these Terms. If you are entering into this agreement on behalf of a business or organisation, you represent that you have authority to bind that entity to these Terms.</p>
+            <p>These Terms apply specifically to SecurifyHQ's commercial monitoring services for businesses in New Zealand and are separate from any terms governing our residential or international monitoring services.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="s2">
+            <h2>2. What SecurifyHQ Is — and Is Not</h2>
+
+            <div class="critical-box">
+                <p>⚠️ READ THIS SECTION CAREFULLY. It defines the nature and limits of our service. If you require a licensed security provider, physical response capability, or crime prevention guarantees, SecurifyHQ is not the right service for you.</p>
+            </div>
+
+            <h3>2.1 What We Are</h3>
+            <p>SecurifyHQ is a <strong>remote CCTV monitoring and alert escalation service</strong>. We use a combination of artificial intelligence detection and human review to monitor your camera feeds, verify whether detected activity represents a genuine incident, and notify or escalate to your designated contacts based on the instructions you provide during onboarding.</p>
+            <p>We act as an <strong>informed reporting and notification layer</strong> between your cameras and your chosen response — ensuring nothing is missed and that the right people are reached as quickly as possible when it matters.</p>
+
+            <h3>2.2 What We Are Not</h3>
+            <p>SecurifyHQ is <strong>not</strong> any of the following, and we make no claim to be:</p>
+            <ul>
+                <li>A licensed security guard company or private security provider under the Private Security Personnel and Private Investigators Act 2010 (NZ)</li>
+                <li>A physical response or patrol service</li>
+                <li>A crime prevention guarantee</li>
+                <li>A replacement for physical security measures, guards, or emergency services</li>
+                <li>An alarm monitoring company in the traditional licensed sense</li>
+                <li>An authority with any power to enforce, detain, apprehend, or intervene physically</li>
+            </ul>
+
+            <h3>2.3 Our Role</h3>
+            <p>We <strong>detect, verify, notify, and escalate</strong> — always based on your pre-authorised instructions. We do not take independent action beyond what you have authorised. You remain in control of all decisions, and you remain responsible for all actions taken in response to our notifications.</p>
+
+            <div class="highlight-box">
+                <p>💡 Think of SecurifyHQ as a highly attentive, always-on alert system that ensures you and your team are notified the moment something real happens — so you can act faster than if cameras were recording and unmonitored.</p>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="s3">
+            <h2>3. Service Description</h2>
+
+            <h3>3.1 Core Service</h3>
+            <p>Subject to your plan selection and these Terms, SecurifyHQ provides the following:</p>
+            <ul>
+                <li><strong>AI-assisted detection:</strong> Automated motion, person, and vehicle detection on your connected camera feeds</li>
+                <li><strong>Human verification:</strong> Every alert escalated by our AI is reviewed by a trained human operator before you are notified — filtering false alarms and confirming genuine activity</li>
+                <li><strong>Instant notification:</strong> Verified alerts are communicated to your designated contacts via call, email, and/or WhatsApp, with a link to view the relevant video clip</li>
+                <li><strong>Escalation assistance:</strong> Where pre-authorised, we follow your defined escalation plan — notifying additional contacts, alerting your guard company, or contacting emergency services on your behalf</li>
+                <li><strong>System health monitoring:</strong> If your cameras or connected equipment go offline, we detect this and notify you promptly</li>
+                <li><strong>Client portal access:</strong> Access to your alert history, reports, and account information, according to your plan tier</li>
+            </ul>
+
+            <h3>3.2 Alert Review Performance</h3>
+            <p>We target alert review within the timeframe associated with your plan. These are <strong>operational targets, not contractual guarantees</strong>. Actual review time may vary based on alert volume, camera feed quality, connectivity, and staffing. We do not guarantee any specific response time.</p>
+
+            <h3>3.2.1 Verification Response Times</h3>
+            <p>SecurifyHQ sets internal targets for the time between AI alert receipt and human operator classification of each event. These targets are: Watch plan — approximately 10 minutes; Respond — approximately 7 minutes; Deter — approximately 5 minutes; Shield — approximately 3 minutes. These represent our service commitment and are best-effort targets only. They are not guaranteed response times and do not form part of any service level agreement. Factors including simultaneous alert volume, network conditions, and footage quality may affect actual times. No claim, refund, or liability arises from failure to meet these targets in any individual incident.</p>
+
+            <h3>3.3 Deterrence Features</h3>
+            <p>Where your site is equipped with compatible IP-based speakers or sirens, we can trigger audio warnings remotely upon verification of a genuine incident, subject to your pre-authorised configuration. This feature is available on Respond plans and above, or as an add-on on Watch plans. SecurifyHQ is not responsible for the effectiveness of deterrence measures — results depend on site-specific conditions outside our control.</p>
+
+            <h3>3.4 Monitoring Hours</h3>
+            <p>Monitoring hours are determined by your plan:</p>
+            <ul>
+                <li><strong>Watch and Respond plans:</strong> After-hours monitoring (6:00 PM to 6:00 AM NZST/NZDT, 7 days per week) unless 24/7 monitoring has been added as an upgrade</li>
+                <li><strong>Deter and Shield plans:</strong> 24/7 monitoring included</li>
+            </ul>
+            <p>Outside your monitoring hours, camera feeds are not actively watched. Offline alerts remain active at all times regardless of monitoring hours.</p>
+
+            <h3>3.5 System Compatibility</h3>
+            <p>Our service is compatible with camera systems that support RTSP (Real Time Streaming Protocol) streaming. Compatibility with specific camera models or NVR systems is not guaranteed. It is your responsibility to confirm your system is RTSP-capable prior to onboarding. We will assist in testing connectivity during setup but make no warranty regarding compatibility with every device or configuration.</p>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="s4">
+            <h2>4. Your Responsibilities</h2>
+            <p>You agree to:</p>
+            <ul>
+                <li>Provide accurate and complete information during onboarding and keep it up to date</li>
+                <li>Ensure your cameras are legally positioned in compliance with the Privacy Act 2020 and any applicable local regulations — cameras must not cover areas where people have a reasonable expectation of privacy (e.g., bathrooms, changing rooms) without appropriate consent</li>
+                <li>Maintain adequate power, internet connectivity, and equipment condition at your monitored site(s) — SecurifyHQ is not responsible for monitoring gaps caused by site-side failures</li>
+                <li>Ensure upload bandwidth at your site is sufficient to support camera streaming (minimum 1–2 Mbps per camera stream recommended)</li>
+                <li>Maintain accurate and reachable escalation contact details — we cannot be held responsible for failed notifications caused by incorrect, unavailable, or unresponsive contact information</li>
+                <li>Obtain any consents required from staff, visitors, or third parties who may be captured by your cameras, including displaying appropriate signage</li>
+                <li>Not use SecurifyHQ's service for any unlawful purpose or to monitor any person without lawful authority</li>
+                <li>Notify us promptly of any changes to your site, camera setup, or contact details that may affect monitoring</li>
+                <li>Respond to our alerts and notifications in a timely manner where your response is required to protect your property</li>
+            </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section" id="s5">
+            <h2>5. Escalation Authorisation</h2>
+
+            <h3>5.1 Your Escalation Plan</h3>
+            <p>During onboarding, you will define your escalation plan — specifying who should be contacted, in what order, and under what conditions when a verified alert is generated. This plan is recorded in our system and drives all escalation actions we take on your behalf. You can update your escalation plan at any time by contacting us or via the client portal (Deter and Shield plans).</p>
+
+            <h3>5.2 Escalation Steps</h3>
+            <p>A typical escalation plan may include:</p>
+            <ul>
+                <li>Step 1: Notify primary contact (call + message)</li>
+                <li>Step 2: If no response within [your specified time], notify secondary contact</li>
+                <li>Step 3: Notify your guard company or security provider (if contracted and contact provided)</li>
+                <li>Step 4: Contact emergency services (if pre-authorised — see 5.3)</li>
+            </ul>
+            <p>We follow your plan as defined. If a contact is unreachable, we proceed to the next step as instructed. We log all escalation actions with timestamps.</p>
+
+            <h3>5.3 Police and Emergency Services Authorisation</h3>
+            <p>SecurifyHQ is not an emergency service and is not a licensed security provider. However, any person may report an incident to New Zealand Police. Where you have explicitly selected police notification as a step in your escalation plan during onboarding, you authorise SecurifyHQ to <strong>contact New Zealand Police on your behalf, solely to report a verified incident at your property</strong>. In making such a report, our operator will:</p>
+            <ul>
+                <li>Identify themselves as calling on behalf of you (the property owner/manager)</li>
+                <li>Confirm the site address and nature of the verified incident</li>
+                <li>Provide any available video evidence reference</li>
+                <li>Not claim authority, make demands, or represent themselves as a security or emergency service</li>
+            </ul>
+
+            <div class="critical-box">
+                <p>⚠️ Regardless of your escalation plan settings, if our operator observes credible evidence of an immediate threat to a person's life or safety, we will contact emergency services (111). This duty to report a life-threatening incident overrides all other escalation settings.</p>
+            </div>
+
+            <h3>5.4 No Autonomous Action</h3>
+            <p>SecurifyHQ does not take any independent action beyond what you have authorised. We do not attend sites, deploy personnel, make financial decisions, engage contractors, or take any physical action on your behalf. All escalation steps are taken strictly in accordance with your predefined instructions.</p>
+
+            <h3>5.5 Limits of Escalation</h3>
+            <p>We cannot guarantee that any escalation action — including notification, siren activation, or police contact — will prevent an incident, result in a response, or reduce loss. Emergency services respond according to their own priorities and procedures, which are outside our control.</p>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="section" id="s6">
+            <h2>6. Service Plans</h2>
+            <p>Our services are available under the following plans. Features and pricing are as displayed on our website at the time of your signup. We reserve the right to update plans with 30 days' notice to existing subscribers.</p>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Plan</th>
+                        <th>Monthly Fee (excl. GST)</th>
+                        <th>Cameras</th>
+                        <th>Monitoring Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Watch</strong></td>
+                        <td>$199/month</td>
+                        <td>Up to 4</td>
+                        <td>After-hours (6pm–6am)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Respond</strong></td>
+                        <td>$349/month</td>
+                        <td>Up to 8</td>
+                        <td>After-hours (6pm–6am)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Deter</strong></td>
+                        <td>$549/month</td>
+                        <td>Up to 12</td>
+                        <td>24/7</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Shield</strong></td>
+                        <td>$799/month</td>
+                        <td>Up to 20</td>
+                        <td>24/7</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enterprise</strong></td>
+                        <td>Custom</td>
+                        <td>Unlimited</td>
+                        <td>Custom</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Available add-ons (at additional charge): extra cameras, 24/7 upgrade, alarm/sensor integration, siren/speaker remote trigger, additional escalation contacts. Current add-on pricing is available on our website.</p>
+
+            <h3>6.1 Plan Limits</h3>
+            <p>Camera counts and escalation contact limits are enforced by our system. Connections exceeding your plan's camera limit will not be monitored unless an add-on has been purchased. Where you require an exception, please contact us — overrides are at our discretion and may be subject to additional charges.</p>
+        </div>
+
+        <!-- Section 7 -->
+        <div class="section" id="s7">
+            <h2>7. Setup and Onboarding</h2>
+
+            <h3>7.1 Setup Fee</h3>
+            <p>A one-off setup fee applies to all new accounts, covering system integration, configuration, escalation plan setup, testing, and onboarding support. The setup fee for your selected plan is confirmed at time of signup and is <strong>non-refundable</strong> once onboarding has commenced, regardless of cancellation. Setup fees are:</p>
+            <ul>
+                <li>Watch and Respond: $299 + GST</li>
+                <li>Deter: $399 + GST</li>
+                <li>Shield: $499 + GST</li>
+                <li>Enterprise: as quoted</li>
+            </ul>
+
+            <h3>7.2 Onboarding Process</h3>
+            <p>Onboarding includes completing our online questionnaire, providing camera access credentials, testing connectivity, configuring your escalation plan, and verifying alert delivery. Most setups go live within 1–5 business days depending on your system's complexity. We make reasonable efforts to complete onboarding promptly but do not guarantee a specific timeframe.</p>
+
+            <h3>7.3 Customer Responsibilities During Setup</h3>
+            <p>You must provide accurate camera access details, ensure sufficient upload speed, and be available to assist with testing. Delays caused by incomplete or inaccurate information provided by you do not affect the non-refundable nature of the setup fee.</p>
+
+            <h3>7.4 Hardware</h3>
+            <p>SecurifyHQ does not install hardware. Camera installation is your responsibility, undertaken by you or your chosen contractor. We may recommend compatible IP speakers, sirens, or networking equipment and can supply these items at cost plus margin — supply does not include installation. Remote configuration support is available for compatible devices.</p>
+        </div>
+
+        <!-- Section 8 -->
+        <div class="section" id="s8">
+            <h2>8. Payment, Billing &amp; GST</h2>
+
+            <h3>8.1 Billing Cycle</h3>
+            <p>Subscriptions are billed <strong>monthly in advance (prepaid)</strong>. Your first billing date is the date your monitoring goes live. Subsequent billing occurs on the same date each month. If a billing date falls on a weekend or public holiday, payment is taken on the next business day.</p>
+
+            <h3>8.2 GST</h3>
+            <p>SecurifyHQ Limited is registered for Goods and Services Tax (GST) in New Zealand. All prices displayed on our website are exclusive of GST unless stated otherwise. GST at the current rate (15%) will be added to all invoices for New Zealand clients. Our GST number will appear on all invoices.</p>
+
+            <h3>8.3 Payment Methods</h3>
+            <p>We accept the following payment methods:</p>
+            <ul>
+                <li><strong>Direct debit (bank account):</strong> Set up via our secure GoCardless integration during onboarding. No surcharge applies. This is our preferred payment method for ongoing subscriptions.</li>
+                <li><strong>Credit or debit card:</strong> Processed via Stripe. A payment processing surcharge of <strong>2.7% + $0.30 per transaction</strong> applies and will be clearly displayed before confirmation. This surcharge represents our actual cost of card processing and does not exceed that cost.</li>
+            </ul>
+            <p>Payment method authorisation (direct debit mandate or card) must be completed during onboarding before monitoring commences.</p>
+
+            <h3>8.4 Failed Payments</h3>
+            <p>If a payment fails, we will notify you and attempt to retry. If payment is not resolved within 7 days of the due date, monitoring may be suspended until the outstanding balance is settled. We reserve the right to terminate accounts where payment remains unresolved after 30 days.</p>
+
+            <h3>8.5 Price Changes</h3>
+            <p>We may update our subscription pricing with a minimum of <strong>30 days' written notice</strong> to existing subscribers. Price changes take effect on your next renewal date following the notice period. If you do not wish to continue at the new price, you may cancel in accordance with Section 12.</p>
+
+            <h3>8.6 Invoices</h3>
+            <p>GST-compliant invoices are generated automatically and made available in your client portal and via email at the time of each billing cycle.</p>
+        </div>
+
+        <!-- Section 9 -->
+        <div class="section" id="s9">
+            <h2>9. Service Availability &amp; System Health</h2>
+
+            <h3>9.1 Uptime Target</h3>
+            <p>We target 99% monthly availability of our monitoring platform. This is an operational target, not a contractual guarantee. Our platform is hosted on enterprise cloud infrastructure (DigitalOcean), and we take reasonable steps to maintain availability. We are subject to third-party infrastructure constraints beyond our control.</p>
+
+            <h3>9.2 Site-Side Failures</h3>
+            <p>If your cameras go offline due to power loss, internet outage, hardware failure, or any other cause at your site, monitoring for those cameras is automatically suspended. We will detect the disconnection and notify you. No credit or refund is provided for monitoring gaps caused by site-side failures.</p>
+
+            <h3>9.3 Camera Offline Alerts</h3>
+            <p>Camera and system offline events are treated as separate alert types. When a disconnection is detected, we will notify your designated contact, raise a support ticket, and provide recommended troubleshooting steps where applicable. Where we are able to assist remotely, we will make reasonable efforts to do so. Recovery assistance is subject to your plan's support entitlements.</p>
+
+            <h3>9.4 Planned Maintenance</h3>
+            <p>Where possible, we will provide at least 24 hours' notice of planned maintenance. Maintenance is scheduled during low-activity periods. No credit is provided for planned maintenance windows.</p>
+
+            <h3>9.5 Service Credits</h3>
+            <p>In the event of an unplanned outage attributable solely to our systems lasting more than <strong>72 consecutive hours</strong>, we may, at our discretion, offer a prorated subscription credit. Credits are not provided for site-side outages, planned maintenance, or outages caused by third-party providers.</p>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="section" id="s10">
+            <h2>10. Limitations of Liability</h2>
+
+            <div class="critical-box">
+                <p>⚠️ This section is critical. Please read it carefully before subscribing.</p>
+            </div>
+
+            <h3>10.1 No Prevention Guarantee</h3>
+            <p>SecurifyHQ provides monitoring and alert escalation services only. <strong>We do not and cannot guarantee the prevention of theft, vandalism, trespass, property damage, personal injury, or any other incident.</strong> Our service is designed to improve awareness and accelerate response — not to eliminate the possibility of incidents occurring.</p>
+
+            <h3>10.2 Notification Reliance</h3>
+            <p>You acknowledge that the effectiveness of our service depends on your escalation contacts being reachable and responsive, on your site's cameras and connectivity being operational, and on timely action being taken by you or your designated responders. SecurifyHQ is not responsible for losses or damages arising from your contacts being unavailable, from your site infrastructure failing, or from delays in your response.</p>
+
+            <h3>10.3 Limitation of Financial Liability</h3>
+            <p>To the maximum extent permitted by applicable law, SecurifyHQ's total liability to you for any claim arising out of or in connection with our services (whether in contract, tort, negligence, or otherwise) shall not exceed the <strong>total amount you paid to SecurifyHQ in the three (3) months immediately preceding the event giving rise to the claim</strong>.</p>
+
+            <h3>10.4 Exclusion of Consequential Loss</h3>
+            <p>SecurifyHQ is not liable for any indirect, consequential, incidental, special, or punitive damages, including but not limited to loss of profit, loss of business, loss of revenue, loss of data, property damage, or personal injury — even if we have been advised of the possibility of such losses.</p>
+
+            <h3>10.5 Third-Party Actions</h3>
+            <p>We are not liable for the actions or inactions of third parties — including police, guard companies, or any person you designate as an escalation contact. Our obligation is limited to making notification attempts in accordance with your escalation plan.</p>
+
+            <h3>10.6 Force Majeure</h3>
+            <p>SecurifyHQ is not liable for failure or delay in performance caused by circumstances beyond our reasonable control, including natural disasters, power failures, cyberattacks, telecommunications failures, government actions, or any event that would constitute a force majeure event under New Zealand law.</p>
+
+            <h3>10.7 Consumer Guarantees Act</h3>
+            <p>Where you are acquiring our services for business purposes (which is the intended use of this service), you agree that the Consumer Guarantees Act 1993 does not apply to our agreement. If you are a consumer under that Act, nothing in these Terms limits your rights under it.</p>
+
+            <h3>10.8 Indemnity</h3>
+            <p>You agree to indemnify and hold harmless SecurifyHQ, its directors, employees, and contractors from any claims, losses, damages, costs, or expenses (including legal fees) arising from: your breach of these Terms; your violation of any applicable law; your misuse of our service; or your cameras being positioned or used in a manner that violates any person's privacy or other legal rights.</p>
+        </div>
+
+        <!-- Section 11 -->
+        <div class="section" id="s11">
+            <h2>11. Data, Privacy &amp; Video Footage</h2>
+            <p>Your privacy and the privacy of those captured by your cameras is important. Our full Privacy Policy (available at securifyhq.com/privacy-policy) governs how we collect, use, store, and protect personal information in connection with our services. By using our services, you also agree to our Privacy Policy.</p>
+
+            <h3>11.1 Ownership of Footage</h3>
+            <p>You retain ownership of all video footage captured by your cameras. You grant SecurifyHQ a limited, non-exclusive licence to access, view, process, and retain footage solely for the purpose of providing the monitoring and alert escalation services described in these Terms.</p>
+
+            <h3>11.2 Retention</h3>
+            <p>SecurifyHQ retains video clips associated with verified alerts for a period of <strong>30 days</strong> from the date of the alert, after which clips are permanently deleted from our systems. Camera feeds are not continuously recorded or stored by SecurifyHQ — we retain only clips flagged as incidents. You are responsible for any long-term footage retention using your own NVR or cloud storage.</p>
+
+            <h3>11.3 Authorised Personnel</h3>
+            <p>Your footage is accessed only by SecurifyHQ's authorised monitoring personnel and is used solely for incident verification and escalation. Access to footage by unauthorised persons is prohibited by our internal policies and by law.</p>
+
+            <h3>11.4 Your Privacy Obligations</h3>
+            <p>You are responsible for ensuring your use of CCTV cameras complies with the Privacy Act 2020, including: placing cameras lawfully; displaying appropriate signage; not monitoring areas where individuals have a reasonable expectation of privacy without lawful basis; and handling any footage of identifiable individuals in accordance with the Information Privacy Principles.</p>
+
+            <h3>11.5 Security</h3>
+            <p>We take reasonable technical and organisational measures to protect your data and footage from unauthorised access, loss, or disclosure. No system is completely secure. You are responsible for maintaining the security of your camera system and the access credentials you provide to us.</p>
+        </div>
+
+        <!-- Section 12 -->
+        <div class="section" id="s12">
+            <h2>12. Cancellation &amp; Termination</h2>
+
+            <h3>12.1 Cancellation by You</h3>
+            <p>You may cancel your subscription at any time with <strong>30 days' written notice</strong> to hello@securifyhq.com. Cancellation takes effect at the end of your current billing period following the notice period (i.e., service continues and billing continues until the end of the 30-day notice period). No partial-month refunds are provided for mid-cycle cancellations.</p>
+
+            <h3>12.2 Refund Policy</h3>
+            <p><strong>Setup fees:</strong> The setup fee is non-refundable at all times, regardless of whether onboarding has commenced or been completed.</p>
+            <p><strong>First month satisfaction guarantee (non-pilot clients only):</strong> If you are not satisfied with our service, you may request a full refund of your first month's subscription fee within 30 days of your monitoring going live — no questions asked. This guarantee applies to the subscription fee only and does not apply to the setup fee. The satisfaction guarantee applies once per customer account and is not available to customers who have previously held a SecurifyHQ account.</p>
+            <p><strong>Pilot clients:</strong> The 30-day satisfaction guarantee does not apply to pilot programme clients. Pilot clients receive their first month's subscription free; accordingly, no subscription refund is payable for that period.</p>
+            <p><strong>No refunds after the first month:</strong> Except as set out above, no refunds are provided once the first month's subscription period has passed.</p>
+
+            <h3>12.3 Early Termination — Contract Clients</h3>
+            <p>Where you have entered into a fixed-term contract (12-month, 24-month, or 36-month), early termination before the end of the contract term requires payment of an early termination fee calculated as follows:</p>
+            <div class="highlight-box">
+                <p>Early Termination Fee = months remaining in contract &times; your discounted monthly rate &times; 50%</p>
+            </div>
+            <p>For example: if you are on a 12-month contract with a discounted monthly rate of $380, and you cancel with 6 months remaining, the early termination fee would be 6 &times; $380 &times; 50% = $1,140. The early termination fee is invoiced and due immediately upon cancellation. No router cost is added to the early termination fee — the router supplied under the 36-month contract remains yours to keep.</p>
+
+            <h3>12.4 Termination by Us</h3>
+            <p>We reserve the right to suspend or terminate your account immediately, without refund, if you: breach these Terms materially; fail to pay amounts owed; use our service for any unlawful purpose; or take any action that, in our reasonable judgement, puts SecurifyHQ, its personnel, or other clients at risk.</p>
+
+            <h3>12.5 Effect of Termination</h3>
+            <p>On termination: monitoring of your cameras ceases; your portal access is disabled; any retained clips are deleted within 14 days; and any unpaid amounts become immediately due. Sections 10 (Limitations of Liability), 11 (Data and Privacy), 13 (Intellectual Property), 14 (Dispute Resolution), and 15 (General Provisions) survive termination.</p>
+        </div>
+
+        <!-- Section 12A -->
+        <div class="section" id="s12a">
+            <h2>12A. Pilot Programme Terms</h2>
+
+            <div class="highlight-box">
+                <p>&#127381; Pilot offer closes 31 May 2026. Only 3 spots available.</p>
+            </div>
+
+            <h3>12A.1 Pilot Pricing</h3>
+            <p>Clients accepted into the SecurifyHQ pilot programme receive the following benefits:</p>
+            <ul>
+                <li><strong>50% off the setup fee</strong> (non-refundable at all times, including for pilot clients)</li>
+                <li><strong>First month's subscription free</strong> — no subscription charge applies for the first full calendar month of monitoring</li>
+            </ul>
+
+            <h3>12A.2 Pilot Offer Eligibility and Close</h3>
+            <p>The pilot offer is limited to 3 clients and closes on 31 May 2026. Applications received after this date, or after the 3 spots are filled, will be processed at standard pricing.</p>
+
+            <h3>12A.3 Satisfaction Guarantee</h3>
+            <p>The 30-day satisfaction guarantee described in Section 12.2 does not apply to pilot programme clients. As pilot clients receive their first month's subscription free, no subscription refund arises in respect of that period.</p>
+
+            <h3>12A.4 Conversion to Standard Billing</h3>
+            <p>After the free first month, pilot clients convert to standard monthly billing at the applicable plan rate. All standard terms (including cancellation notice, payment terms, and refund policy) apply from that point forward.</p>
+        </div>
+
+        <!-- Section 12B -->
+        <div class="section" id="s12b">
+            <h2>12B. Contract Term Discounts</h2>
+
+            <p>Clients may choose a fixed-term contract to receive a discount on their monthly subscription fee. All contract discounts are applied to your billing from the date of signup — no adjustments are made retrospectively. The applicable contract terms are as follows:</p>
+
+            <table class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Contract Term</th>
+                        <th>Monthly Discount</th>
+                        <th>Additional Benefits</th>
+                        <th>Early Termination Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Open term (no contract)</strong></td>
+                        <td>None — standard pricing</td>
+                        <td>Cancel with 30 days' written notice at any time</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td><strong>12-month contract</strong></td>
+                        <td>5% off monthly fee</td>
+                        <td>—</td>
+                        <td>50% of remaining contract value</td>
+                    </tr>
+                    <tr>
+                        <td><strong>24-month contract</strong></td>
+                        <td>10% off monthly fee</td>
+                        <td>—</td>
+                        <td>50% of remaining contract value</td>
+                    </tr>
+                    <tr>
+                        <td><strong>36-month contract</strong></td>
+                        <td>10% off monthly fee</td>
+                        <td>Free router included; no setup fee charged</td>
+                        <td>50% of remaining contract value (router cost not included)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Early termination fee calculation:</strong> months remaining &times; discounted monthly rate &times; 50%. The router supplied under the 36-month contract is not charged on early termination — it remains yours to keep regardless.</p>
+
+            <div class="highlight-box">
+                <p>&#128161; Contract discounts are built into your monthly billing from signup. You pay the discounted rate every month for the duration of the contract — no lump sum required upfront.</p>
+            </div>
+        </div>
+
+        <!-- Section 13 -->
+        <div class="section" id="s13">
+            <h2>13. Intellectual Property</h2>
+            <p>SecurifyHQ owns all rights to its website, software, monitoring platform, systems, SOPs, brand, logos, and processes. Nothing in these Terms grants you any licence to use our intellectual property other than as strictly necessary to receive the services.</p>
+            <p>You retain ownership of your video footage, site data, and business information. You grant us a limited licence to use this data solely to provide and improve our services to you.</p>
+        </div>
+
+        <!-- Section 14 -->
+        <div class="section" id="s14">
+            <h2>14. Dispute Resolution &amp; Governing Law</h2>
+
+            <h3>14.1 Governing Law</h3>
+            <p>These Terms are governed by and construed in accordance with the laws of New Zealand. Both parties submit to the non-exclusive jurisdiction of the New Zealand courts.</p>
+
+            <h3>14.2 Dispute Resolution</h3>
+            <p>If a dispute arises, we encourage you to contact us first at hello@securifyhq.com. We will make genuine efforts to resolve any issue informally within 14 days of receiving your notice. If the dispute is not resolved informally, either party may refer the matter to mediation or arbitration under the Arbitration Act 1996 (NZ) before commencing court proceedings.</p>
+
+            <h3>14.3 Complaints</h3>
+            <p>Complaints about our privacy practices may be directed to the Office of the Privacy Commissioner (privacy.org.nz) in New Zealand.</p>
+        </div>
+
+        <!-- Section 15 -->
+        <div class="section" id="s15">
+            <h2>15. General Provisions</h2>
+            <ul>
+                <li><strong>Entire Agreement:</strong> These Terms, together with our Privacy Policy and your onboarding confirmation, constitute the entire agreement between you and SecurifyHQ regarding our services.</li>
+                <li><strong>Amendments:</strong> We may update these Terms at any time. Material changes will be communicated with at least 14 days' notice. Continued use of the service after the effective date of changes constitutes acceptance.</li>
+                <li><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable, the remaining provisions continue in full force.</li>
+                <li><strong>Waiver:</strong> Failure by either party to enforce any provision does not constitute a waiver of that provision.</li>
+                <li><strong>Assignment:</strong> You may not assign your rights under these Terms without our prior written consent. We may assign our obligations to a successor entity upon reasonable notice.</li>
+                <li><strong>Notices:</strong> Notices to SecurifyHQ must be sent to hello@securifyhq.com. Notices to you will be sent to the email address registered on your account.</li>
+            </ul>
+        </div>
+
+        <!-- Section 16 -->
+        <div class="section" id="s16">
+            <h2>16. Contact Information</h2>
+            <div class="contact-box">
+                <h3>SecurifyHQ Limited</h3>
+                <p>NZ Company Number: 9405543</p>
+                <p>Registered Address: 13B Fryer Street, Queenstown 9300, New Zealand</p>
+                <p>Email: <a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></p>
+                <p>Phone: <a href="tel:+6437328743">+64 3 732 8743</a></p>
+                <p>Website: <a href="https://securifyhq.com">securifyhq.com</a></p>
+            </div>
+        </div>
+
+        <!-- Section 17 -->
+        <div class="ack-box" id="s17">
+            <h3>✅ Acknowledgement</h3>
+            <p>By signing up for and using SecurifyHQ services, you confirm that you:</p>
+            <ul>
+                <li>Have read and understood these Terms of Service in full</li>
+                <li>Understand that SecurifyHQ is a monitoring and alert escalation service only — not a licensed security company</li>
+                <li>Understand that SecurifyHQ does not guarantee prevention of crime, theft, vandalism, or property damage</li>
+                <li>Understand that you remain responsible for all decisions and actions taken in response to our notifications</li>
+                <li>Authorise SecurifyHQ to access your camera feeds and act in accordance with your escalation plan</li>
+                <li>Accept that the setup fee is non-refundable at all times</li>
+                <li>Understand that the 30-day satisfaction guarantee applies to non-pilot clients only and covers the first month's subscription fee only</li>
+                <li>Understand that pilot clients receive 50% off the setup fee and their first month's subscription free, and are not eligible for the 30-day satisfaction guarantee</li>
+                <li>Understand that contract clients (12-, 24-, or 36-month terms) are subject to an early termination fee of 50% of remaining contract value if cancelled before the end of their term</li>
+                <li>Have read and agree to our Privacy Policy</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-display" aria-label="SecurifyHQ logo"></div>
+                    <div class="f-logo">Securify<span>HQ</span></div>
+                    <p>AI-powered CCTV monitoring and human-verified alert escalation for small to mid-size NZ businesses with existing cameras &mdash; monitored 24/7.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://www.facebook.com/profile.php?id=61570974383165" target="_blank" rel="noopener" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.instagram.com/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://wa.me/642108144777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="index.html#industries">Industries</a></li>
+                        <li><a href="plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="index.html#pilot">Pilot Offer</a></li>
+                        <li><a href="signup.html">Get Started</a></li>
+                        <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener">Client Portal</a></li>
+                        <li><a href="camera-guide.html">Camera Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About SecurifyHQ</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></li>
+                        <li><a href="tel:+6437328743">03 732 8743</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; 2026 SecurifyHQ Limited. All rights reserved.</p>
+                    <p>NZ Company #9405543 &mdash; 13B Fryer Street, Queenstown 9300</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html" class="footer-legal-pill">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-legal-pill">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleNav() { document.getElementById('navMenu').classList.toggle('nav-open'); }
+        function toggleDropdownMob(el, e) {
+            if (window.innerWidth > 900) return;
+            e.preventDefault();
+            var li = el.closest('.has-dropdown');
+            li.classList.toggle('mob-open');
+        }
+        document.addEventListener('click', function(e) {
+            var nav = document.getElementById('mainNav');
+            if (nav && !nav.contains(e.target)) { document.getElementById('navMenu').classList.remove('nav-open'); }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,876 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV Monitoring for Construction, Warehouses &amp; Retail NZ | SecurifyHQ</title>
+    <meta name="description" content="SecurifyHQ monitors construction sites, warehouses, and commercial properties across New Zealand. Human-verified alerts, incident reports, and escalation — for the industries that need it most.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://securifyhq.com/industries.html">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQJ2HZ6EJL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EQJ2HZ6EJL');
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #2c3e50; }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: #0d1f2d; padding: 1rem 2rem;
+            z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: -0.5px; }
+        .nav-logo:hover { color: #FFA500; }
+        .nav-logo span { color: #FFA500; }
+        #navMenu { list-style: none; display: flex; gap: 1.8rem; align-items: center; }
+        nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.55rem 1.4rem; border-radius: 30px; font-size: 0.9rem !important; }
+        .nav-cta:hover { background: #ff8c00 !important; color: #0d1f2d !important; }
+        .nav-active { color: #FFA500 !important; }
+        .nav-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (max-width: 968px) { .burger { display: flex; } }
+        .nav-logo { display: flex; align-items: center; gap: 0.5rem; }
+
+        /* DROPDOWN NAV */
+        .has-dropdown { position: relative; }
+        .dropdown { display: none; position: absolute; top: 100%; left: 0; background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.4rem 0; min-width: 210px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); z-index: 200; list-style: none; margin: 0; }
+        .has-dropdown:hover .dropdown { display: block; }
+        .dropdown li { padding: 0; }
+        .dropdown a { display: block; padding: 0.6rem 1.2rem; color: rgba(255,255,255,0.85); border-radius: 0; white-space: nowrap; font-size: 0.9rem; }
+        .dropdown a:hover { background: rgba(255,165,0,0.1); color: #FFA500; }
+        .nav-portal { color: rgba(255,255,255,0.6) !important; font-size: 0.85rem !important; border: 1px solid rgba(255,255,255,0.2); padding: 0.3rem 0.9rem; border-radius: 20px; }
+        .nav-portal:hover { border-color: rgba(255,255,255,0.5); color: white !important; }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #0a1825 0%, #0d1f2d 50%, #1a3a52 100%);
+            color: white; padding: 140px 2rem 80px; text-align: center;
+        }
+        .hero-content { max-width: 820px; margin: 0 auto; }
+        .hero-eyebrow {
+            display: inline-block;
+            background: rgba(255,165,0,0.15); border: 1px solid rgba(255,165,0,0.4);
+            color: #FFA500; padding: 0.4rem 1.2rem; border-radius: 30px;
+            font-size: 0.85rem; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; margin-bottom: 1.5rem;
+        }
+        .hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.2; margin-bottom: 1.2rem; }
+        .hero p { font-size: 1.15rem; color: rgba(255,255,255,0.8); max-width: 640px; margin: 0 auto; }
+
+        /* INDUSTRY TABS NAV */
+        .industry-nav {
+            background: white; border-bottom: 2px solid #e8edf2;
+            position: sticky; top: 64px; z-index: 100;
+        }
+        .industry-nav-inner {
+            max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+            display: flex; gap: 0; overflow-x: auto;
+        }
+        .ind-tab {
+            padding: 1rem 1.75rem; font-weight: 700; font-size: 0.95rem;
+            color: #6c757d; text-decoration: none; white-space: nowrap;
+            border-bottom: 3px solid transparent; transition: all 0.2s;
+            margin-bottom: -2px;
+        }
+        .ind-tab:hover { color: #0d1f2d; border-color: #e8edf2; }
+        .ind-tab.active { color: #FFA500; border-color: #FFA500; }
+        .ind-tab.coming { color: #9ca3af !important; cursor: default; }
+        .coming-tag { font-size: 0.7rem; background: #f0f4f8; color: #9ca3af; padding: 0.15rem 0.4rem; border-radius: 10px; margin-left: 0.4rem; font-weight: 600; }
+
+        /* COMMON */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 80px 0; }
+        .section-eyebrow {
+            display: inline-block; background: rgba(255,165,0,0.1);
+            border: 1px solid rgba(255,165,0,0.3); color: #FFA500;
+            padding: 0.3rem 1rem; border-radius: 20px;
+            font-size: 0.8rem; font-weight: 700; letter-spacing: 1px;
+            text-transform: uppercase; margin-bottom: 1rem;
+        }
+        h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: #0d1f2d; margin-bottom: 1rem; }
+        h3 { font-size: 1.3rem; font-weight: 800; color: #0d1f2d; margin-bottom: 0.75rem; }
+        .section-sub { font-size: 1.05rem; color: #6c757d; margin-bottom: 3rem; }
+        .centered { text-align: center; }
+        .centered .section-sub { max-width: 640px; margin-left: auto; margin-right: auto; }
+
+        /* INDUSTRY HERO SECTION */
+        .industry-section { padding: 80px 0; border-bottom: 1px solid #e8edf2; }
+        .industry-section:last-of-type { border-bottom: none; }
+        .ind-header { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-bottom: 4rem; }
+        .ind-header.reverse { direction: rtl; }
+        .ind-header.reverse > * { direction: ltr; }
+        .ind-icon-large { font-size: 5rem; margin-bottom: 1rem; display: block; }
+        .ind-label { display: inline-block; background: rgba(255,165,0,0.1); border: 1px solid rgba(255,165,0,0.3); color: #FFA500; padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .ind-header p { color: #6c757d; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; }
+
+        /* CONNECTIVITY NOTE */
+        .connectivity-note {
+            background: rgba(255,165,0,0.07); border: 1px solid rgba(255,165,0,0.25);
+            border-radius: 10px; padding: 1rem 1.25rem; margin-top: 1rem;
+            font-size: 0.88rem; color: #555; line-height: 1.6;
+        }
+        .connectivity-note strong { color: #0d1f2d; }
+
+        /* PROBLEM BOX */
+        .problem-box {
+            background: rgba(239,68,68,0.05); border: 1px solid rgba(239,68,68,0.15);
+            border-radius: 14px; padding: 2rem;
+        }
+        .problem-box h4 { color: #ef4444; font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem; }
+        .problem-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+        .problem-list li { display: flex; gap: 0.6rem; font-size: 0.9rem; color: #4b5563; align-items: flex-start; }
+        .problem-list li::before { content: '✕'; color: #ef4444; font-weight: 700; flex-shrink: 0; }
+
+        /* USE CASES */
+        .use-cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+        .use-case {
+            background: white; border-radius: 12px; padding: 1.5rem;
+            border: 1px solid #e8edf2; box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .uc-icon { font-size: 1.6rem; margin-bottom: 0.75rem; }
+        .uc-title { font-weight: 700; font-size: 0.95rem; color: #0d1f2d; margin-bottom: 0.4rem; }
+        .uc-desc { font-size: 0.88rem; color: #6c757d; line-height: 1.6; }
+
+        /* STAT ROW */
+        .stat-row { display: flex; gap: 2rem; margin: 2rem 0; flex-wrap: wrap; }
+        .stat { background: #0d1f2d; border-radius: 12px; padding: 1.25rem 1.75rem; }
+        .stat-num { font-size: 1.8rem; font-weight: 900; color: #FFA500; line-height: 1; }
+        .stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 0.25rem; }
+
+        /* COMING SOON SECTION */
+        .coming-soon-section {
+            background: #f8f9fa; border-radius: 16px; padding: 3rem;
+            text-align: center; border: 2px dashed #e8edf2;
+            margin: 2rem 0;
+        }
+        .cs-badge { display: inline-block; background: #f0f4f8; color: #6c757d; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 1rem; }
+        .coming-soon-section h3 { color: #0d1f2d; }
+        .coming-soon-section p { color: #6c757d; max-width: 560px; margin: 0.75rem auto 1.5rem; }
+
+        /* PLAN REC */
+        .plan-rec { display: inline-flex; align-items: center; gap: 0.75rem; background: rgba(255,165,0,0.08); border: 1px solid rgba(255,165,0,0.25); border-radius: 10px; padding: 0.75rem 1.25rem; margin-top: 1.5rem; }
+        .plan-rec-label { font-size: 0.85rem; color: #6c757d; }
+        .plan-rec-name { font-weight: 800; color: #FFA500; font-size: 0.95rem; }
+
+        /* CTA */
+        .cta-section { background: linear-gradient(135deg, #0d1f2d, #1a3a52); color: white; }
+        .cta-inner { text-align: center; padding: 5rem 2rem; max-width: 700px; margin: 0 auto; }
+        .cta-inner h2 { color: white; font-size: clamp(1.8rem, 3vw, 2.5rem); margin-bottom: 1rem; }
+        .cta-inner p { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 2rem; }
+        .btn-primary {
+            display: inline-block; background: #FFA500; color: #0d1f2d;
+            padding: 0.9rem 2.5rem; border-radius: 30px; font-weight: 700;
+            font-size: 1rem; text-decoration: none; transition: all 0.2s;
+        }
+        .btn-primary:hover { background: #ff8c00; transform: translateY(-2px); }
+        .btn-outline {
+            display: inline-block; border: 2px solid rgba(255,255,255,0.4);
+            color: white; padding: 0.9rem 2.5rem; border-radius: 30px; font-weight: 600;
+            font-size: 1rem; text-decoration: none; transition: all 0.2s; margin-left: 1rem;
+        }
+        .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); }
+
+        /* FOOTER */
+        footer { background: #0d1f2d; color: rgba(255,255,255,0.7); padding: 3rem 2rem 2rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2.5rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .footer-brand p { font-size: 0.9rem; line-height: 1.7; }
+        .footer-col h4 { color: white; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.9rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; }
+        .footer-bottom p { margin-bottom: 0.25rem; }
+        .social-links { display: flex; gap: 0.75rem; }
+        .social-links a {
+            width: 36px; height: 36px; background: rgba(255,255,255,0.08);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,0.7); text-decoration: none; font-size: 1rem;
+            font-family: 'FontAwesome', serif; transition: all 0.2s;
+        }
+        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+        .footer-legal-pill { display:inline-block; padding:0.2rem 0.75rem; border:1px solid rgba(255,255,255,0.25); border-radius:20px; color:rgba(255,255,255,0.65); font-size:0.8rem; text-decoration:none; margin-right:0.5rem; transition:all 0.2s; }
+        .footer-legal-pill:hover { border-color:#FFA500; color:#FFA500; }
+
+        @media (max-width: 968px) {
+            .nav-toggle { display: block; }
+            #navMenu { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); }
+            #navMenu.open { display: flex; }
+            #navMenu > li { padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+            #navMenu > li:last-child { border-bottom: none; }
+            .dropdown { position: static; background: rgba(255,255,255,0.05); box-shadow: none; border: none; border-radius: 0; padding-left: 1rem; display: none; }
+            .has-dropdown.open .dropdown { display: block; }
+            .nav-portal { border: none; padding: 0; font-size: 0.95rem !important; color: rgba(255,255,255,0.85) !important; }
+        }
+        @media (max-width: 768px) {
+            .ind-header { grid-template-columns: 1fr; gap: 2rem; }
+            .ind-header.reverse { direction: ltr; }
+            .use-cases { grid-template-columns: 1fr; }
+            .stat-row { gap: 1rem; }
+            .footer-top { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .btn-outline { margin-left: 0; margin-top: 0.75rem; display: block; text-align: center; }
+        }
+    
+        /* ===== NAV OVERRIDE (fix_business_all) ===== */
+        nav#mainNav { position: fixed !important; top: 0; width: 100%; background: #0d1f2d !important; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { color: white !important; font-weight: 800 !important; font-size: 1.3rem !important; text-decoration: none; letter-spacing: -0.5px !important; display: flex !important; align-items: center; gap: 0 !important; flex-shrink: 0; }
+        .nav-logo:hover { color: white !important; }
+        .nav-logo span { color: #FFA500; }
+        nav#mainNav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; margin: 0; padding: 0; }
+        nav#mainNav ul > li { position: relative; }
+        nav#mainNav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
+        nav#mainNav a:hover { color: #FFA500; }
+        .nav-cta { background: #FFA500 !important; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; text-decoration: none; }
+        .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
+        .nav-portal { border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 30px; font-size: 0.88rem !important; white-space: nowrap; color: rgba(255,255,255,0.55) !important; padding: 0.3rem 0.85rem !important; }
+        .nav-portal:hover { border-color: rgba(255,255,255,0.4) !important; color: rgba(255,255,255,0.85) !important; }
+        .has-dropdown { position: relative; }
+        .has-dropdown > a { cursor: pointer; }
+        .dropdown { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; padding-top: 12px; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
+        .has-dropdown::before { content: ''; position: absolute; bottom: -8px; left: 0; right: 0; height: 8px; z-index: 201; }
+        .has-dropdown:hover .dropdown, .has-dropdown:focus-within .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
+        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
+        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
+        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
+        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
+        @media (max-width: 900px) {
+            .burger { display: flex !important; }
+            nav#mainNav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
+            nav#mainNav ul.nav-open { display: flex !important; }
+            nav#mainNav ul > li { width: 100%; }
+            nav#mainNav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
+            .nav-cta { display: inline-block !important; margin-top: 0.5rem; border-bottom: none !important; }
+            .nav-portal { border-bottom: none !important; }
+            .has-dropdown { width: 100%; }
+            .dropdown { position: static !important; opacity: 1 !important; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; }
+            .has-dropdown.mob-open .dropdown { display: block !important; }
+            .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
+        }
+        /* ===== FOOTER OVERRIDE (fix_business_all) ===== */
+        footer#footer { background: #0a1825 !important; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+        .footer-inner { max-width: 1200px; margin: 0 auto; }
+        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
+        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
+        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
+        .f-logo span { color: #FFA500; }
+        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
+        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
+        .footer-col ul { list-style: none; padding: 0; }
+        .footer-col li { margin-bottom: 0.5rem; }
+        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+        .footer-col a:hover { color: #FFA500; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
+        .footer-bottom p { margin-bottom: 0.2rem; color: rgba(255,255,255,0.7); }
+        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
+        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
+        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
+        .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
+        .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
+        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+        @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<nav id="mainNav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">Securify<span>HQ</span></a>
+            <ul id="navMenu">
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Services &#9662;</a>
+                    <div class="dropdown">
+                        <a href="how-it-works.html">How It Works</a>
+                        <a href="index.html#industries">Industries We Serve</a>
+                        <a href="camera-guide.html">Camera Compatibility</a>
+                    </div>
+                </li>
+                <li><a href="plans.html">Plans</a></li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Company &#9662;</a>
+                    <div class="dropdown">
+                        <a href="about.html">About SecurifyHQ</a>
+                        <a href="index.html#trust">Why SecurifyHQ</a>
+                        <a href="blog/index.html">Blog</a>
+                        <a href="residential.html">Residential</a>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#" onclick="toggleDropdownMob(this,event)">Support &#9662;</a>
+                    <div class="dropdown">
+                        <a href="faq.html">FAQ</a>
+                        <a href="index.html#contact">Contact Us</a>
+                    </div>
+                </li>
+                <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener" class="nav-portal">Client Portal</a></li>
+                <li><a href="signup.html" class="nav-cta">Get Started</a></li>
+            </ul>
+            <button class="burger" onclick="toggleNav()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <div class="hero-eyebrow">Industries</div>
+        <h1>Built for the sites where security actually matters</h1>
+        <p>Construction, warehouses, commercial properties — places with expensive assets, low foot traffic after hours, and real exposure to theft and vandalism. That's where we work.</p>
+    </div>
+</div>
+
+<!-- INDUSTRY TABS -->
+<div class="industry-nav">
+    <div class="industry-nav-inner">
+        <a href="#construction" class="ind-tab active">🏗️ Construction Sites</a>
+        <a href="#warehouses" class="ind-tab">🏭 Warehouses</a>
+        <a href="#commercial" class="ind-tab">🏢 Commercial Property</a>
+        <a href="#retail" class="ind-tab coming">🛒 Retail <span class="coming-tag">Coming Soon</span></a>
+    </div>
+</div>
+
+<!-- CONSTRUCTION -->
+<div class="industry-section" id="construction">
+    <div class="container">
+        <div class="ind-header">
+            <div>
+                <span class="ind-icon-large">🏗️</span>
+                <div class="ind-label">Construction Sites</div>
+                <h2>The most targeted sites in New Zealand after hours</h2>
+                <p>Construction sites are a prime target — high-value tools, copper, and plant equipment left unattended overnight and on weekends. A single theft can cost tens of thousands in equipment loss, project delay, and insurance excess.</p>
+                <p>Most sites have cameras. Very few have anyone actually watching them. SecurifyHQ bridges that gap: we monitor the feed, verify real intrusions, and escalate — so you're alerted before the thieves have loaded the van.</p>
+                <p>Works with most existing cameras — if your cameras support RTSP streaming, we can connect them. IP cameras, analog cameras with IP NVRs, and most commercial surveillance systems are supported.</p>
+                <div class="connectivity-note">
+                    <strong>Connectivity note:</strong> Supported for sites with internet connectivity (4G, Starlink, or wired) and RTSP-capable cameras — whether IP cameras or analog cameras with an IP NVR. We install our VPN router on-site. Not compatible with cloud-only/app-locked camera systems.
+                </div>
+                <div class="stat-row">
+                    <div class="stat">
+                        <div class="stat-num">73%</div>
+                        <div class="stat-label">of construction theft occurs at night or weekends</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">$28k</div>
+                        <div class="stat-label">average loss per construction theft incident (NZ)</div>
+                    </div>
+                </div>
+                <div class="plan-rec">
+                    <span class="plan-rec-label">Recommended plan:</span>
+                    <span class="plan-rec-name">Respond or Deter</span>
+                </div>
+            </div>
+            <div class="problem-box">
+                <h4>Without SecurifyHQ</h4>
+                <ul class="problem-list">
+                    <li>Cameras record but nobody watches — footage only reviewed after a theft</li>
+                    <li>Site manager called at 3am by a neighbour who happened to notice</li>
+                    <li>Police report filed with no usable footage reference</li>
+                    <li>Tool trailer emptied. Generator gone. $40k claim. $5k excess.</li>
+                    <li>Project delayed 2 weeks while equipment is replaced</li>
+                    <li>Insurance premium increases at next renewal</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>How we monitor construction sites</h3>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="uc-icon">🚧</div>
+                <div class="uc-title">Perimeter intrusion</div>
+                <div class="uc-desc">Cameras covering fence lines and entry gates detect any person entering after-hours. Operator verifies — not a worker, not a contractor — and escalates immediately.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🚗</div>
+                <div class="uc-title">Vehicle detection</div>
+                <div class="uc-desc">Vehicles on site after hours or in areas outside expected patterns are flagged. Useful for catching trailer theft before it's completed.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔧</div>
+                <div class="uc-title">Tool/plant storage zones</div>
+                <div class="uc-desc">Point cameras directly at high-value zones — tool containers, generator areas, copper stores. Any activity in these zones after close is an immediate alert.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📢</div>
+                <div class="uc-title">Remote deterrence</div>
+                <div class="uc-desc">With the siren/speaker add-on, our operator can trigger an audio warning the moment an intrusion is verified — before the alarm even sounds physically.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📋</div>
+                <div class="uc-title">Insurance-ready reports</div>
+                <div class="uc-desc">Every verified incident generates a timestamped PDF report with operator notes, clip reference, and escalation log — structured for formal use, including insurance submissions and authority notifications.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔄</div>
+                <div class="uc-title">Multi-stage sites</div>
+                <div class="uc-desc">As your site evolves, camera coverage adapts. Add or reassign cameras as zones change without changing your plan.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WAREHOUSES -->
+<div class="industry-section" id="warehouses" style="background: #f8f9fa;">
+    <div class="container">
+        <div class="ind-header reverse">
+            <div>
+                <span class="ind-icon-large">🏭</span>
+                <div class="ind-label">Warehouses &amp; Distribution</div>
+                <h2>High-stock environments need more than a padlock and a camera</h2>
+                <p>Warehouses hold dense, high-value inventory in large spaces that are hard to cover with a security guard patrol. Organised theft — sometimes by people who know the layout — is a persistent problem.</p>
+                <p>SecurifyHQ monitors the access points, loading docks, and storage aisles that matter. When something moves that shouldn't, a trained human confirms it and escalates — not an automated motion notification that gets ignored.</p>
+                <p>Works with most existing cameras — if your cameras support RTSP streaming, we can connect them. IP cameras, analog cameras with IP NVRs, and most commercial surveillance systems are supported.</p>
+                <div class="stat-row">
+                    <div class="stat">
+                        <div class="stat-num">68%</div>
+                        <div class="stat-label">of warehouse theft involves inside knowledge of layout</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">24/7</div>
+                        <div class="stat-label">monitoring available on Deter and Shield plans</div>
+                    </div>
+                </div>
+                <div class="plan-rec">
+                    <span class="plan-rec-label">Recommended plan:</span>
+                    <span class="plan-rec-name">Deter or Shield</span>
+                </div>
+            </div>
+            <div class="problem-box">
+                <h4>Without SecurifyHQ</h4>
+                <ul class="problem-list">
+                    <li>Motion alerts from the camera system go to an app nobody monitors at night</li>
+                    <li>Loading dock breach discovered at 6am shift start — theft occurred at 2am</li>
+                    <li>Footage exists but no escalation happened — opportunity lost</li>
+                    <li>Inventory audit identifies loss but cause unknown until reviewed</li>
+                    <li>Guard patrol company charges $80–$150/hour for occasional drive-by checks</li>
+                    <li>Insurance won't cover without evidence of timely response</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>How we monitor warehouses</h3>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="uc-icon">🚪</div>
+                <div class="uc-title">Access point monitoring</div>
+                <div class="uc-desc">Loading docks, roller doors, and staff entry points monitored around the clock. Any access outside approved hours triggers immediate operator review.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📦</div>
+                <div class="uc-title">High-value stock zones</div>
+                <div class="uc-desc">Point cameras at your highest-value racking or storage areas. Activity in these zones after-hours is immediately escalated regardless of entry point.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🚛</div>
+                <div class="uc-title">Vehicle yard coverage</div>
+                <div class="uc-desc">Yard cameras detect vehicles and movement in loading areas overnight. Useful for preventing truck theft, trailer swaps, and after-hours drops.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">👤</div>
+                <div class="uc-title">Person detection</div>
+                <div class="uc-desc">Our AI layer distinguishes people from shadows, forklifts, and general movement — so operators only review genuine person-detected events.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📊</div>
+                <div class="uc-title">Monthly uptime reports</div>
+                <div class="uc-desc">Camera uptime, alert frequency, and false alarm rates delivered monthly. Useful for compliance reporting and insurance risk assessments.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔗</div>
+                <div class="uc-title">Alarm integration</div>
+                <div class="uc-desc">Connect existing alarm systems to your monitoring profile. SecurifyHQ can correlate alarm triggers with camera footage for faster operator decisions.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- COMMERCIAL PROPERTY -->
+<div class="industry-section" id="commercial">
+    <div class="container">
+        <div class="ind-header">
+            <div>
+                <span class="ind-icon-large">🏢</span>
+                <div class="ind-label">Commercial Properties</div>
+                <h2>Offices, yards, and multi-tenancy premises</h2>
+                <p>Commercial property owners and managers face a wide range of security scenarios — after-hours break-ins, vandalism, trespassing, and liability exposure. A monitored site is also a defensible one.</p>
+                <p>SecurifyHQ works for property managers overseeing multiple sites, business owners with a single premises, and anyone who needs documented evidence of what happened and when.</p>
+                <p>Works with most existing cameras — if your cameras support RTSP streaming, we can connect them. IP cameras, analog cameras with IP NVRs, and most commercial surveillance systems are supported.</p>
+                <div class="plan-rec">
+                    <span class="plan-rec-label">Recommended plan:</span>
+                    <span class="plan-rec-name">Watch, Respond, or Deter</span>
+                </div>
+            </div>
+            <div class="problem-box">
+                <h4>Without SecurifyHQ</h4>
+                <ul class="problem-list">
+                    <li>Break-in discovered Monday morning — occurred Friday night</li>
+                    <li>Vandalism goes undetected until tenants report it</li>
+                    <li>No documented response timeline for insurance claims</li>
+                    <li>Trespassers repeatedly access premises — no escalation path to police</li>
+                    <li>Property manager relies on tenants to report incidents</li>
+                    <li>Cameras installed but nobody watching — deterrent only, not detection</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>How we monitor commercial properties</h3>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="uc-icon">🏢</div>
+                <div class="uc-title">Entry &amp; perimeter coverage</div>
+                <div class="uc-desc">Main entry, rear access, and car park cameras cover all key approach routes. After-hours access is flagged immediately for human review.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔍</div>
+                <div class="uc-title">Trespass &amp; vandalism detection</div>
+                <div class="uc-desc">Persistent trespassers or vandalism in progress triggers immediate escalation. Operators note behaviour patterns that help police identify repeat offenders.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📞</div>
+                <div class="uc-title">Pre-authorise escalation to emergency services</div>
+                <div class="uc-desc">On Shield plan, you can pre-authorise SecurifyHQ to notify emergency services or relevant authorities on your behalf when a verified security incident occurs — without needing to be available yourself.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🗃️</div>
+                <div class="uc-title">Comprehensive incident documentation</div>
+                <div class="uc-desc">Every verified incident generates a timestamped report including operator notes and clip references — structured to support formal processes including insurance submissions, legal proceedings, and authority notifications.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🏗️</div>
+                <div class="uc-title">Multi-site management</div>
+                <div class="uc-desc">Property managers with multiple premises can consolidate monitoring under a single account. Enterprise plan available for 5+ sites with dedicated account management.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📬</div>
+                <div class="uc-title">Tenant communication</div>
+                <div class="uc-desc">Where agreed, we can include tenant contacts in your escalation ladder — so the right people are notified first regardless of time of day.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- RETAIL COMING SOON -->
+<div class="industry-section" id="retail" style="background: #f8f9fa;">
+    <div class="container">
+        <div class="coming-soon-section">
+            <div class="cs-badge">Coming Soon</div>
+            <span style="font-size: 4rem; display: block; margin-bottom: 1rem;">🛒</span>
+            <h3>Retail Behavioral Detection</h3>
+            <p>We're building a purpose-built retail monitoring service for NZ shops — covering after-hours break-ins, organised retail crime, behavioural detection in-store, and out-of-hours stockroom access. Expected in late 2026.</p>
+            <p style="font-size:0.88rem;color:#9ca3af;max-width:480px;margin:0 auto 1.5rem;">Our AI model will be trained specifically for retail environments — detecting loitering, unusual dwell times, and coordinated multi-person activity that standard motion detection misses.</p>
+            <a href="index.html#contact" class="btn-primary" style="display: inline-block;">Register your interest</a>
+        </div>
+    </div>
+</div>
+
+<!-- SMALL RETAIL / LIQUOR -->
+<div class="industry-section" id="retail-liquor">
+    <div class="container">
+        <div class="ind-header reverse">
+            <div>
+                <span class="ind-icon-large">🍾</span>
+                <div class="ind-label">Small Retail &amp; Liquor Stores</div>
+                <h2>After-hours protection for high-theft retail environments</h2>
+                <p>Small retail and liquor stores are disproportionately targeted for after-hours break-ins. High-value, portable stock — spirits, tobacco, electronics — makes them attractive. Alarm systems trigger but nobody is watching in real time.</p>
+                <p>SecurifyHQ bridges the gap: when an alarm trips or motion is detected, a trained operator reviews the footage immediately and escalates — so police are contacted with a verified incident, not a blind alarm call.</p>
+                <p>Works with most existing cameras — if your cameras support RTSP streaming, we can connect them. IP cameras, analog cameras with IP NVRs, and most commercial surveillance systems are supported.</p>
+                <div class="stat-row">
+                    <div class="stat">
+                        <div class="stat-num">62%</div>
+                        <div class="stat-label">of retail break-ins occur outside business hours</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">3x</div>
+                        <div class="stat-label">faster police response with verified incident reports</div>
+                    </div>
+                </div>
+                <div class="plan-rec">
+                    <span class="plan-rec-label">Recommended plan:</span>
+                    <span class="plan-rec-name">Watch or Respond</span>
+                </div>
+            </div>
+            <div class="problem-box">
+                <h4>Without SecurifyHQ</h4>
+                <ul class="problem-list">
+                    <li>Alarm goes off — monitoring centre logs it as an unverified activation</li>
+                    <li>Police deprioritise unverified alarm calls — arrive hours later</li>
+                    <li>Thieves are gone with stock before anyone reviews the footage</li>
+                    <li>Insurance requires evidence of timely escalation — you have none</li>
+                    <li>Repeat targeting — same store, same gap in response</li>
+                    <li>Owner called at 2am with no useful information to act on</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>How we monitor small retail &amp; liquor stores</h3>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="uc-icon">🚪</div>
+                <div class="uc-title">Entry &amp; window monitoring</div>
+                <div class="uc-desc">Front door, rear access, and display window cameras cover all break-in vectors. Any after-hours breach is reviewed by a human operator immediately.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔔</div>
+                <div class="uc-title">Alarm correlation</div>
+                <div class="uc-desc">Connect your existing alarm system to SecurifyHQ. When it triggers, we cross-reference with camera footage to confirm whether it's a real intrusion before calling anyone.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📞</div>
+                <div class="uc-title">Verified escalation to emergency services</div>
+                <div class="uc-desc">On Shield plan, we can pre-authorise SecurifyHQ to notify emergency services or relevant authorities on your behalf with a confirmed incident — not a blind alarm. Verified calls get prioritised response.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📋</div>
+                <div class="uc-title">Comprehensive incident documentation</div>
+                <div class="uc-desc">Detailed incident reports generated for every verified event — formatted to support insurance claims, legal proceedings, and formal notifications.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📢</div>
+                <div class="uc-title">Remote audio deterrence</div>
+                <div class="uc-desc">With compatible IP speakers, our operator can trigger an audio warning the moment an intrusion is confirmed — before the alarm physically sounds.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔄</div>
+                <div class="uc-title">No new cameras required</div>
+                <div class="uc-desc">We connect to your existing RTSP-capable camera system. Most retail camera installs are already compatible — no rip-and-replace needed.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HOSPITALITY -->
+<div class="industry-section" id="hospitality" style="background: #f8f9fa;">
+    <div class="container">
+        <div class="ind-header">
+            <div>
+                <span class="ind-icon-large">🏨</span>
+                <div class="ind-label">Hospitality</div>
+                <h2>Hotels, motels, bars &amp; restaurants — monitored when your staff aren't there</h2>
+                <p>Hospitality venues have complex security needs: late-night patron incidents, after-hours property access, car park disputes, and staff-only area breaches. Standard motion alerts go unreviewed — SecurifyHQ makes sure every real event is caught.</p>
+                <p>Whether it's a motel with an unstaffed overnight reception, a bar with a car park, or a restaurant with a rear loading dock — we monitor the cameras you already have and escalate when it matters.</p>
+                <p>Works with most existing cameras — if your cameras support RTSP streaming, we can connect them. IP cameras, analog cameras with IP NVRs, and most commercial surveillance systems are supported.</p>
+                <div class="stat-row">
+                    <div class="stat">
+                        <div class="stat-num">24/7</div>
+                        <div class="stat-label">monitoring available on Deter and Shield plans</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-num">100%</div>
+                        <div class="stat-label">human-verified before any escalation</div>
+                    </div>
+                </div>
+                <div class="plan-rec">
+                    <span class="plan-rec-label">Recommended plan:</span>
+                    <span class="plan-rec-name">Respond or Deter</span>
+                </div>
+            </div>
+            <div class="problem-box">
+                <h4>Without SecurifyHQ</h4>
+                <ul class="problem-list">
+                    <li>Overnight incidents captured on camera but not discovered until morning</li>
+                    <li>Car park altercations escalate with no staff present to respond</li>
+                    <li>Rear entry or loading dock accessed after hours — nobody notified</li>
+                    <li>Guest disputes with no documented timeline for liability purposes</li>
+                    <li>Motion alerts on phone apps go unread during off-hours</li>
+                    <li>Insurance claims lack verified escalation record</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>How we monitor hospitality venues</h3>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="uc-icon">🅿️</div>
+                <div class="uc-title">Car park monitoring</div>
+                <div class="uc-desc">Car parks are high-incident zones — theft, vandalism, and altercations. After-hours activity is flagged and reviewed immediately by a human operator.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🚪</div>
+                <div class="uc-title">Staff &amp; service entry</div>
+                <div class="uc-desc">Rear entries, loading docks, and staff-only access points monitored around the clock. Any unauthorised access after close triggers immediate escalation.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🏩</div>
+                <div class="uc-title">Motel &amp; accommodation sites</div>
+                <div class="uc-desc">Unstaffed overnight reception areas, common zones, and external corridors monitored continuously. Incidents escalated directly to the duty manager or owner.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🗃️</div>
+                <div class="uc-title">Liability documentation</div>
+                <div class="uc-desc">Every verified incident generates a timestamped report — useful for insurance, police, and civil disputes involving guests or third parties.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📞</div>
+                <div class="uc-title">Multi-step escalation</div>
+                <div class="uc-desc">Set your escalation chain once — duty manager, owner, guard company, police. If the first contact doesn't respond, escalation continues automatically.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔌</div>
+                <div class="uc-title">Works with existing systems</div>
+                <div class="uc-desc">Connect your current RTSP-capable cameras — no new hardware required. Most hospitality camera installs are already compatible with our monitoring platform.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ALL INDUSTRIES COMMON -->
+<section style="background: white;">
+    <div class="container">
+        <div class="centered" style="margin-bottom: 3rem;">
+            <div class="section-eyebrow">Across All Industries</div>
+            <h2>What every client gets</h2>
+            <p class="section-sub">Regardless of your industry, these are the fundamentals that come with every SecurifyHQ plan.</p>
+        </div>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="uc-icon">👁️</div>
+                <div class="uc-title">Human-verified every alert</div>
+                <div class="uc-desc">No automated notifications. Every alert that passes AI filtering is reviewed by a trained human before you're contacted.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📋</div>
+                <div class="uc-title">PDF incident reports</div>
+                <div class="uc-desc">Detailed incident reports generated for every verified event — formatted to support insurance claims, legal proceedings, and formal notifications.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🔌</div>
+                <div class="uc-title">Existing cameras, no rip-out</div>
+                <div class="uc-desc">Works with most existing cameras — if your cameras support RTSP streaming, we can connect them. IP cameras, analog cameras with IP NVRs, and most commercial surveillance systems are supported.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📞</div>
+                <div class="uc-title">Multi-step escalation</div>
+                <div class="uc-desc">Your escalation ladder runs automatically. Set it once — if you don't answer, escalation continues without operator guesswork.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">📡</div>
+                <div class="uc-title">Camera offline monitoring</div>
+                <div class="uc-desc">If a camera goes dark, we detect it and notify you — separate from security alerts, with a support ticket raised automatically.</div>
+            </div>
+            <div class="use-case">
+                <div class="uc-icon">🇳🇿</div>
+                <div class="uc-title">NZ registered and owned company</div>
+                <div class="uc-desc">SecurifyHQ Limited, registered and owned in New Zealand. Local accountability. Operating under NZ law.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="cta-inner">
+        <h2>Tell us about your site</h2>
+        <p>We'll assess your cameras, recommend the right plan, and get you set up. Pilot spots are still available — 50% off setup fee for pilot clients — 3 seats remaining.</p>
+        <a href="index.html#contact" class="btn-primary">Get Started</a>
+        <a href="plans.html" class="btn-outline">See Pricing</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo-display" aria-label="SecurifyHQ logo"></div>
+                    <div class="f-logo">Securify<span>HQ</span></div>
+                    <p>AI-powered CCTV monitoring and human-verified alert escalation for small to mid-size NZ businesses with existing cameras &mdash; monitored 24/7.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://www.facebook.com/profile.php?id=61570974383165" target="_blank" rel="noopener" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.instagram.com/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://wa.me/642108144777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="index.html#industries">Industries</a></li>
+                        <li><a href="plans.html">Plans &amp; Pricing</a></li>
+                        <li><a href="index.html#pilot">Pilot Offer</a></li>
+                        <li><a href="signup.html">Get Started</a></li>
+                        <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener">Client Portal</a></li>
+                        <li><a href="camera-guide.html">Camera Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About SecurifyHQ</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="residential.html">Residential</a></li>
+                        <li><a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></li>
+                        <li><a href="tel:+6437328743">03 732 8743</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p>&copy; 2026 SecurifyHQ Limited. All rights reserved.</p>
+                    <p>NZ Company #9405543 &mdash; 13B Fryer Street, Queenstown 9300</p>
+                    <div class="footer-legal">
+                        <a href="privacy-policy.html" class="footer-legal-pill">Privacy Policy</a>
+                        <a href="terms-of-service.html" class="footer-legal-pill">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+function toggleNav() {
+    document.getElementById('navMenu').classList.toggle('open');
+}
+document.querySelectorAll('.has-dropdown > a').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+        if (window.innerWidth <= 968) {
+            e.preventDefault();
+            var li = this.parentElement;
+            li.classList.toggle('open');
+        }
+    });
+});
+
+// Update active tab on scroll
+const sections = ['construction', 'warehouses', 'commercial', 'retail'];
+const tabs = document.querySelectorAll('.ind-tab:not(.coming)');
+
+window.addEventListener('scroll', () => {
+    let current = sections[0];
+    sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && window.scrollY >= el.offsetTop - 200) current = id;
+    });
+    tabs.forEach(t => {
+        t.classList.toggle('active', t.getAttribute('href') === '#' + current);
+    });
+});
+</script>
+
+</body>
+</html>

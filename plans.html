@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCTV Monitoring Plans &amp; Pricing NZ | SecurifyHQ</title>
-    <meta name="description" content="Remote CCTV monitoring plans for NZ businesses. Watch from $199/month, Respond $349, Deter $549, Shield $799. All plans include human-verified alerts and incident reports. No lock-in.">
+    <title>Verified Monitoring Plans &amp; Pricing NZ | SecurifyHQ</title>
+    <meta name="description" content="SecurifyHQ Verified Monitoring plans for NZ businesses. Watch $175/mo, Shield $299/mo, Pro $499/mo, Pro Plus $699/mo. AI-detected. Human-verified. All-inclusive pricing with no hidden fees.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://securifyhq.com/plans.html">
 
@@ -28,7 +28,7 @@
             z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
         .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 0.5rem; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 0; }
         .nav-logo:hover { color: #FFA500; }
         .nav-logo span { color: #FFA500; }
         #navMenu { list-style: none; display: flex; gap: 1.8rem; align-items: center; }
@@ -160,24 +160,31 @@
         }
         .enterprise-cta:hover { background: #ff8c00; }
 
-        /* SLA SECTION */
-        .sla-section { background: #f4f6f8; }
-        .sla-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-bottom: 2rem; }
-        .sla-card {
-            background: white; border-radius: 14px; border: 1px solid #e8edf2;
-            overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        /* HARDWARE SECTION */
+        .hardware-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+        .hardware-card {
+            background: white; border-radius: 14px; padding: 1.5rem;
+            border: 1px solid #e8edf2; display: flex; gap: 1rem; align-items: flex-start;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
         }
-        .sla-card-header {
-            background: #0d1f2d; padding: 1rem 1.25rem;
-            text-align: center;
+        .hardware-icon { font-size: 1.75rem; flex-shrink: 0; }
+        .hardware-name { font-weight: 800; font-size: 1rem; color: #0d1f2d; margin-bottom: 0.25rem; }
+        .hardware-price { font-size: 0.95rem; color: #FFA500; font-weight: 700; margin-bottom: 0.3rem; }
+        .hardware-plans { display: inline-block; background: rgba(13,31,45,0.08); border-radius: 6px; padding: 0.15rem 0.5rem; font-size: 0.75rem; font-weight: 700; color: #0d1f2d; margin-bottom: 0.4rem; }
+        .hardware-desc { font-size: 0.85rem; color: #6c757d; line-height: 1.55; }
+
+        /* UPFRONT BOX */
+        .upfront-box {
+            background: linear-gradient(135deg, #0d1f2d, #1a3a52);
+            border-radius: 16px; padding: 2rem 2.5rem; margin-bottom: 2.5rem; color: white;
         }
-        .sla-plan-name { color: #FFA500; font-weight: 800; font-size: 1.05rem; }
-        .sla-card-body { padding: 1.25rem; }
-        .sla-row { margin-bottom: 0.9rem; }
-        .sla-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #9ca3af; margin-bottom: 0.2rem; }
-        .sla-value { font-size: 0.95rem; font-weight: 700; color: #0d1f2d; }
-        .sla-value.highlight { color: #FFA500; font-size: 1.05rem; }
-        .sla-note { font-size: 0.82rem; font-style: italic; color: #6c757d; max-width: 760px; margin: 1.5rem auto 0; text-align: center; line-height: 1.7; padding: 1rem 1.5rem; background: white; border-radius: 10px; border: 1px solid #e8edf2; }
+        .upfront-box h3 { color: white; font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .upfront-box p { color: rgba(255,255,255,0.75); font-size: 0.9rem; line-height: 1.7; }
+        .upfront-row { display: flex; gap: 1.5rem; margin-top: 1.25rem; }
+        .upfront-item { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 1rem 1.5rem; flex: 1; }
+        .upfront-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.5); margin-bottom: 0.25rem; }
+        .upfront-value { font-size: 1.1rem; font-weight: 800; color: #FFA500; }
+        .upfront-note { font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-top: 0.2rem; }
 
         /* ADD-ONS */
         .addons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
@@ -197,6 +204,22 @@
         .setup-table tr:nth-child(even) td { background: #f8f9fa; }
         .setup-table td:first-child { font-weight: 600; color: #0d1f2d; }
         .free-tag { background: #dcfce7; color: #16a34a; padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; }
+
+        /* CONTRACT DISCOUNTS */
+        .contract-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+        .contract-card { border-radius: 12px; padding: 1.5rem; text-align: center; }
+        .contract-card.rolling { background: white; border: 1px solid #e8edf2; }
+        .contract-card.c12 { background: white; border: 1px solid #e8edf2; }
+        .contract-card.c24 { background: white; border: 2px solid #FFA500; }
+        .contract-card.c36 { background: #0d1f2d; }
+        .contract-tag { display: inline-block; background: rgba(255,165,0,0.12); border: 1px solid rgba(255,165,0,0.3); color: #FFA500; padding: 0.2rem 0.7rem; border-radius: 20px; font-size: 0.72rem; font-weight: 700; margin-bottom: 0.75rem; letter-spacing: 0.5px; text-transform: uppercase; }
+        .contract-term { font-size: 1rem; font-weight: 800; color: #0d1f2d; margin-bottom: 0.4rem; }
+        .contract-card.c36 .contract-term { color: white; }
+        .contract-saving { font-size: 2rem; font-weight: 900; color: #FFA500; line-height: 1; margin-bottom: 0.3rem; }
+        .contract-saving-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #6c757d; margin-bottom: 0.75rem; }
+        .contract-card.c36 .contract-saving-label { color: rgba(255,255,255,0.5); }
+        .contract-desc { font-size: 0.83rem; color: #6c757d; line-height: 1.5; }
+        .contract-card.c36 .contract-desc { color: rgba(255,255,255,0.65); }
 
         /* COMPARISON TABLE */
         .compare-table-wrap { overflow-x: auto; }
@@ -280,20 +303,22 @@
             .dropdown { position: static; background: rgba(255,255,255,0.05); box-shadow: none; border: none; border-radius: 0; padding-left: 1rem; display: none; }
             .has-dropdown.open .dropdown { display: block; }
             .nav-portal { border: none; padding: 0; font-size: 0.95rem !important; color: rgba(255,255,255,0.85) !important; }
-            .sla-grid { grid-template-columns: repeat(2, 1fr); }
+            .contract-grid { grid-template-columns: repeat(2, 1fr); }
+            .upfront-row { flex-direction: column; }
         }
-        @media (max-width: 1024px) { .plans-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 1024px) { .plans-grid { grid-template-columns: repeat(2, 1fr); } .hardware-grid { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) {
             .plans-grid { grid-template-columns: 1fr; }
+            .hardware-grid { grid-template-columns: 1fr; }
             .addons-grid { grid-template-columns: 1fr; }
             .enterprise-bar { flex-direction: column; text-align: center; }
             .enterprise-specs { justify-content: center; }
             .footer-top { grid-template-columns: 1fr; }
             .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
             .btn-outline { margin-left: 0; margin-top: 0.75rem; display: block; text-align: center; }
-            .sla-grid { grid-template-columns: 1fr; }
+            .contract-grid { grid-template-columns: 1fr; }
         }
-    
+
         /* ===== NAV OVERRIDE (fix_business_all) ===== */
         nav#mainNav { position: fixed !important; top: 0; width: 100%; background: #0d1f2d !important; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
         .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
@@ -400,8 +425,8 @@
     <div class="hero-content">
         <div class="hero-eyebrow">Plans &amp; Pricing</div>
         <h1>Simple, transparent pricing for NZ businesses</h1>
-        <p>All prices exclude GST. No hidden fees. Cancel with 30 days notice.</p>
-        <p class="hero-note">GoCardless direct debit available — no surcharge. Card payments: 2.7% + $0.30 surcharge, disclosed at checkout.</p>
+        <p>Every alert AI-detected and human-verified. No hidden fees. No long-term lock-in required.</p>
+        <p class="hero-note">All prices exclude GST. GoCardless direct debit available — no surcharge. Card payments: 2.7% + $0.30 surcharge, disclosed at checkout.</p>
         <div class="pilot-banner">
             <span class="pilot-badge">PILOT OFFER</span>
             <span style="color: rgba(255,255,255,0.85);">Only 3 seats left &mdash; <strong style="color: #FFA500;">50% off setup fee</strong> + <strong style="color: #FFA500;">first month free</strong>. Sign up before 31st May 2026 to secure your pilot spot.</span>
@@ -418,12 +443,12 @@
             <div class="plan-card">
                 <div class="plan-header">
                     <div class="plan-name">Watch</div>
-                    <div class="plan-tagline">Smaller sites, after-hours peace of mind</div>
+                    <div class="plan-tagline">After-hours peace of mind for smaller sites</div>
                     <div class="plan-price">
-                        <div class="price-amount">$199</div>
+                        <div class="price-amount">$175</div>
                         <div class="price-suffix">/month</div>
                     </div>
-                    <div class="plan-gst">excl. GST</div>
+                    <div class="plan-gst">excl. GST &bull; 8PM&ndash;8AM NZT monitoring</div>
                 </div>
                 <div class="plan-body">
                     <div class="plan-specs">
@@ -438,38 +463,40 @@
                             <div class="spec-icon">🕐</div>
                             <div>
                                 <div class="spec-text">After-hours monitoring</div>
-                                <div class="spec-sub">6pm – 6am, 7 days</div>
+                                <div class="spec-sub">8PM – 8AM NZT, 7 days a week</div>
                             </div>
                         </div>
                     </div>
                     <hr class="plan-divider">
                     <ul class="plan-features">
+                        <li><span class="feat-check">✓</span> AI pre-filter on every alert</li>
                         <li><span class="feat-check">✓</span> Human-verified alert review</li>
-                        <li><span class="feat-check">✓</span> PDF incident reports</li>
                         <li><span class="feat-check">✓</span> Alert history in client portal</li>
+                        <li><span class="feat-check">✓</span> PDF incident reports</li>
                         <li><span class="feat-check">✓</span> View &amp; download video clips</li>
                         <li><span class="feat-check">✓</span> 2-contact escalation ladder</li>
                         <li><span class="feat-check">✓</span> Camera offline alerts</li>
-                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Camera status in portal</span></li>
-                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Monthly summary report</span></li>
-                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Account/billing management</span></li>
+                        <li><span class="feat-check">✓</span> Alert light deterrent (add-on)</li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">24/7 monitoring</span></li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Sensor monitoring (PIR / door / vibration)</span></li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">2-way audio deterrent</span></li>
                     </ul>
                     <a href="signup.html" class="plan-cta plan-cta-secondary">Get Started</a>
-                    <div class="plan-setup">Setup fee: $299 + GST <span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off for pilots (non-refundable)</span></div>
+                    <div class="plan-setup">Setup: $299 + GST &nbsp;<span style="background:#fff3cd;color:#92400e;padding:0.15rem 0.5rem;border-radius:20px;font-size:0.78rem;font-weight:700;">50% off for pilots</span></div>
                 </div>
             </div>
 
-            <!-- RESPOND (FEATURED) -->
+            <!-- SHIELD (FEATURED) -->
             <div class="plan-card featured">
                 <div class="plan-header">
                     <div class="plan-badge">MOST POPULAR</div>
-                    <div class="plan-name">Respond</div>
-                    <div class="plan-tagline">The right fit for most commercial sites</div>
+                    <div class="plan-name">Shield</div>
+                    <div class="plan-tagline">Full portal control and sensor support</div>
                     <div class="plan-price">
-                        <div class="price-amount">$349</div>
+                        <div class="price-amount">$299</div>
                         <div class="price-suffix">/month</div>
                     </div>
-                    <div class="plan-gst">excl. GST</div>
+                    <div class="plan-gst">excl. GST &bull; 8PM&ndash;8AM NZT monitoring</div>
                 </div>
                 <div class="plan-body">
                     <div class="plan-specs">
@@ -484,37 +511,40 @@
                             <div class="spec-icon">🕐</div>
                             <div>
                                 <div class="spec-text">After-hours monitoring</div>
-                                <div class="spec-sub">6pm – 6am, 7 days</div>
+                                <div class="spec-sub">8PM – 8AM NZT, 7 days a week</div>
                             </div>
                         </div>
                     </div>
                     <hr class="plan-divider">
                     <ul class="plan-features">
-                        <li><span class="feat-check">✓</span> Human-verified alert review</li>
-                        <li><span class="feat-check">✓</span> PDF incident reports</li>
-                        <li><span class="feat-check">✓</span> Alert history in client portal</li>
-                        <li><span class="feat-check">✓</span> View &amp; download video clips</li>
-                        <li><span class="feat-check">✓</span> 2-contact escalation ladder</li>
-                        <li><span class="feat-check">✓</span> Camera offline alerts</li>
-                        <li><span class="feat-check">✓</span> Camera status in portal</li>
-                        <li><span class="feat-check">✓</span> View escalation contacts</li>
+                        <li><span class="feat-check">✓</span> Everything in Watch</li>
+                        <li><span class="feat-check">✓</span> Sensor monitoring (PIR, door, vibration)</li>
+                        <li><span class="feat-check">✓</span> Camera status (online/offline) in portal</li>
                         <li><span class="feat-check">✓</span> Monthly summary report</li>
+                        <li><span class="feat-check">✓</span> View &amp; edit escalation contacts</li>
+                        <li><span class="feat-check">✓</span> 3-contact escalation ladder</li>
+                        <li><span class="feat-check">✓</span> Full alert timeline + operator notes</li>
+                        <li><span class="feat-check">✓</span> Account &amp; billing management in portal</li>
+                        <li><span class="feat-check">✓</span> Alert light deterrent (add-on)</li>
+                        <li><span class="feat-check">✓</span> VPN router included (not charged separately)</li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">24/7 monitoring</span></li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">2-way audio deterrent</span></li>
                     </ul>
                     <a href="signup.html" class="plan-cta plan-cta-primary">Get Started</a>
-                    <div class="plan-setup" style="color: #6c757d;">Setup fee: $299 + GST <span style="background:#fff3cd;color:#92400e;padding:0.2rem 0.6rem;border-radius:20px;font-size:0.8rem;font-weight:700;">50% off for pilots (non-refundable)</span></div>
+                    <div class="plan-setup" style="color:#6c757d;">Setup: $299 + GST &nbsp;<span style="background:#fff3cd;color:#92400e;padding:0.15rem 0.5rem;border-radius:20px;font-size:0.78rem;font-weight:700;">50% off for pilots</span></div>
                 </div>
             </div>
 
-            <!-- DETER -->
+            <!-- PRO -->
             <div class="plan-card">
                 <div class="plan-header">
-                    <div class="plan-name">Deter</div>
-                    <div class="plan-tagline">Full-day coverage, full portal control</div>
+                    <div class="plan-name">Pro</div>
+                    <div class="plan-tagline">24/7 coverage with active deterrent tools</div>
                     <div class="plan-price">
-                        <div class="price-amount">$549</div>
+                        <div class="price-amount">$499</div>
                         <div class="price-suffix">/month</div>
                     </div>
-                    <div class="plan-gst">excl. GST</div>
+                    <div class="plan-gst">excl. GST &bull; 24/7 monitoring</div>
                 </div>
                 <div class="plan-body">
                     <div class="plan-specs">
@@ -535,30 +565,31 @@
                     </div>
                     <hr class="plan-divider">
                     <ul class="plan-features">
-                        <li><span class="feat-check">✓</span> Everything in Respond</li>
-                        <li><span class="feat-check">✓</span> 24/7 monitoring (not after-hours only)</li>
-                        <li><span class="feat-check">✓</span> Edit escalation contacts in portal</li>
-                        <li><span class="feat-check">✓</span> Full alert timeline + operator notes</li>
-                        <li><span class="feat-check">✓</span> Account &amp; billing management</li>
-                        <li><span class="feat-check">✓</span> Up to 3 escalation contacts</li>
+                        <li><span class="feat-check">✓</span> Everything in Shield</li>
+                        <li><span class="feat-check">✓</span> <strong>24/7 monitoring</strong> (not after-hours only)</li>
+                        <li><span class="feat-check">✓</span> Up to 5 escalation contacts</li>
+                        <li><span class="feat-check">✓</span> Alert light deterrent (add-on)</li>
+                        <li><span class="feat-check">✓</span> 2-way audio speaker deterrent (add-on)</li>
                         <li><span class="feat-check">✓</span> Priority email support</li>
-                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Quarterly review scheduling</span></li>
+                        <li><span class="feat-check">✓</span> Quarterly review scheduling</li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Guard company escalation</span></li>
+                        <li><span class="feat-cross feat-text-muted">✕</span> <span class="feat-text-muted">Emergency services pre-authorisation</span></li>
                     </ul>
                     <a href="signup.html" class="plan-cta plan-cta-secondary">Enquire</a>
-                    <div class="plan-setup">Setup fee: $399 + GST <span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off for pilots (non-refundable)</span></div>
+                    <div class="plan-setup">Setup: $399 + GST &nbsp;<span style="background:#fff3cd;color:#92400e;padding:0.15rem 0.5rem;border-radius:20px;font-size:0.78rem;font-weight:700;">50% off for pilots</span></div>
                 </div>
             </div>
 
-            <!-- SHIELD -->
+            <!-- PRO PLUS -->
             <div class="plan-card">
                 <div class="plan-header">
-                    <div class="plan-name">Shield</div>
+                    <div class="plan-name">Pro Plus</div>
                     <div class="plan-tagline">High-value sites and multi-property operators</div>
                     <div class="plan-price">
-                        <div class="price-amount">$799</div>
+                        <div class="price-amount">$699</div>
                         <div class="price-suffix">/month</div>
                     </div>
-                    <div class="plan-gst">excl. GST</div>
+                    <div class="plan-gst">excl. GST &bull; 24/7 monitoring</div>
                 </div>
                 <div class="plan-body">
                     <div class="plan-specs">
@@ -579,16 +610,17 @@
                     </div>
                     <hr class="plan-divider">
                     <ul class="plan-features">
-                        <li><span class="feat-check">✓</span> Everything in Deter</li>
-                        <li><span class="feat-check">✓</span> Up to 5 escalation contacts</li>
-                        <li><span class="feat-check">✓</span> Quarterly review scheduling</li>
+                        <li><span class="feat-check">✓</span> Everything in Pro</li>
+                        <li><span class="feat-check">✓</span> Up to 8 escalation contacts</li>
+                        <li><span class="feat-check">✓</span> Guard company escalation</li>
+                        <li><span class="feat-check">✓</span> Emergency services pre-authorisation</li>
                         <li><span class="feat-check">✓</span> Priority phone support</li>
-                        <li><span class="feat-check">✓</span> Guard company integration</li>
-                        <li><span class="feat-check">✓</span> Pre-authorise escalation to emergency services</li>
-                        <li><span class="feat-check">✓</span> Alarm/siren integration available</li>
+                        <li><span class="feat-check">✓</span> Dedicated account manager</li>
+                        <li><span class="feat-check">✓</span> Alert light deterrent (add-on)</li>
+                        <li><span class="feat-check">✓</span> 2-way audio speaker deterrent (add-on)</li>
                     </ul>
                     <a href="signup.html" class="plan-cta plan-cta-secondary">Enquire</a>
-                    <div class="plan-setup">Setup fee: $499 + GST <span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off for pilots (non-refundable)</span></div>
+                    <div class="plan-setup">Setup: $499 + GST &nbsp;<span style="background:#fff3cd;color:#92400e;padding:0.15rem 0.5rem;border-radius:20px;font-size:0.78rem;font-weight:700;">50% off for pilots</span></div>
                 </div>
             </div>
 
@@ -597,7 +629,7 @@
         <!-- ENTERPRISE -->
         <div class="enterprise-bar">
             <div class="enterprise-left">
-                <h3>Enterprise — Custom</h3>
+                <h3>Enterprise &mdash; Custom</h3>
                 <p>Multiple sites, unlimited cameras, custom monitoring windows, dedicated account management, and tailored SLAs.</p>
             </div>
             <div class="enterprise-specs">
@@ -607,15 +639,6 @@
             </div>
             <a href="index.html#contact" class="enterprise-cta">Get a quote &rarr;</a>
         </div>
-
-        <!-- ROUTER COST -->
-        <div style="background:#fff;border:1px solid #e8edf2;border-radius:12px;padding:1.5rem 2rem;margin:1.5rem 0;display:flex;align-items:flex-start;gap:1rem;">
-            <span style="font-size:1.5rem;">📡</span>
-            <div>
-                <div style="font-weight:700;color:#0d1f2d;margin-bottom:0.3rem;">One-Time Router Cost (Required)</div>
-                <div style="font-size:0.9rem;color:#6c757d;line-height:1.6;">A secure MikroTik VPN router is required for each site. <strong style="color:#0d1f2d;">Watch / Respond / Deter:</strong> hAP ac2 — $199 NZD incl. GST + shipping. <strong style="color:#0d1f2d;">Shield / Enterprise:</strong> hAP ac3 — $349 NZD incl. GST + shipping. Supplied and configured by SecurifyHQ. <strong style="color:#FFA500;">Included at no cost on 36-month contracts.</strong></div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -624,108 +647,160 @@
     <div class="container" style="max-width:1100px;margin:0 auto;">
         <div style="display:inline-block;background:rgba(255,165,0,0.1);border:1px solid rgba(255,165,0,0.3);color:#FFA500;padding:0.3rem 1rem;border-radius:20px;font-size:0.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.75rem;">Service Commitment</div>
         <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#0d1f2d;margin-bottom:0.75rem;">Our Monitoring Commitment</h2>
-        <p style="color:#4b5563;font-size:1rem;max-width:760px;line-height:1.7;">We target alert review times of 3–10 minutes depending on your plan — our team is structured to keep response times as low as possible, around the clock. Verification is best-effort; exact timeframes may vary with alert volume and are not contractually guaranteed. <a href="terms-of-service.html" style="color:#FFA500;font-weight:600;">Full service terms &rarr;</a></p>
+        <p style="color:#4b5563;font-size:1rem;max-width:760px;line-height:1.7;">We target alert review times of 10&ndash;30 minutes depending on your plan. Watch and Shield plans are monitored 8PM&ndash;8AM NZT. Pro and Pro Plus plans are monitored 24/7. Verification is best-effort; exact timeframes may vary with alert volume and are not contractually guaranteed. <a href="terms-of-service.html" style="color:#FFA500;font-weight:600;">Full service terms &rarr;</a></p>
     </div>
 </section>
 
-<!-- ADD-ONS -->
-<section style="background: white;" id="addons">
+<!-- HARDWARE COSTS -->
+<section style="background: white;" id="hardware">
     <div class="container">
-        <div class="centered" style="margin-bottom: 3rem;">
-            <div class="section-eyebrow">Add-ons</div>
-            <h2>Customise your plan</h2>
-            <p class="section-sub">Add exactly what you need — no bundled extras you don't use.</p>
+        <div class="centered" style="margin-bottom: 2.5rem;">
+            <div class="section-eyebrow">Hardware</div>
+            <h2>Two upfront costs — transparent from day one</h2>
+            <p class="section-sub">Every new site has two upfronts: a <strong>Setup Fee</strong> (onboarding labour) and <strong>Hardware</strong> (physical equipment). Both are itemised on your quote. Contract discounts apply to the combined total.</p>
         </div>
-        <div class="addons-grid">
-            <div class="addon-card">
-                <div class="addon-icon">📷</div>
-                <div>
-                    <div class="addon-name">Additional cameras</div>
-                    <div class="addon-price">$25/camera/month</div>
-                    <div class="addon-desc">Extend beyond your plan's camera limit. Add as many as needed.</div>
+
+        <!-- UPFRONT SUMMARY -->
+        <div class="upfront-box">
+            <h3>What you pay before go-live</h3>
+            <p>Every installation involves two upfront costs, invoiced together before your site goes live. No surprises at go-live.</p>
+            <div class="upfront-row">
+                <div class="upfront-item">
+                    <div class="upfront-label">Upfront #1</div>
+                    <div class="upfront-value">Setup Fee</div>
+                    <div class="upfront-note">$299 – $499 depending on plan. Covers site assessment, camera connection, Frigate config, escalation setup, and portal provisioning.</div>
+                </div>
+                <div class="upfront-item">
+                    <div class="upfront-label">Upfront #2</div>
+                    <div class="upfront-value">Hardware</div>
+                    <div class="upfront-note">VPN router (required) + any optional add-on hardware (sensor kit, speakers, alert light). Itemised per your quote.</div>
+                </div>
+                <div class="upfront-item">
+                    <div class="upfront-label">Contract discount</div>
+                    <div class="upfront-value">On combined total</div>
+                    <div class="upfront-note">12-month: 25% off. 24-month: 50% off. 36-month: both entirely free. Applied to Setup + Hardware combined.</div>
                 </div>
             </div>
-            <div class="addon-card">
-                <div class="addon-icon">🕐</div>
+        </div>
+
+        <!-- HARDWARE GRID -->
+        <h3 style="font-size:1.1rem;font-weight:800;color:#0d1f2d;margin-bottom:1.25rem;margin-top:2.5rem;">Required &amp; Optional Hardware</h3>
+        <div class="hardware-grid">
+
+            <div class="hardware-card">
+                <div class="hardware-icon">📡</div>
                 <div>
-                    <div class="addon-name">24/7 upgrade</div>
-                    <div class="addon-price">+$150/month</div>
-                    <div class="addon-desc">Upgrade Watch or Respond from after-hours to full 24/7 monitoring.</div>
+                    <div class="hardware-name">VPN Router (MikroTik hEX)</div>
+                    <div class="hardware-price">$150 NZD</div>
+                    <div class="hardware-plans">Required — all plans</div>
+                    <div class="hardware-desc">Creates a secure encrypted tunnel between your site and our monitoring platform. Preconfigured by our tech team — no IT knowledge needed. Supplied and shipped to site. Customer-owned hardware.</div>
                 </div>
             </div>
-            <div class="addon-card">
-                <div class="addon-icon">🔔</div>
+
+            <div class="hardware-card">
+                <div class="hardware-icon">🔌</div>
                 <div>
-                    <div class="addon-name">Alarm/sensor integration</div>
-                    <div class="addon-price">+$50/month</div>
-                    <div class="addon-desc">Connect existing alarm systems or door sensors to your monitoring feed. Watch/Respond only.</div>
+                    <div class="hardware-name">Sensor Kit (mini PC + Zigbee)</div>
+                    <div class="hardware-price">From $600 base + $100/sensor</div>
+                    <div class="hardware-plans">Optional — Shield, Pro, Pro Plus</div>
+                    <div class="hardware-desc">Adds Zigbee motion, door/window, and vibration sensors. Base cost ($600) includes the mini PC and Zigbee coordinator, fully configured. Each additional Aqara sensor (PIR / door-window / vibration) is $100. Customer-owned hardware.</div>
                 </div>
             </div>
-            <div class="addon-card">
-                <div class="addon-icon">📢</div>
+
+            <div class="hardware-card">
+                <div class="hardware-icon">🔊</div>
                 <div>
-                    <div class="addon-name">Siren/speaker trigger</div>
-                    <div class="addon-price">+$50/month per site</div>
-                    <div class="addon-desc">Remote activation of IP-based sirens or speakers. Customer supplies hardware. Setup quoted on application.</div>
+                    <div class="hardware-name">2-Way Audio Speaker</div>
+                    <div class="hardware-price">From $249/unit + $20/mo per speaker</div>
+                    <div class="hardware-plans">Optional — Pro &amp; Pro Plus only</div>
+                    <div class="hardware-desc">Operator-activated live voice deterrent. Three models: indoor ($249), outdoor weatherproof ($349), heavy-duty outdoor ($449). Operator speaks directly to the scene via the CRM when an alert is verified. Monthly add-on covers the managed speaker service.</div>
                 </div>
             </div>
-            <div class="addon-card">
-                <div class="addon-icon">👥</div>
+
+            <div class="hardware-card">
+                <div class="hardware-icon">🔴</div>
                 <div>
-                    <div class="addon-name">Additional escalation contacts</div>
-                    <div class="addon-price">+$20/contact/month</div>
-                    <div class="addon-desc">Add contacts beyond your plan's included limit.</div>
+                    <div class="hardware-name">Alert Light (Red Strobe Beacon)</div>
+                    <div class="hardware-price">$199 NZD — no monthly cost</div>
+                    <div class="hardware-plans">Optional — all plans</div>
+                    <div class="hardware-desc">Red flashing LED strobe beacon (IP54 weatherproof, 240V). Operator activates it from the CRM when a verified intruder is detected. The strobe signals that the intruder has been seen and is being watched. Controlled via WireGuard VPN — sub-2 second activation from click to flash. No ongoing monthly fee.</div>
                 </div>
             </div>
-            <div class="addon-card">
-                <div class="addon-icon">🏢</div>
+
+            <div class="hardware-card">
+                <div class="hardware-icon">🔋</div>
                 <div>
-                    <div class="addon-name">Multi-site discount</div>
-                    <div class="addon-price">Contact us</div>
-                    <div class="addon-desc">Operating multiple properties? We offer bundled pricing for multi-site clients.</div>
+                    <div class="hardware-name">UPS (Uninterruptible Power Supply)</div>
+                    <div class="hardware-price">Purchase only — price varies by model</div>
+                    <div class="hardware-plans">Optional — all plans</div>
+                    <div class="hardware-desc">Keeps cameras, the mini PC, and router running during power outages. Tick yes/no on signup — we'll recommend a suitable model for your site. Customer-sourced or we can supply on request. No monthly cost. Strongly recommended for construction sites and unmanned properties.</div>
                 </div>
             </div>
+
+            <div class="hardware-card" style="background: #f8f9fa; border-style: dashed;">
+                <div class="hardware-icon">❓</div>
+                <div>
+                    <div class="hardware-name">Not sure what you need?</div>
+                    <div class="hardware-price" style="color:#0d1f2d;">We'll work it out together</div>
+                    <div class="hardware-desc">Your quote will itemise exactly what hardware applies to your site. No obligation — just fill in the enquiry form and we'll walk you through what makes sense for your cameras, site size, and risk level.</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
 <!-- CONTRACT TERM DISCOUNTS -->
-<section style="background: white;">
+<section style="background: #f8f9fa;" id="contract">
     <div class="container">
-        <div style="margin-top:0;">
-            <div style="font-size:0.82rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#0d1f2d;text-align:center;margin-bottom:1rem;">Contract Term Discounts</div>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
-                <div style="background:white;border:1px solid #e8edf2;border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.6rem;font-weight:900;color:#FFA500;">5% off</div>
-                    <div style="font-weight:700;color:#0d1f2d;margin:0.3rem 0;">12-Month Contract</div>
-                    <div style="font-size:0.85rem;color:#6c757d;">Lock in a lower rate for the year. Early termination fee applies.</div>
-                </div>
-                <div style="background:white;border:2px solid #FFA500;border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.6rem;font-weight:900;color:#FFA500;">10% off</div>
-                    <div style="font-weight:700;color:#0d1f2d;margin:0.3rem 0;">24-Month Contract</div>
-                    <div style="font-size:0.85rem;color:#6c757d;">Best value rate for growing businesses. Early termination fee applies.</div>
-                </div>
-                <div style="background:#0d1f2d;border-radius:12px;padding:1.5rem;text-align:center;">
-                    <div style="font-size:1.6rem;font-weight:900;color:#FFA500;">10% off</div>
-                    <div style="font-weight:700;color:white;margin:0.3rem 0;">36-Month Contract</div>
-                    <div style="font-size:0.85rem;color:rgba(255,255,255,0.65);">Plus: <strong style="color:#FFA500;">free router</strong> + <strong style="color:#FFA500;">no setup fee</strong>. Maximum long-term saving. Early termination fee applies.</div>
-                </div>
-            </div>
-            <p style="text-align:center;font-size:0.8rem;color:#9ca3af;margin-top:1rem;">Early termination fee = 50% of remaining contract value. Router cost added to early termination fee on 36-month contracts if cancelled before month 18. <a href="terms-of-service.html" style="color:#FFA500;">Full terms &rarr;</a></p>
+        <div class="centered" style="margin-bottom: 2.5rem;">
+            <div class="section-eyebrow">Contract Terms</div>
+            <h2>Lock in longer, pay less upfront</h2>
+            <p class="section-sub">Monthly plans are flexible — cancel any time with 30 days notice. Fixed-term contracts give you a significant discount on your combined Setup + Hardware total.</p>
         </div>
-        <p style="text-align:center;font-size:0.82rem;color:#6c757d;margin-top:1.5rem;padding:1rem;background:#f8f9fa;border-radius:8px;max-width:760px;margin-left:auto;margin-right:auto;">30-day satisfaction guarantee on first month subscription fee only — non-pilot clients only (pilot clients' first month is already free). Setup fees are always non-refundable. No refunds after the first month — cancellations require 30 days written notice.</p>
+        <div class="contract-grid">
+            <div class="contract-card rolling">
+                <div class="contract-tag">Flexible</div>
+                <div class="contract-term">30-Day Rolling</div>
+                <div class="contract-saving" style="font-size:1.4rem;color:#6c757d;">Full Price</div>
+                <div class="contract-saving-label">on Setup + Hardware</div>
+                <div class="contract-desc">Pay full upfront costs. Cancel with 30 days written notice, no penalty. Setup fees are non-refundable. First month refundable within 30 days (non-pilot clients only).</div>
+            </div>
+            <div class="contract-card c12">
+                <div class="contract-tag">12 Months</div>
+                <div class="contract-term">12-Month Fixed</div>
+                <div class="contract-saving">25% off</div>
+                <div class="contract-saving-label">combined Setup + Hardware total</div>
+                <div class="contract-desc">Good starting commitment. Early termination fee = 50% of remaining monthly value. Discount applied to your upfront invoice at signing.</div>
+            </div>
+            <div class="contract-card c24">
+                <div class="contract-tag">Best Value</div>
+                <div class="contract-term">24-Month Fixed</div>
+                <div class="contract-saving">50% off</div>
+                <div class="contract-saving-label">combined Setup + Hardware total</div>
+                <div class="contract-desc">Most popular for growing businesses. Half your upfront costs covered. Early termination fee = 50% of remaining monthly value.</div>
+            </div>
+            <div class="contract-card c36">
+                <div class="contract-tag">Maximum Saving</div>
+                <div class="contract-term">36-Month Fixed</div>
+                <div class="contract-saving">FREE</div>
+                <div class="contract-saving-label">Setup + Hardware entirely waived</div>
+                <div class="contract-desc" style="color:rgba(255,255,255,0.65);">Zero upfront. Setup fee waived, hardware cost waived. Early termination fee = 50% of remaining monthly value. Hardware waiver clawed back proportionally if cancelled before month 18.</div>
+            </div>
+        </div>
+        <p style="text-align:center;font-size:0.8rem;color:#9ca3af;margin-top:1.5rem;">Contract discounts apply to the combined Setup Fee + Hardware total only — not to the monthly subscription rate. Monthly rates are fixed regardless of contract term. <a href="terms-of-service.html" style="color:#FFA500;">Full terms &rarr;</a></p>
     </div>
 </section>
 
-<!-- SETUP FEES -->
-<section style="background: #f8f9fa;" id="setup">
+<!-- SETUP FEES TABLE -->
+<section style="background: white;" id="setup">
     <div class="container">
         <div class="centered" style="margin-bottom: 3rem;">
             <div class="section-eyebrow">Setup Fees</div>
             <h2>One-time onboarding cost</h2>
-            <p class="section-sub">Setup covers: site assessment, camera connection, Frigate configuration, escalation plan setup, and portal provisioning. Paid once, not recurring.</p>
+            <p class="section-sub">Setup covers site assessment, camera connection, Frigate configuration, VPN tunnel setup, escalation plan configuration, and portal provisioning. Paid once, not recurring.</p>
         </div>
-        <div style="max-width: 600px; margin: 0 auto;">
+        <div style="max-width: 640px; margin: 0 auto;">
             <table class="setup-table">
                 <thead>
                     <tr>
@@ -741,17 +816,17 @@
                         <td><span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off (non-refundable)</span></td>
                     </tr>
                     <tr>
-                        <td>Respond</td>
+                        <td>Shield</td>
                         <td>$299</td>
                         <td><span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off (non-refundable)</span></td>
                     </tr>
                     <tr>
-                        <td>Deter</td>
+                        <td>Pro</td>
                         <td>$399</td>
                         <td><span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off (non-refundable)</span></td>
                     </tr>
                     <tr>
-                        <td>Shield</td>
+                        <td>Pro Plus</td>
                         <td>$499</td>
                         <td><span class="free-tag" style="background:#fff3cd;color:#92400e;">50% off (non-refundable)</span></td>
                     </tr>
@@ -762,6 +837,67 @@
                 </tbody>
             </table>
             <p style="font-size: 0.85rem; color: #6c757d; margin-top: 1rem; text-align: center;">Pilot offer: 3 seats remaining. Must sign before 31 May 2026. Setup fee is 50% off and non-refundable. First month is free.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ADD-ONS -->
+<section style="background: #f8f9fa;" id="addons">
+    <div class="container">
+        <div class="centered" style="margin-bottom: 3rem;">
+            <div class="section-eyebrow">Monthly Add-ons</div>
+            <h2>Customise your plan</h2>
+            <p class="section-sub">Add exactly what you need. Hardware add-ons (speakers, alert lights) have a one-time hardware cost plus a monthly service fee where noted.</p>
+        </div>
+        <div class="addons-grid">
+            <div class="addon-card">
+                <div class="addon-icon">📷</div>
+                <div>
+                    <div class="addon-name">Additional cameras</div>
+                    <div class="addon-price">$25/camera/month</div>
+                    <div class="addon-desc">Extend beyond your plan's camera limit. Add as many as needed.</div>
+                </div>
+            </div>
+            <div class="addon-card">
+                <div class="addon-icon">🔊</div>
+                <div>
+                    <div class="addon-name">2-Way Audio Speaker</div>
+                    <div class="addon-price">$20/speaker/month + hardware upfront</div>
+                    <div class="addon-desc">Operator-triggered live voice deterrent. Pro and Pro Plus plans only. Hardware from $249/unit. Monthly add-on covers managed speaker service.</div>
+                </div>
+            </div>
+            <div class="addon-card">
+                <div class="addon-icon">👥</div>
+                <div>
+                    <div class="addon-name">Additional escalation contacts</div>
+                    <div class="addon-price">$20/contact/month</div>
+                    <div class="addon-desc">Add contacts beyond your plan's included limit. Useful for multi-staff sites.</div>
+                </div>
+            </div>
+            <div class="addon-card">
+                <div class="addon-icon">🕐</div>
+                <div>
+                    <div class="addon-name">24/7 monitoring upgrade</div>
+                    <div class="addon-price">Upgrade to Pro plan</div>
+                    <div class="addon-desc">Watch and Shield plans monitor 8PM–8AM NZT only. For 24/7 coverage, Pro and Pro Plus plans include it as standard.</div>
+                </div>
+            </div>
+            <div class="addon-card">
+                <div class="addon-icon">🏢</div>
+                <div>
+                    <div class="addon-name">Multi-site discount</div>
+                    <div class="addon-price">Contact us</div>
+                    <div class="addon-desc">Operating multiple properties? We offer bundled pricing for multi-site clients. Enquire for a tailored quote.</div>
+                </div>
+            </div>
+            <div class="addon-card">
+                <div class="addon-icon">🤝</div>
+                <div>
+                    <div class="addon-name">Guard company escalation</div>
+                    <div class="addon-price">Pro Plus only</div>
+                    <div class="addon-desc">Escalate verified incidents to a contracted guard response company. Pre-authorisation required. Quoted on application.</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -779,12 +915,28 @@
                     <tr>
                         <th>Feature</th>
                         <th>Watch</th>
-                        <th class="featured-col">Respond</th>
-                        <th>Deter</th>
-                        <th>Shield</th>
+                        <th class="featured-col">Shield</th>
+                        <th>Pro</th>
+                        <th>Pro Plus</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <tr class="compare-section-row"><td colspan="5">Pricing</td></tr>
+                    <tr>
+                        <td>Monthly (excl. GST)</td>
+                        <td>$175/mo</td>
+                        <td class="featured-col">$299/mo</td>
+                        <td>$499/mo</td>
+                        <td>$699/mo</td>
+                    </tr>
+                    <tr>
+                        <td>Setup fee</td>
+                        <td>$299</td>
+                        <td class="featured-col">$299</td>
+                        <td>$399</td>
+                        <td>$499</td>
+                    </tr>
+
                     <tr class="compare-section-row"><td colspan="5">Monitoring</td></tr>
                     <tr>
                         <td>Cameras included</td>
@@ -795,20 +947,20 @@
                     </tr>
                     <tr>
                         <td>Monitoring hours</td>
-                        <td>After-hours</td>
-                        <td class="featured-col">After-hours</td>
+                        <td>8PM–8AM NZT</td>
+                        <td class="featured-col">8PM–8AM NZT</td>
                         <td>24/7</td>
                         <td>24/7</td>
                     </tr>
                     <tr>
-                        <td>Human operator review</td>
+                        <td>AI pre-filter</td>
                         <td class="c-check">✓</td>
                         <td class="featured-col c-check">✓</td>
                         <td class="c-check">✓</td>
                         <td class="c-check">✓</td>
                     </tr>
                     <tr>
-                        <td>AI pre-filter</td>
+                        <td>Human operator review</td>
                         <td class="c-check">✓</td>
                         <td class="featured-col c-check">✓</td>
                         <td class="c-check">✓</td>
@@ -821,14 +973,37 @@
                         <td class="c-check">✓</td>
                         <td class="c-check">✓</td>
                     </tr>
+                    <tr>
+                        <td>Sensor monitoring (PIR / door / vibration)</td>
+                        <td class="c-cross">–</td>
+                        <td class="featured-col c-check">✓</td>
+                        <td class="c-check">✓</td>
+                        <td class="c-check">✓</td>
+                    </tr>
+
+                    <tr class="compare-section-row"><td colspan="5">Deterrents</td></tr>
+                    <tr>
+                        <td>Alert light deterrent (operator-activated)</td>
+                        <td>Add-on</td>
+                        <td class="featured-col">Add-on</td>
+                        <td>Add-on</td>
+                        <td>Add-on</td>
+                    </tr>
+                    <tr>
+                        <td>2-way audio speaker deterrent</td>
+                        <td class="c-cross">–</td>
+                        <td class="featured-col c-cross">–</td>
+                        <td>Add-on</td>
+                        <td>Add-on</td>
+                    </tr>
 
                     <tr class="compare-section-row"><td colspan="5">Escalation</td></tr>
                     <tr>
                         <td>Escalation contacts included</td>
                         <td>2</td>
-                        <td class="featured-col">2</td>
-                        <td>3</td>
+                        <td class="featured-col">3</td>
                         <td>5</td>
+                        <td>8</td>
                     </tr>
                     <tr>
                         <td>Guard company escalation</td>
@@ -875,23 +1050,16 @@
                         <td class="c-check">✓</td>
                     </tr>
                     <tr>
-                        <td>View escalation contacts</td>
+                        <td>View &amp; edit escalation contacts</td>
                         <td class="c-cross">–</td>
                         <td class="featured-col c-check">✓</td>
                         <td class="c-check">✓</td>
                         <td class="c-check">✓</td>
                     </tr>
                     <tr>
-                        <td>Edit escalation contacts</td>
-                        <td class="c-cross">–</td>
-                        <td class="featured-col c-cross">–</td>
-                        <td class="c-check">✓</td>
-                        <td class="c-check">✓</td>
-                    </tr>
-                    <tr>
                         <td>Full alert timeline + operator notes</td>
                         <td class="c-cross">–</td>
-                        <td class="featured-col c-cross">–</td>
+                        <td class="featured-col c-check">✓</td>
                         <td class="c-check">✓</td>
                         <td class="c-check">✓</td>
                     </tr>
@@ -905,12 +1073,19 @@
                     <tr>
                         <td>Account &amp; billing management</td>
                         <td class="c-cross">–</td>
-                        <td class="featured-col c-cross">–</td>
+                        <td class="featured-col c-check">✓</td>
                         <td class="c-check">✓</td>
                         <td class="c-check">✓</td>
                     </tr>
                     <tr>
                         <td>Quarterly review scheduling</td>
+                        <td class="c-cross">–</td>
+                        <td class="featured-col c-cross">–</td>
+                        <td class="c-check">✓</td>
+                        <td class="c-check">✓</td>
+                    </tr>
+                    <tr>
+                        <td>Dedicated account manager</td>
                         <td class="c-cross">–</td>
                         <td class="featured-col c-cross">–</td>
                         <td class="c-cross">–</td>
@@ -934,13 +1109,25 @@
                 <button class="faq-q" onclick="toggleFaq(this)">
                     Do I need new cameras? <span class="faq-arrow">&rsaquo;</span>
                 </button>
-                <div class="faq-a">No. SecurifyHQ connects to any RTSP-capable IP camera system. Hikvision, Dahua, Reolink, Axis, Uniview, and most modern brands are compatible. We assess compatibility during onboarding and let you know before you commit.</div>
+                <div class="faq-a">No. SecurifyHQ connects to any RTSP-capable IP camera system. Hikvision, Dahua, Reolink, Axis, Uniview, and most modern brands are compatible. We assess compatibility during onboarding and let you know before you commit. See our <a href="camera-guide.html" style="color:#FFA500;">Camera Compatibility Guide</a> for full details.</div>
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
-                    Is there GST on top of the prices? <span class="faq-arrow">&rsaquo;</span>
+                    What are the two upfront costs? <span class="faq-arrow">&rsaquo;</span>
                 </button>
-                <div class="faq-a">Yes. All prices on this page are exclusive of GST (15%). GST is added at checkout and shown clearly on your invoice. SecurifyHQ is GST-registered with Inland Revenue.</div>
+                <div class="faq-a">Every new site has a Setup Fee (covers our onboarding labour — site assessment, camera connection, Frigate config, escalation plan, portal provisioning) and a Hardware cost (the VPN router, plus any optional add-on hardware you select). Both are itemised separately on your quote before you commit. Contract term discounts apply to the combined total of these two upfronts.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    How do contract discounts work? <span class="faq-arrow">&rsaquo;</span>
+                </button>
+                <div class="faq-a">Contract discounts apply to your combined Setup Fee + Hardware total — not to the monthly subscription rate. On a 12-month contract you save 25% off that combined total; on 24 months you save 50%; on 36 months both the setup fee and hardware cost are entirely waived. Monthly plan rates are the same regardless of contract length. Early termination fee = 50% of remaining monthly contract value.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-q" onclick="toggleFaq(this)">
+                    Is GST included in the prices? <span class="faq-arrow">&rsaquo;</span>
+                </button>
+                <div class="faq-a">No. All prices shown are exclusive of GST (15%). GST is added at checkout and shown clearly on your invoice. SecurifyHQ is GST-registered with Inland Revenue.</div>
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
@@ -952,25 +1139,25 @@
                 <button class="faq-q" onclick="toggleFaq(this)">
                     Can I cancel at any time? <span class="faq-arrow">&rsaquo;</span>
                 </button>
-                <div class="faq-a">Yes. Cancel with 30 days notice, no penalty. Setup fees are non-refundable. The first month's subscription is refundable if you cancel within 30 days under our satisfaction guarantee.</div>
+                <div class="faq-a">Yes, on a 30-day rolling plan you can cancel with 30 days written notice, no penalty. Setup fees are non-refundable. The first month's subscription is refundable within 30 days under our satisfaction guarantee (non-pilot clients only). Fixed-term clients are subject to an early termination fee of 50% of remaining monthly contract value.</div>
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
                     What's the pilot offer exactly? <span class="faq-arrow">&rsaquo;</span>
                 </button>
-                <div class="faq-a">Pilot clients pay 50% off the setup fee (non-refundable) and get their first month's subscription free. Only 3 pilot spots remain — sign before 31 May 2026 to secure your place. There's no lock-in on the ongoing plan; the pilot terms are a one-time discount. Enquire now to confirm your spot.</div>
+                <div class="faq-a">Pilot clients pay 50% off the setup fee (non-refundable) and get their first month's subscription free. Only 3 pilot spots remain — sign before 31 May 2026 to secure your place. There's no lock-in on the ongoing plan; the pilot terms are a one-time discount. Enquire to confirm your spot.</div>
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
-                    What happens if I go over my camera limit? <span class="faq-arrow">&rsaquo;</span>
+                    What's the difference between Watch/Shield and Pro/Pro Plus? <span class="faq-arrow">&rsaquo;</span>
                 </button>
-                <div class="faq-a">Your plan monitors up to the stated number of cameras. Cameras beyond that limit won't be monitored until you add the "Additional cameras" add-on ($25/camera/month). Our team will notify you if we detect more cameras connected than your plan allows.</div>
+                <div class="faq-a">Watch and Shield monitor your site 8PM&ndash;8AM NZT — perfect for businesses that close overnight and need after-hours protection. Pro and Pro Plus monitor 24/7, which means alerts are reviewed around the clock regardless of time of day. Pro and Pro Plus also unlock the 2-way audio speaker deterrent, which allows our operators to speak directly to your site when a verified intruder is detected.</div>
             </div>
             <div class="faq-item">
                 <button class="faq-q" onclick="toggleFaq(this)">
                     Can I upgrade my plan later? <span class="faq-arrow">&rsaquo;</span>
                 </button>
-                <div class="faq-a">Yes, you can upgrade at any time. The difference in subscription cost is pro-rated. Downgrading is possible with 30 days notice.</div>
+                <div class="faq-a">Yes, you can upgrade at any time. The difference in subscription cost is pro-rated from the upgrade date. Downgrading is possible with 30 days notice. If you're on a fixed-term contract, upgrading is always permitted; early downgrading may trigger early termination terms.</div>
             </div>
         </div>
     </div>
@@ -980,7 +1167,7 @@
 <section class="cta-section">
     <div class="cta-inner">
         <h2>Not sure which plan fits?</h2>
-        <p>Tell us about your site and we'll recommend the right plan. No sales pressure — just a straight answer.</p>
+        <p>Tell us about your site and we'll recommend the right plan and hardware. No sales pressure — just a straight answer.</p>
         <a href="index.html#contact" class="btn-primary">Get a Recommendation</a>
         <a href="how-it-works.html" class="btn-outline">See How It Works</a>
     </div>
@@ -993,7 +1180,7 @@
                 <div class="footer-brand">
                     <div class="footer-logo-display" aria-label="SecurifyHQ logo"></div>
                     <div class="f-logo">Securify<span>HQ</span></div>
-                    <p>AI-powered CCTV monitoring and human-verified alert escalation for small to mid-size NZ businesses with existing cameras &mdash; monitored 24/7.</p>
+                    <p>AI-Powered Verified Monitoring for NZ businesses. Every alert AI-detected, human-verified. We watch your cameras and sensors &mdash; and act the moment something real is detected.</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/company/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
                         <a href="https://www.facebook.com/profile.php?id=61570974383165" target="_blank" rel="noopener" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
@@ -1050,10 +1237,10 @@ function toggleNav() {
     document.getElementById('navMenu').classList.toggle('open');
 }
 function toggleDropdownMob(el, e) {
-    if (window.innerWidth > 968) return;
+    if (window.innerWidth > 900) return;
     e.preventDefault();
     var li = el.closest('.has-dropdown');
-    li.classList.toggle('open');
+    li.classList.toggle('mob-open');
 }
 function toggleFaq(btn) {
     const item = btn.closest('.faq-item');

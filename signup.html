@@ -1,18 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Started — SecurifyHQ Business Monitoring</title>
-    <meta name="description" content="Sign up for SecurifyHQ remote CCTV monitoring. Choose self-serve sign up or let us handle the setup. From $199/month. NZ businesses only.">
+    <title>Get Started — SecurifyHQ Verified Monitoring</title>
+    <meta name="description" content="Sign up for SecurifyHQ AI-Powered Verified Monitoring. Watch $175/mo, Shield $299/mo, SHQ Pro $499/mo, SHQ Pro Plus $699/mo. NZ businesses only.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://securifyhq.com/business/signup.html">
+    <link rel="canonical" href="https://securifyhq.com/signup.html">
 
-    <!-- Preconnect -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://crm.securifyhq.com">
 
-    <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EQJ2HZ6EJL"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,173 +20,20 @@
     </script>
 
     <style>
-        /* ===== RESET & BASE ===== */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #2c3e50; background: #f8f9fa; }
         .container { max-width: 1200px; margin: 0 auto; }
 
-        /* ===== NAV ===== */
+        /* NAV */
         nav { position: fixed; top: 0; width: 100%; background: #0d1f2d; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
         .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 0.5rem; }
+        .nav-logo { color: white; font-weight: 800; font-size: 1.3rem; text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 0; flex-shrink: 0; }
         .nav-logo span { color: #FFA500; }
-        nav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; }
+        nav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; margin: 0; padding: 0; }
         nav ul > li { position: relative; }
         nav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
         nav a:hover { color: #FFA500; }
-        .nav-cta { background: #FFA500; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; }
-        .nav-cta:hover { background: #ff8c00 !important; }
-        .nav-portal { color: rgba(255,255,255,0.55) !important; font-size: 0.85rem !important; border: 1px solid rgba(255,255,255,0.2); padding: 0.3rem 0.85rem !important; border-radius: 20px; }
-        .nav-portal:hover { color: rgba(255,255,255,0.85) !important; border-color: rgba(255,255,255,0.4); }
-
-        /* DROPDOWN */
-        .has-dropdown { position: relative; }
-        .dropdown { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%) translateY(-4px); background: #0a1825; border: 1px solid rgba(255,165,0,0.2); border-radius: 8px; padding: 0.5rem; min-width: 200px; opacity: 0; pointer-events: none; transition: opacity 0.2s, transform 0.2s; box-shadow: 0 12px 32px rgba(0,0,0,0.5); z-index: 200; }
-        .has-dropdown:hover .dropdown { opacity: 1; pointer-events: all; transform: translateX(-50%) translateY(0); }
-        .dropdown a { display: block; padding: 0.55rem 1rem !important; border-radius: 6px; font-size: 0.88rem !important; color: rgba(255,255,255,0.8) !important; white-space: nowrap; font-weight: 500 !important; }
-        .dropdown a:hover { background: rgba(255,165,0,0.12); color: #FFA500 !important; }
-
-        /* HAMBURGER */
-        .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 0.25rem; }
-        .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
-
-        @media (max-width: 1024px) { nav ul { gap: 0; } nav a { font-size: 0.87rem; padding: 0.4rem 0.55rem; } }
-        @media (max-width: 900px) {
-            .burger { display: flex; }
-            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
-            nav ul.nav-open { display: flex; }
-            nav ul > li { width: 100%; }
-            nav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
-            .nav-cta { display: inline-block; margin-top: 0.5rem; border-bottom: none !important; }
-            .nav-portal { border-bottom: none !important; }
-            .has-dropdown { width: 100%; }
-            .dropdown { position: static; opacity: 1; pointer-events: all; box-shadow: none; border: none; padding: 0 0 0 1rem; background: transparent; transform: none !important; display: none; }
-            .has-dropdown.mob-open .dropdown { display: block; }
-            .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
-        }
-
-        /* ===== HERO ===== */
-        .signup-hero { background: linear-gradient(135deg, #0a1825 0%, #0d1f2d 60%, #1a3a52 100%); color: white; padding: 130px 2rem 70px; text-align: center; }
-        .signup-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1rem; }
-        .signup-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.72); max-width: 600px; margin: 0 auto; line-height: 1.7; }
-
-        /* ===== MAIN LAYOUT ===== */
-        .signup-main { padding: 3rem 2rem 5rem; max-width: 1200px; margin: 0 auto; }
-        .cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
-
-        /* ===== SIGNUP CARDS ===== */
-        .signup-card { border-radius: 20px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
-        .card-a { background: white; }
-        .card-b { background: #f0f4f8; }
-
-        .card-header { padding: 2rem 2rem 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.07); }
-        .card-badge { display: inline-block; padding: 0.25rem 0.85rem; border-radius: 20px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 0.85rem; }
-        .badge-primary { background: rgba(255,165,0,0.15); color: #c47800; border: 1px solid rgba(255,165,0,0.4); }
-        .badge-secondary { background: rgba(13,31,45,0.08); color: #1a3a52; border: 1px solid rgba(13,31,45,0.15); }
-        .card-title { font-size: 1.5rem; font-weight: 900; color: #0d1f2d; margin-bottom: 0.5rem; }
-        .card-desc { font-size: 0.93rem; color: #6c757d; line-height: 1.65; }
-
-        .card-body { padding: 2rem; }
-
-        /* ===== FORM ELEMENTS ===== */
-        .form-group { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
-        .form-group label { font-size: 0.84rem; font-weight: 600; color: #374151; }
-        .form-group input, .form-group select, .form-group textarea {
-            padding: 0.72rem 0.95rem;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            font-size: 0.93rem;
-            font-family: inherit;
-            color: #0d1f2d;
-            background: white;
-            transition: border-color 0.2s;
-            width: 100%;
-        }
-        .card-b .form-group input,
-        .card-b .form-group select,
-        .card-b .form-group textarea { background: white; }
-        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #FFA500; box-shadow: 0 0 0 3px rgba(255,165,0,0.12); }
-        .form-group textarea { resize: vertical; min-height: 90px; }
-        .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-
-        /* CHECKBOX */
-        .check-row { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 1rem; cursor: pointer; font-size: 0.87rem; color: #374151; font-weight: 500; line-height: 1.5; }
-        .check-row input[type="checkbox"] { width: 17px; height: 17px; accent-color: #FFA500; cursor: pointer; flex-shrink: 0; margin-top: 0.15rem; }
-        .check-row a { color: #FFA500; text-decoration: none; font-weight: 600; }
-        .check-row a:hover { text-decoration: underline; }
-
-        /* SUBMIT */
-        .submit-btn-a { width: 100%; background: #FFA500; color: #0d1f2d; border: none; padding: 1rem; border-radius: 10px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.2s; font-family: inherit; }
-        .submit-btn-a:hover { background: #ff8c00; transform: translateY(-1px); }
-        .submit-btn-a:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-
-        .submit-btn-b { width: 100%; background: #0d1f2d; color: white; border: 2px solid #FFA500; padding: 1rem; border-radius: 10px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.2s; font-family: inherit; }
-        .submit-btn-b:hover { background: #1a3a52; transform: translateY(-1px); }
-        .submit-btn-b:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
-
-        /* SUCCESS */
-        .form-result { display: none; border-radius: 12px; padding: 1.5rem; font-weight: 600; font-size: 0.95rem; margin-top: 1.5rem; }
-        .form-result-ok { background: #f0fdf4; border: 1px solid #bbf7d0; color: #15803d; }
-        .form-result-err { background: #fff7ed; border: 1px solid #fed7aa; color: #c2410c; }
-
-        /* HONEYPOT */
-        .hp-field { position: absolute; left: -9999px; }
-
-        /* ===== TRUST ROW ===== */
-        .trust-row { margin-top: 3rem; background: #0d1f2d; border-radius: 16px; padding: 1.75rem 2rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem 2.5rem; }
-        .trust-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.75); font-size: 0.88rem; font-weight: 600; }
-        .trust-dot { width: 7px; height: 7px; background: #FFA500; border-radius: 50%; flex-shrink: 0; }
-
-        /* ===== FOOTER ===== */
-        .nri-bridge { background: #0d1f2d; padding: 1.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.07); }
-        .nri-bridge p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 0.5rem; }
-        .nri-bridge a { color: #FFA500; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
-        footer { background: #0a1825; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; }
-        .footer-inner { max-width: 1200px; margin: 0 auto; }
-        .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
-        .f-logo { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.75rem; }
-        .f-logo span { color: #FFA500; }
-        .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
-        .footer-brand p { font-size: 0.88rem; line-height: 1.7; margin-bottom: 1rem; }
-        .footer-brand img { max-height: 48px; width: auto; margin-bottom: 0.75rem; display: block; }
-        .footer-col h4 { color: white; font-size: 0.82rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 1rem; }
-        .footer-col ul { list-style: none; }
-        .footer-col li { margin-bottom: 0.5rem; }
-        .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
-        .footer-col a:hover { color: #FFA500; }
-        .footer-bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.82rem; }
-        .footer-bottom p { margin-bottom: 0.2rem; }
-        .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
-        .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
-        .social-links a:hover { background: #FFA500; color: #0d1f2d; }
-        .footer-legal { display: flex; gap: 0.5rem; margin-top: 0.6rem; flex-wrap: wrap; }
-        .footer-legal-pill { border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 0.2rem 0.75rem; color: rgba(255,255,255,0.65); font-size: 0.8rem; text-decoration: none; display: inline-block; transition: all 0.2s; }
-        .footer-legal-pill:hover { border-color: #FFA500; color: #FFA500; }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 900px) {
-            .cards-row { grid-template-columns: 1fr; }
-            .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
-        }
-        @media (max-width: 768px) {
-            .form-row-2 { grid-template-columns: 1fr; }
-            .trust-row { gap: 0.85rem 1.5rem; }
-            .footer-top { grid-template-columns: 1fr; }
-            .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
-            .signup-main { padding: 2rem 1.25rem 4rem; }
-        }
-    
-        /* ===== NAV OVERRIDE (fix_business_all) ===== */
-        nav#mainNav { position: fixed !important; top: 0; width: 100%; background: #0d1f2d !important; padding: 0.85rem 2rem; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
-        .nav-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
-        .nav-logo { color: white !important; font-weight: 800 !important; font-size: 1.3rem !important; text-decoration: none; letter-spacing: -0.5px !important; display: flex !important; align-items: center; gap: 0 !important; flex-shrink: 0; }
-        .nav-logo:hover { color: white !important; }
-        .nav-logo span { color: #FFA500; }
-        nav#mainNav ul { list-style: none; display: flex; gap: 0.25rem; align-items: center; margin: 0; padding: 0; }
-        nav#mainNav ul > li { position: relative; }
-        nav#mainNav a { color: rgba(255,255,255,0.85); text-decoration: none; font-weight: 500; font-size: 0.93rem; transition: color 0.2s; padding: 0.45rem 0.75rem; display: inline-flex; align-items: center; gap: 0.25rem; }
-        nav#mainNav a:hover { color: #FFA500; }
         .nav-cta { background: #FFA500 !important; color: #0d1f2d !important; font-weight: 700 !important; padding: 0.5rem 1.3rem !important; border-radius: 30px; font-size: 0.88rem !important; transition: all 0.2s !important; white-space: nowrap; text-decoration: none; }
         .nav-cta:hover { background: #ff8c00 !important; transform: translateY(-1px); }
         .nav-portal { border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 30px; font-size: 0.88rem !important; white-space: nowrap; color: rgba(255,255,255,0.55) !important; padding: 0.3rem 0.85rem !important; }
@@ -204,10 +49,10 @@
         .burger span { width: 22px; height: 2px; background: white; border-radius: 2px; transition: all 0.3s; display: block; }
         @media (max-width: 900px) {
             .burger { display: flex !important; }
-            nav#mainNav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
-            nav#mainNav ul.nav-open { display: flex !important; }
-            nav#mainNav ul > li { width: 100%; }
-            nav#mainNav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
+            nav ul { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #0d1f2d; flex-direction: column; padding: 1rem 2rem 1.5rem; gap: 0; border-top: 1px solid rgba(255,255,255,0.1); align-items: flex-start; }
+            nav ul.nav-open { display: flex !important; }
+            nav ul > li { width: 100%; }
+            nav ul > li > a { display: flex; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 1rem; width: 100%; }
             .nav-cta { display: inline-block !important; margin-top: 0.5rem; border-bottom: none !important; }
             .nav-portal { border-bottom: none !important; }
             .has-dropdown { width: 100%; }
@@ -215,8 +60,93 @@
             .has-dropdown.mob-open .dropdown { display: block !important; }
             .dropdown a { border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0.6rem 0 !important; color: rgba(255,255,255,0.65) !important; font-size: 0.9rem !important; }
         }
-        /* ===== FOOTER OVERRIDE (fix_business_all) ===== */
-        footer#footer { background: #0a1825 !important; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
+
+        /* HERO */
+        .signup-hero { background: linear-gradient(135deg, #0a1825 0%, #0d1f2d 60%, #1a3a52 100%); color: white; padding: 130px 2rem 70px; text-align: center; }
+        .signup-hero h1 { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 1rem; }
+        .signup-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.72); max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+        /* MAIN LAYOUT */
+        .signup-main { padding: 3rem 2rem 5rem; max-width: 1200px; margin: 0 auto; }
+        .cards-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+
+        /* SIGNUP CARDS */
+        .signup-card { border-radius: 20px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.1); }
+        .card-a { background: white; }
+        .card-b { background: #f0f4f8; }
+        .card-header { padding: 2rem 2rem 1.5rem; border-bottom: 1px solid rgba(0,0,0,0.07); }
+        .card-badge { display: inline-block; padding: 0.25rem 0.85rem; border-radius: 20px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.5px; margin-bottom: 0.85rem; }
+        .badge-primary { background: rgba(255,165,0,0.15); color: #c47800; border: 1px solid rgba(255,165,0,0.4); }
+        .badge-secondary { background: rgba(13,31,45,0.08); color: #1a3a52; border: 1px solid rgba(13,31,45,0.15); }
+        .card-title { font-size: 1.5rem; font-weight: 900; color: #0d1f2d; margin-bottom: 0.5rem; }
+        .card-desc { font-size: 0.93rem; color: #6c757d; line-height: 1.65; }
+        .card-body { padding: 2rem; }
+
+        /* FORM ELEMENTS */
+        .form-group { display: flex; flex-direction: column; gap: 0.35rem; margin-bottom: 1rem; }
+        .form-group label { font-size: 0.84rem; font-weight: 600; color: #374151; }
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 0.72rem 0.95rem; border: 1px solid #d1d5db; border-radius: 8px;
+            font-size: 0.93rem; font-family: inherit; color: #0d1f2d; background: white;
+            transition: border-color 0.2s; width: 100%;
+        }
+        .card-b .form-group input, .card-b .form-group select, .card-b .form-group textarea { background: white; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: #FFA500; box-shadow: 0 0 0 3px rgba(255,165,0,0.12); }
+        .form-group textarea { resize: vertical; min-height: 90px; }
+        .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .form-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0.75rem; }
+        .form-hint { font-size: 0.78rem; color: #9ca3af; margin-top: 0.25rem; line-height: 1.5; }
+
+        /* HARDWARE SECTION */
+        .hw-section { background: #f8f9fa; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; border: 1px solid #e8edf2; display: none; }
+        .hw-section.visible { display: block; }
+        .hw-section-title { font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; color: #0d1f2d; margin-bottom: 0.1rem; }
+        .hw-section-sub { font-size: 0.78rem; color: #9ca3af; margin-bottom: 1rem; }
+        .hw-plans-badge { display: inline-block; background: rgba(255,165,0,0.12); border: 1px solid rgba(255,165,0,0.3); color: #c47800; border-radius: 20px; padding: 0.1rem 0.6rem; font-size: 0.72rem; font-weight: 700; margin-left: 0.5rem; }
+
+        /* PRICING ESTIMATE */
+        .price-estimate { background: linear-gradient(135deg, #0d1f2d, #1a3a52); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; color: white; display: none; }
+        .price-estimate.visible { display: block; }
+        .pe-title { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem; }
+        .pe-row { display: flex; justify-content: space-between; font-size: 0.85rem; padding: 0.2rem 0; color: rgba(255,255,255,0.8); }
+        .pe-row.total { border-top: 1px solid rgba(255,255,255,0.15); margin-top: 0.5rem; padding-top: 0.6rem; font-weight: 700; color: white; font-size: 0.95rem; }
+        .pe-row.saving { color: #4ade80; font-weight: 600; }
+        .pe-note { font-size: 0.72rem; color: rgba(255,255,255,0.4); margin-top: 0.5rem; }
+
+        /* CHECKBOX */
+        .check-row { display: flex; align-items: flex-start; gap: 0.6rem; margin-bottom: 1rem; cursor: pointer; font-size: 0.87rem; color: #374151; font-weight: 500; line-height: 1.5; }
+        .check-row input[type="checkbox"] { width: 17px; height: 17px; accent-color: #FFA500; cursor: pointer; flex-shrink: 0; margin-top: 0.15rem; }
+        .check-row a { color: #FFA500; text-decoration: none; font-weight: 600; }
+        .check-row a:hover { text-decoration: underline; }
+
+        /* SUBMIT */
+        .submit-btn-a { width: 100%; background: #FFA500; color: #0d1f2d; border: none; padding: 1rem; border-radius: 10px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+        .submit-btn-a:hover { background: #ff8c00; transform: translateY(-1px); }
+        .submit-btn-a:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+        .submit-btn-b { width: 100%; background: #0d1f2d; color: white; border: 2px solid #FFA500; padding: 1rem; border-radius: 10px; font-size: 1rem; font-weight: 800; cursor: pointer; transition: all 0.2s; font-family: inherit; }
+        .submit-btn-b:hover { background: #1a3a52; transform: translateY(-1px); }
+        .submit-btn-b:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+        /* SUCCESS */
+        .form-result { display: none; border-radius: 12px; padding: 1.5rem; font-weight: 600; font-size: 0.95rem; margin-top: 1.5rem; }
+        .form-result-ok { background: #f0fdf4; border: 1px solid #bbf7d0; color: #15803d; }
+        .form-result-err { background: #fff7ed; border: 1px solid #fed7aa; color: #c2410c; }
+
+        /* HONEYPOT */
+        .hp-field { position: absolute; left: -9999px; }
+
+        /* TRUST ROW */
+        .trust-row { margin-top: 3rem; background: #0d1f2d; border-radius: 16px; padding: 1.75rem 2rem; display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem 2.5rem; }
+        .trust-item { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.75); font-size: 0.88rem; font-weight: 600; }
+        .trust-dot { width: 7px; height: 7px; background: #FFA500; border-radius: 50%; flex-shrink: 0; }
+
+        /* NRI BRIDGE */
+        .nri-bridge { background: #0d1f2d; padding: 1.5rem 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.07); }
+        .nri-bridge p { color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .nri-bridge a { color: #FFA500; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+
+        /* FOOTER */
+        footer#footer { background: #0a1825; color: rgba(255,255,255,0.7); padding: 3.5rem 2rem 2rem; margin-top: 4rem; }
         .footer-inner { max-width: 1200px; margin: 0 auto; }
         .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 2.5rem; }
         .footer-logo-display { width: 160px; height: 107px; background-image: url('SecurifyHQ_Logo_Transparent.webp'); background-size: contain; background-repeat: no-repeat; background-position: center left; filter: drop-shadow(0 0 10px rgba(255,255,255,0.65)) drop-shadow(0 0 22px rgba(100,160,255,0.45)); margin-bottom: 1rem; }
@@ -236,56 +166,62 @@
         .social-links { display: flex; gap: 0.6rem; margin-top: 1rem; }
         .social-links a { width: 34px; height: 34px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.9rem; transition: all 0.2s; }
         .social-links a:hover { background: #FFA500; color: #0d1f2d; }
+
         @media (max-width: 1024px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; } }
-        @media (max-width: 768px) { .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; } .footer-top { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .cards-row { grid-template-columns: 1fr; } }
+        @media (max-width: 768px) {
+            .form-row-2, .form-row-3 { grid-template-columns: 1fr; }
+            .trust-row { gap: 0.85rem 1.5rem; }
+            .footer-top { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
+            .signup-main { padding: 2rem 1.25rem 4rem; }
+        }
     </style>
 </head>
 <body>
 
-    <!-- NAV -->
-    <nav id="mainNav">
-        <div class="nav-content">
-            <a href="index.html" class="nav-logo">Securify<span>HQ</span></a>
-            <ul id="navMenu">
-                <li class="has-dropdown">
-                    <a href="#" onclick="toggleDropdownMob(this,event)">Services &#9662;</a>
-                    <div class="dropdown">
-                        <a href="how-it-works.html">How It Works</a>
-                        <a href="index.html#industries">Industries We Serve</a>
-                        <a href="camera-guide.html">Camera Compatibility</a>
-                    </div>
-                </li>
-                <li><a href="plans.html">Plans</a></li>
-                <li class="has-dropdown">
-                    <a href="#" onclick="toggleDropdownMob(this,event)">Company &#9662;</a>
-                    <div class="dropdown">
-                        <a href="about.html">About SecurifyHQ</a>
-                        <a href="index.html#trust">Why SecurifyHQ</a>
-                        <a href="blog/index.html">Blog</a>
-                        <a href="residential.html">Residential</a>
-                    </div>
-                </li>
-                <li class="has-dropdown">
-                    <a href="#" onclick="toggleDropdownMob(this,event)">Support &#9662;</a>
-                    <div class="dropdown">
-                        <a href="faq.html">FAQ</a>
-                        <a href="index.html#contact">Contact Us</a>
-                    </div>
-                </li>
-                <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener" class="nav-portal">Client Portal</a></li>
-                <li><a href="signup.html" class="nav-cta">Get Started</a></li>
-            </ul>
-            <button class="burger" onclick="toggleNav()" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <div class="signup-hero">
-        <h1>Start Protecting Your Site</h1>
-        <p>Choose how you'd like to get set up. Both paths get you monitored &mdash; it's just about how hands-on you want to be. Pilot spots still available — 3 seats left, closes 31 May 2026.</p>
+<nav id="mainNav">
+    <div class="nav-content">
+        <a href="index.html" class="nav-logo">Securify<span>HQ</span></a>
+        <ul id="navMenu">
+            <li class="has-dropdown">
+                <a href="#" onclick="toggleDropdownMob(this,event)">Services &#9662;</a>
+                <div class="dropdown">
+                    <a href="how-it-works.html">How It Works</a>
+                    <a href="index.html#industries">Industries We Serve</a>
+                    <a href="camera-guide.html">Camera Compatibility</a>
+                </div>
+            </li>
+            <li><a href="plans.html">Plans</a></li>
+            <li class="has-dropdown">
+                <a href="#" onclick="toggleDropdownMob(this,event)">Company &#9662;</a>
+                <div class="dropdown">
+                    <a href="about.html">About SecurifyHQ</a>
+                    <a href="index.html#trust">Why SecurifyHQ</a>
+                    <a href="blog/index.html">Blog</a>
+                    <a href="residential.html">Residential</a>
+                </div>
+            </li>
+            <li class="has-dropdown">
+                <a href="#" onclick="toggleDropdownMob(this,event)">Support &#9662;</a>
+                <div class="dropdown">
+                    <a href="faq.html">FAQ</a>
+                    <a href="index.html#contact">Contact Us</a>
+                </div>
+            </li>
+            <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener" class="nav-portal">Client Portal</a></li>
+            <li><a href="signup.html" class="nav-cta">Get Started</a></li>
+        </ul>
+        <button class="burger" onclick="toggleNav()" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
+</nav>
+
+<div class="signup-hero">
+    <h1>Start Protecting Your Site</h1>
+    <p>Choose how you'd like to get set up. Both paths get you monitored &mdash; it's just about how hands-on you want to be.</p>
+</div>
 
 <div style="background:linear-gradient(135deg,#0d1f2d,#1a3a52);padding:1rem 2rem;text-align:center;">
     <span style="display:inline-flex;align-items:center;gap:0.75rem;background:rgba(255,165,0,0.12);border:1px solid rgba(255,165,0,0.3);border-radius:40px;padding:0.55rem 1.5rem;font-size:0.92rem;color:rgba(255,255,255,0.9);">
@@ -294,475 +230,725 @@
     </span>
 </div>
 
-    <!-- MAIN SIGNUP AREA -->
-    <div class="signup-main">
-        <div class="cards-row">
+<div class="signup-main">
+    <div class="cards-row">
 
-            <!-- CARD A: SELF-SERVE -->
-            <div class="signup-card card-a">
-                <div class="card-header">
-                    <div class="card-badge badge-primary">Fastest Setup</div>
-                    <div class="card-title">Self-Serve Sign Up</div>
-                    <p class="card-desc">Fill in your details, select your plan, and we'll reach out within one business day to complete configuration.</p>
-                </div>
-                <div class="card-body">
-                    <div id="formA-wrap">
-                        <form id="formA" onsubmit="handleSignup(event)" novalidate>
-                            <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <!-- CARD A: SELF-SERVE -->
+        <div class="signup-card card-a">
+            <div class="card-header">
+                <div class="card-badge badge-primary">Fastest Setup</div>
+                <div class="card-title">Self-Serve Sign Up</div>
+                <p class="card-desc">Fill in your details, select your plan and hardware requirements. We'll build your quote and reach out within one business day to confirm and complete setup.</p>
+            </div>
+            <div class="card-body">
+                <div id="formA-wrap">
+                    <form id="formA" onsubmit="handleSignup(event)" novalidate>
+                        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="a_contact_name">Contact Name *</label>
-                                    <input type="text" id="a_contact_name" name="contact_name" required placeholder="Jane Smith">
-                                </div>
-                                <div class="form-group">
-                                    <label for="a_business_name">Business Name *</label>
-                                    <input type="text" id="a_business_name" name="business_name" required placeholder="Smith Warehousing Ltd">
-                                </div>
-                            </div>
-
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="a_email">Email *</label>
-                                    <input type="email" id="a_email" name="email" required placeholder="jane@example.co.nz">
-                                </div>
-                                <div class="form-group">
-                                    <label for="a_phone">Phone *</label>
-                                    <input type="tel" id="a_phone" name="phone" required placeholder="021 234 5678">
-                                </div>
-                            </div>
-
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="a_plan">Plan *</label>
-                                    <select id="a_plan" name="plan" required>
-                                        <option value="">&#8212; Select a Plan &#8212;</option>
-                                        <option value="watch">Watch &mdash; $199/mo</option>
-                                        <option value="respond">Respond &mdash; $349/mo</option>
-                                        <option value="deter">Deter &mdash; $549/mo</option>
-                                        <option value="shield">Shield &mdash; $799/mo</option>
-                                        <option value="enterprise">Enterprise &mdash; Custom</option>
-                                    </select>
-                                    <p style="font-size:0.8rem;color:#6c757d;margin-top:0.3rem;">📡 A one-time MikroTik VPN router is required per site: $199 incl. GST (Watch/Respond/Deter) or $349 incl. GST (Shield/Enterprise). Included free on 36-month contracts. Not charged during early cancellation.</p>
-                                </div>
-                                <div class="form-group">
-                                    <label for="a_business_category">Business Type</label>
-                                    <select id="a_business_category" name="business_category">
-                                        <option value="">&#8212; Select &#8212;</option>
-                                        <option value="warehouse">Warehouse / Storage</option>
-                                        <option value="retail">Small Retail / Liquor</option>
-                                        <option value="construction">Construction Site</option>
-                                        <option value="hospitality">Hospitality / Accommodation</option>
-                                        <option value="office">Office / Commercial</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-
+                        <div class="form-row-2">
                             <div class="form-group">
-                                <label for="a_site_address">Site Address</label>
-                                <input type="text" id="a_site_address" name="site_address" placeholder="12 Example Street, Christchurch">
+                                <label for="a_contact_name">Contact Name *</label>
+                                <input type="text" id="a_contact_name" name="contact_name" required placeholder="Jane Smith">
                             </div>
-
                             <div class="form-group">
-                                <label>Contract Term</label>
-                                <select name="contract_term">
-                                    <option value="open">Open term (no contract) &mdash; standard pricing</option>
-                                    <option value="12">12-month contract &mdash; 5% discount</option>
-                                    <option value="24">24-month contract &mdash; 10% discount</option>
-                                    <option value="36">36-month contract &mdash; 10% discount + free router + no setup fee</option>
+                                <label for="a_business_name">Business Name *</label>
+                                <input type="text" id="a_business_name" name="business_name" required placeholder="Smith Warehousing Ltd">
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="a_email">Email *</label>
+                                <input type="email" id="a_email" name="email" required placeholder="jane@example.co.nz">
+                            </div>
+                            <div class="form-group">
+                                <label for="a_phone">Phone *</label>
+                                <input type="tel" id="a_phone" name="phone" required placeholder="021 234 5678">
+                            </div>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="a_plan">Plan *</label>
+                                <select id="a_plan" name="plan" required onchange="onPlanChange()">
+                                    <option value="">— Select a Plan —</option>
+                                    <option value="watch">Watch — $175/mo (8PM–8AM)</option>
+                                    <option value="shield">Shield — $299/mo (8PM–8AM)</option>
+                                    <option value="shq_pro">SHQ Pro — $499/mo (24/7)</option>
+                                    <option value="shq_pro_plus">SHQ Pro Plus — $699/mo (24/7)</option>
+                                    <option value="enterprise">Enterprise — Custom</option>
+                                </select>
+                                <div class="form-hint">All plans require a one-time VPN Router hardware cost ($150). Sensors and deterrents are optional add-ons.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="a_business_category">Business Type</label>
+                                <select id="a_business_category" name="business_category">
+                                    <option value="">— Select —</option>
+                                    <option value="warehouse">Warehouse / Storage</option>
+                                    <option value="retail">Small Retail / Liquor</option>
+                                    <option value="construction">Construction Site</option>
+                                    <option value="hospitality">Hospitality / Accommodation</option>
+                                    <option value="office">Office / Commercial</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
+                        </div>
 
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="a_camera_count">Number of Cameras</label>
-                                    <select id="a_camera_count" name="camera_count">
-                                        <option value="">&#8212; Select &#8212;</option>
-                                        <option value="1-4">1&ndash;4</option>
-                                        <option value="5-8">5&ndash;8</option>
-                                        <option value="9-12">9&ndash;12</option>
-                                        <option value="13-20">13&ndash;20</option>
-                                        <option value="20+">20+</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="a_camera_type">Camera Type</label>
-                                    <select id="a_camera_type" name="camera_type">
-                                        <option value="">&#8212; Select &#8212;</option>
-                                        <option value="ip">IP Cameras</option>
-                                        <option value="analog_nvr">Analog + IP NVR</option>
-                                        <option value="not_sure">Not Sure</option>
-                                    </select>
-                                </div>
+                        <div class="form-group">
+                            <label for="a_site_address">Site Address</label>
+                            <input type="text" id="a_site_address" name="site_address" placeholder="12 Example Street, Christchurch">
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="a_camera_count">Number of Cameras</label>
+                                <select id="a_camera_count" name="camera_count">
+                                    <option value="">— Select —</option>
+                                    <option value="1-4">1–4</option>
+                                    <option value="5-8">5–8</option>
+                                    <option value="9-12">9–12</option>
+                                    <option value="13-20">13–20</option>
+                                    <option value="20+">20+</option>
+                                </select>
                             </div>
-
                             <div class="form-group">
                                 <label for="a_connectivity">Internet Connection</label>
                                 <select id="a_connectivity" name="connectivity">
-                                    <option value="">&#8212; Select &#8212;</option>
+                                    <option value="">— Select —</option>
                                     <option value="4g">4G / Mobile</option>
                                     <option value="starlink">Starlink</option>
                                     <option value="wired">Wired Broadband</option>
                                     <option value="not_sure">Not Sure</option>
                                 </select>
                             </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="a_notes">Any notes (optional)</label>
-                                <textarea id="a_notes" name="notes" placeholder="Anything that helps us understand your setup &mdash; existing cameras, site type, special requirements..."></textarea>
-                            </div>
+                        <div class="form-group">
+                            <label for="a_contract_term">Contract Term</label>
+                            <select id="a_contract_term" name="contract_term" onchange="updatePriceEstimate()">
+                                <option value="open">30-Day Rolling (no lock-in) — full upfront pricing</option>
+                                <option value="12">12-Month Fixed — 25% off combined Setup + Hardware total</option>
+                                <option value="24">24-Month Fixed — 50% off combined Setup + Hardware total</option>
+                                <option value="36">36-Month Fixed — Setup + Hardware entirely FREE</option>
+                            </select>
+                            <div class="form-hint">Discount applies to Setup Fee + Hardware combined total only. Monthly rate is the same on all terms.</div>
+                        </div>
 
-                            <label class="check-row">
-                                <input type="checkbox" id="a_terms" name="terms_accepted" required>
-                                <span>I agree to the <a href="terms-of-service.html" target="_blank" rel="noopener">Terms of Service</a> including cancellation and refund policy, and <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a></span>
-                            </label>
-
-                            <label class="check-row">
-                                <input type="checkbox" id="a_notrobot" required>
-                                <span>I'm not a robot &#10003;</span>
-                            </label>
-
-                            <div style="background:#f8f9fa;border-left:3px solid #FFA500;padding:0.75rem 1rem;border-radius:0 8px 8px 0;font-size:0.82rem;color:#6c757d;margin-bottom:1rem;line-height:1.6;">
-                                <strong style="color:#0d1f2d;">Refund &amp; Cancellation:</strong> Setup fees are non-refundable. First month subscription fee is refundable within 30 days (non-pilot clients only — pilot clients' first month is free). No refunds after the first month. Cancellation requires 30 days written notice. Early termination on contract terms: 50% of remaining contract value applies.
-                            </div>
-                            <button type="submit" id="submitBtnA" class="submit-btn-a">Complete Sign Up &rarr;</button>
-                        </form>
-                    </div>
-                    <div class="form-result" id="successA"></div>
-                </div>
-            </div>
-
-            <!-- CARD B: LEAVE IT WITH US -->
-            <div class="signup-card card-b">
-                <div class="card-header">
-                    <div class="card-badge badge-secondary">No Effort Required</div>
-                    <div class="card-title">Leave It With Us</div>
-                    <p class="card-desc">Give us your basic details and what you're looking for. We'll call you, understand your site, and set everything up for you.</p>
-                </div>
-                <div class="card-body">
-                    <div id="formB-wrap">
-                        <form id="formB" onsubmit="handleEnquiry(event)" novalidate>
-                            <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="b_name">Name *</label>
-                                    <input type="text" id="b_name" name="name" required placeholder="John Smith">
-                                </div>
-                                <div class="form-group">
-                                    <label for="b_business">Business Name</label>
-                                    <input type="text" id="b_business" name="business" placeholder="Smith Construction Ltd">
-                                </div>
-                            </div>
-
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="b_email">Email *</label>
-                                    <input type="email" id="b_email" name="email" required placeholder="john@example.co.nz">
-                                </div>
-                                <div class="form-group">
-                                    <label for="b_phone">Phone</label>
-                                    <input type="tel" id="b_phone" name="phone" placeholder="021 234 5678">
-                                </div>
-                            </div>
-
-                            <div class="form-row-2">
-                                <div class="form-group">
-                                    <label for="b_plan">Interested Plan</label>
-                                    <select id="b_plan" name="plan">
-                                        <option value="">&#8212; Select &#8212;</option>
-                                        <option value="watch">Watch</option>
-                                        <option value="respond">Respond</option>
-                                        <option value="deter">Deter</option>
-                                        <option value="shield">Shield</option>
-                                        <option value="enterprise">Enterprise</option>
-                                        <option value="not_sure">Not Sure</option>
+                        <!-- SENSOR SECTION — SHQ Pro / Pro Plus only -->
+                        <div class="hw-section" id="sensor-section">
+                            <div class="hw-section-title">Smart Sensor Kit <span class="hw-plans-badge">SHQ Pro &amp; Pro Plus</span></div>
+                            <div class="hw-section-sub">Zigbee sensors work alongside your cameras for dual-layer detection. Each sensor adds $100 to hardware cost. Base kit ($600) includes mini PC and Zigbee coordinator. Not sure how many? Leave at zero — we'll advise during onboarding.</div>
+                            <div class="form-row-3">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label for="a_pir_count">PIR Motion Sensors</label>
+                                    <select id="a_pir_count" name="pir_count" onchange="updatePriceEstimate()">
+                                        <option value="0">0 — not needed</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6+">6+ (we'll advise)</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="b_business_category">Business Type</label>
-                                    <select id="b_business_category" name="business_category">
-                                        <option value="">&#8212; Select &#8212;</option>
-                                        <option value="warehouse">Warehouse / Storage</option>
-                                        <option value="retail">Small Retail / Liquor</option>
-                                        <option value="construction">Construction Site</option>
-                                        <option value="hospitality">Hospitality / Accommodation</option>
-                                        <option value="office">Office / Commercial</option>
-                                        <option value="other">Other</option>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label for="a_door_count">Door/Window Sensors</label>
+                                    <select id="a_door_count" name="door_count" onchange="updatePriceEstimate()">
+                                        <option value="0">0 — not needed</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6+">6+ (we'll advise)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label for="a_vib_count">Vibration Sensors</label>
+                                    <select id="a_vib_count" name="vib_count" onchange="updatePriceEstimate()">
+                                        <option value="0">0 — not needed</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6+">6+ (we'll advise)</option>
                                     </select>
                                 </div>
                             </div>
+                            <div style="margin-top:0.75rem;">
+                                <label class="check-row" style="margin-bottom:0;">
+                                    <input type="checkbox" name="sensor_unsure" onchange="updatePriceEstimate()">
+                                    <span style="font-size:0.82rem;color:#6c757d;">Not sure on sensor quantities — leave it with us, we'll advise during the site assessment.</span>
+                                </label>
+                            </div>
+                        </div>
 
-                            <div class="form-group">
-                                <label for="b_camera_count">Camera Count</label>
-                                <select id="b_camera_count" name="camera_count">
-                                    <option value="">&#8212; Select &#8212;</option>
-                                    <option value="1-4">1&ndash;4</option>
-                                    <option value="5-8">5&ndash;8</option>
-                                    <option value="9-12">9&ndash;12</option>
-                                    <option value="13+">13+</option>
-                                    <option value="not_sure">Not Sure</option>
+                        <!-- AUDIO SPEAKER SECTION — SHQ Pro / Pro Plus only -->
+                        <div class="hw-section" id="speaker-section">
+                            <div class="hw-section-title">2-Way Audio Deterrent Speaker <span class="hw-plans-badge">SHQ Pro &amp; Pro Plus</span></div>
+                            <div class="hw-section-sub">Operator speaks directly to your site when a verified threat is detected. Hardware from $249/speaker upfront + $20/mo per speaker service fee. Not sure? Tick the box below.</div>
+                            <div class="form-row-2">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label for="a_speaker_required">Audio Speaker Required?</label>
+                                    <select id="a_speaker_required" name="speaker_required" onchange="onSpeakerChange()">
+                                        <option value="no">No — not required</option>
+                                        <option value="yes">Yes — I want audio deterrent</option>
+                                        <option value="unsure">Unsure — advise me</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="speaker-count-group" style="margin-bottom:0;display:none;">
+                                    <label for="a_speaker_count">Number of Speakers</label>
+                                    <select id="a_speaker_count" name="speaker_count" onchange="updatePriceEstimate()">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4+">4+ (we'll quote)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ALERT LIGHT SECTION — all plans -->
+                        <div class="hw-section visible" id="light-section">
+                            <div class="hw-section-title">Alert Light Deterrent (Red Strobe)</div>
+                            <div class="hw-section-sub">Operator-activated red flashing strobe beacon — signals to intruders they're being watched. $199/unit hardware, no monthly cost. Available on all plans.</div>
+                            <div class="form-row-2">
+                                <div class="form-group" style="margin-bottom:0;">
+                                    <label for="a_light_required">Strobe Alert Light Required?</label>
+                                    <select id="a_light_required" name="light_required" onchange="onLightChange()">
+                                        <option value="no">No — not required</option>
+                                        <option value="yes">Yes — I want the alert light</option>
+                                        <option value="unsure">Unsure — advise me</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" id="light-count-group" style="margin-bottom:0;display:none;">
+                                    <label for="a_light_count">Number of Lights</label>
+                                    <select id="a_light_count" name="light_count" onchange="updatePriceEstimate()">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UPS SECTION — all plans -->
+                        <div class="hw-section visible" id="ups-section">
+                            <div class="hw-section-title">UPS (Uninterruptible Power Supply)</div>
+                            <div class="hw-section-sub">Keeps cameras, router, and mini PC running during power cuts. Strongly recommended for unmanned sites and construction sites. Purchase only — no monthly cost. We'll quote a suitable model based on your site.</div>
+                            <div class="form-group" style="margin-bottom:0;">
+                                <label for="a_ups_required">UPS Required?</label>
+                                <select id="a_ups_required" name="ups_required">
+                                    <option value="no">No — not required</option>
+                                    <option value="yes">Yes — include in my quote</option>
+                                    <option value="unsure">Unsure — advise me</option>
                                 </select>
                             </div>
+                        </div>
 
+                        <!-- PRICING ESTIMATE -->
+                        <div class="price-estimate" id="price-estimate">
+                            <div class="pe-title">Indicative Upfront Estimate (excl. GST)</div>
+                            <div id="pe-rows"></div>
+                            <div class="pe-note">This is an indicative estimate only. Your confirmed quote will be provided by our team before you are charged anything.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="a_notes">Any notes (optional)</label>
+                            <textarea id="a_notes" name="notes" placeholder="Anything that helps us understand your setup — existing cameras, site layout, specific concerns..."></textarea>
+                        </div>
+
+                        <label class="check-row">
+                            <input type="checkbox" id="a_terms" name="terms_accepted" required>
+                            <span>I agree to the <a href="terms-of-service.html" target="_blank" rel="noopener">Terms of Service</a> including cancellation and refund policy, and <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a></span>
+                        </label>
+
+                        <label class="check-row">
+                            <input type="checkbox" id="a_notrobot" required>
+                            <span>I'm not a robot ✓</span>
+                        </label>
+
+                        <div style="background:#f8f9fa;border-left:3px solid #FFA500;padding:0.75rem 1rem;border-radius:0 8px 8px 0;font-size:0.82rem;color:#6c757d;margin-bottom:1rem;line-height:1.6;">
+                            <strong style="color:#0d1f2d;">Refund &amp; Cancellation:</strong> Setup fees are non-refundable. First month subscription fee is refundable within 30 days (non-pilot clients only — pilot clients' first month is free). No refunds after the first month. Cancellation requires 30 days written notice. Fixed-term early termination: 50% of remaining contract value.
+                        </div>
+                        <button type="submit" id="submitBtnA" class="submit-btn-a">Submit Application &rarr;</button>
+                    </form>
+                </div>
+                <div class="form-result" id="successA"></div>
+            </div>
+        </div>
+
+        <!-- CARD B: LEAVE IT WITH US -->
+        <div class="signup-card card-b">
+            <div class="card-header">
+                <div class="card-badge badge-secondary">No Effort Required</div>
+                <div class="card-title">Leave It With Us</div>
+                <p class="card-desc">Give us your basic details and what you're looking for. We'll call you, understand your site, and build your quote — including all hardware — for you. Nothing to fill in except your name and what you need.</p>
+            </div>
+            <div class="card-body">
+                <div id="formB-wrap">
+                    <form id="formB" onsubmit="handleEnquiry(event)" novalidate>
+                        <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="form-row-2">
                             <div class="form-group">
-                                <label for="b_message">Tell us about your site</label>
-                                <textarea id="b_message" name="message" placeholder="Tell us about your site &mdash; anything helps. Type of business, location, what you're most worried about..."></textarea>
+                                <label for="b_name">Name *</label>
+                                <input type="text" id="b_name" name="name" required placeholder="John Smith">
                             </div>
+                            <div class="form-group">
+                                <label for="b_business">Business Name</label>
+                                <input type="text" id="b_business" name="business" placeholder="Smith Construction Ltd">
+                            </div>
+                        </div>
 
-                            <label class="check-row">
-                                <input type="checkbox" id="b_notrobot" required>
-                                <span>I'm not a robot &#10003;</span>
-                            </label>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="b_email">Email *</label>
+                                <input type="email" id="b_email" name="email" required placeholder="john@example.co.nz">
+                            </div>
+                            <div class="form-group">
+                                <label for="b_phone">Phone</label>
+                                <input type="tel" id="b_phone" name="phone" placeholder="021 234 5678">
+                            </div>
+                        </div>
 
-                            <button type="submit" id="submitBtnB" class="submit-btn-b">Send My Details &rarr;</button>
-                        </form>
-                    </div>
-                    <div class="form-result" id="successB"></div>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="b_plan">Interested Plan</label>
+                                <select id="b_plan" name="plan">
+                                    <option value="">— Select if known —</option>
+                                    <option value="watch">Watch — $175/mo</option>
+                                    <option value="shield">Shield — $299/mo</option>
+                                    <option value="shq_pro">SHQ Pro — $499/mo</option>
+                                    <option value="shq_pro_plus">SHQ Pro Plus — $699/mo</option>
+                                    <option value="enterprise">Enterprise</option>
+                                    <option value="not_sure">Not Sure — advise me</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="b_business_category">Business Type</label>
+                                <select id="b_business_category" name="business_category">
+                                    <option value="">— Select —</option>
+                                    <option value="warehouse">Warehouse / Storage</option>
+                                    <option value="retail">Small Retail / Liquor</option>
+                                    <option value="construction">Construction Site</option>
+                                    <option value="hospitality">Hospitality / Accommodation</option>
+                                    <option value="office">Office / Commercial</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="b_camera_count">Camera Count (approx.)</label>
+                            <select id="b_camera_count" name="camera_count">
+                                <option value="">— Select if known —</option>
+                                <option value="1-4">1–4</option>
+                                <option value="5-8">5–8</option>
+                                <option value="9-12">9–12</option>
+                                <option value="13+">13+</option>
+                                <option value="not_sure">Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>What are you most concerned about?</label>
+                            <div style="display:flex;flex-direction:column;gap:0.4rem;margin-top:0.25rem;">
+                                <label class="check-row" style="margin-bottom:0;"><input type="checkbox" name="concern_afterhours"> <span style="font-size:0.87rem;">After-hours break-ins / theft</span></label>
+                                <label class="check-row" style="margin-bottom:0;"><input type="checkbox" name="concern_vandalism"> <span style="font-size:0.87rem;">Vandalism or property damage</span></label>
+                                <label class="check-row" style="margin-bottom:0;"><input type="checkbox" name="concern_sensors"> <span style="font-size:0.87rem;">Sensors for entry points / motion zones</span></label>
+                                <label class="check-row" style="margin-bottom:0;"><input type="checkbox" name="concern_deterrent"> <span style="font-size:0.87rem;">Active deterrents (speaker / alert light)</span></label>
+                                <label class="check-row" style="margin-bottom:0;"><input type="checkbox" name="concern_insurance"> <span style="font-size:0.87rem;">Insurance documentation / incident evidence</span></label>
+                                <label class="check-row" style="margin-bottom:0;"><input type="checkbox" name="concern_24_7"> <span style="font-size:0.87rem;">24/7 coverage needed (not just after hours)</span></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="b_message">Tell us about your site</label>
+                            <textarea id="b_message" name="message" placeholder="Anything helps — type of business, location, what you're most worried about, existing cameras..."></textarea>
+                        </div>
+
+                        <label class="check-row">
+                            <input type="checkbox" id="b_notrobot" required>
+                            <span>I'm not a robot ✓</span>
+                        </label>
+
+                        <button type="submit" id="submitBtnB" class="submit-btn-b">Send My Details &rarr;</button>
+                    </form>
                 </div>
+                <div class="form-result" id="successB"></div>
             </div>
-
         </div>
 
-        <!-- TRUST SIGNALS -->
-        <div class="trust-row">
-            <div class="trust-item"><div class="trust-dot"></div>NZ Registered Company</div>
-            <div class="trust-item"><div class="trust-dot"></div>24/7 Human Operators</div>
-            <div class="trust-item"><div class="trust-dot"></div>No Lock-in Contract</div>
-            <div class="trust-item"><div class="trust-dot"></div>First Month Free + 50% Off Setup (Pilot)</div>
-            <div class="trust-item"><div class="trust-dot"></div>Data Stays in NZ</div>
-        </div>
     </div>
 
-    <!-- NRI BRIDGE -->
-    <div class="nri-bridge">
-        <p>SecurifyHQ also supports residential monitoring — NRI families with property in India, NZ homeowners, and AirBnB or short-term rental operators.</p>
-        <a href="residential.html">Learn more &rarr;</a>
+    <div class="trust-row">
+        <div class="trust-item"><div class="trust-dot"></div>NZ Registered Company</div>
+        <div class="trust-item"><div class="trust-dot"></div>Human-Verified Every Alert</div>
+        <div class="trust-item"><div class="trust-dot"></div>No Lock-in Required</div>
+        <div class="trust-item"><div class="trust-dot"></div>50% Off Setup + First Month Free (Pilot)</div>
+        <div class="trust-item"><div class="trust-dot"></div>Transparent Quote Before Any Charge</div>
     </div>
+</div>
 
-    <!-- FOOTER -->
-    <footer id="footer">
-        <div class="footer-inner">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <div class="footer-logo-display" aria-label="SecurifyHQ logo"></div>
-                    <div class="f-logo">Securify<span>HQ</span></div>
-                    <p>AI-powered CCTV monitoring and human-verified alert escalation for small to mid-size NZ businesses with existing cameras &mdash; monitored 24/7.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/company/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                        <a href="https://www.facebook.com/profile.php?id=61570974383165" target="_blank" rel="noopener" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-                        <a href="https://www.instagram.com/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
-                        <a href="https://wa.me/642108144777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="how-it-works.html">How It Works</a></li>
-                        <li><a href="index.html#industries">Industries</a></li>
-                        <li><a href="plans.html">Plans &amp; Pricing</a></li>
-                        <li><a href="index.html#pilot">Pilot Offer</a></li>
-                        <li><a href="signup.html">Get Started</a></li>
-                        <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener">Client Portal</a></li>
-                        <li><a href="camera-guide.html">Camera Guide</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="about.html">About SecurifyHQ</a></li>
-                        <li><a href="blog/index.html">Blog</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="residential.html">Residential</a></li>
-                        <li><a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></li>
-                        <li><a href="tel:+6437328743">03 732 8743</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html">Terms of Service</a></li>
-                    </ul>
+<div class="nri-bridge">
+    <p>SecurifyHQ also monitors residential properties — NRI families with property in India, NZ homeowners, and short-term rental operators.</p>
+    <a href="residential.html">Learn more about residential monitoring &rarr;</a>
+</div>
+
+<footer id="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo-display" aria-label="SecurifyHQ logo"></div>
+                <div class="f-logo">Securify<span>HQ</span></div>
+                <p>AI-Powered Verified Monitoring for NZ businesses. Every alert AI-detected, human-verified. We watch your cameras and sensors and act the moment something real is detected.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="https://www.facebook.com/profile.php?id=61570974383165" target="_blank" rel="noopener" aria-label="Facebook"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="https://www.instagram.com/securifyhqbusiness/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    <a href="https://wa.me/642108144777" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <div>
-                    <p>&copy; 2026 SecurifyHQ Limited. All rights reserved.</p>
-                    <p>NZ Company #9405543 &mdash; 13B Fryer Street, Queenstown 9300</p>
-                    <div class="footer-legal">
-                        <a href="privacy-policy.html" class="footer-legal-pill">Privacy Policy</a>
-                        <a href="terms-of-service.html" class="footer-legal-pill">Terms of Service</a>
-                    </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="index.html#industries">Industries</a></li>
+                    <li><a href="plans.html">Plans &amp; Pricing</a></li>
+                    <li><a href="index.html#pilot">Pilot Offer</a></li>
+                    <li><a href="signup.html">Get Started</a></li>
+                    <li><a href="https://crm.securifyhq.com/portal/login" target="_blank" rel="noopener">Client Portal</a></li>
+                    <li><a href="camera-guide.html">Camera Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About SecurifyHQ</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="residential.html">Residential</a></li>
+                    <li><a href="mailto:hello@securifyhq.com">hello@securifyhq.com</a></li>
+                    <li><a href="tel:+6437328743">03 732 8743</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div>
+                <p>&copy; 2026 SecurifyHQ Limited. All rights reserved.</p>
+                <p>NZ Company #9405543 &mdash; 13B Fryer Street, Queenstown 9300</p>
+                <div class="footer-legal">
+                    <a href="privacy-policy.html" class="footer-legal-pill">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="footer-legal-pill">Terms of Service</a>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script>
-        /* ===== NAV ===== */
-        function toggleNav() {
-            document.getElementById('navMenu').classList.toggle('nav-open');
+<script>
+    /* === NAV === */
+    function toggleNav() { document.getElementById('navMenu').classList.toggle('nav-open'); }
+    function toggleDropdownMob(el, e) {
+        if (window.innerWidth > 900) return;
+        e.preventDefault();
+        el.closest('.has-dropdown').classList.toggle('mob-open');
+    }
+    document.addEventListener('click', function(e) {
+        if (!document.getElementById('mainNav').contains(e.target)) {
+            document.getElementById('navMenu').classList.remove('nav-open');
         }
-        function toggleDropdownMob(el, e) {
-            if (window.innerWidth > 900) return;
-            e.preventDefault();
-            var li = el.closest('.has-dropdown');
-            li.classList.toggle('mob-open');
-        }
-        document.addEventListener('click', function(e) {
-            var nav = document.getElementById('mainNav');
-            if (!nav.contains(e.target)) {
-                document.getElementById('navMenu').classList.remove('nav-open');
+    });
+
+    /* === PLAN DATA === */
+    var PLAN_DATA = {
+        watch:         { setup: 299, monthly: 175, hasSensors: false, hasSpeaker: false },
+        shield:        { setup: 299, monthly: 299, hasSensors: false, hasSpeaker: false },
+        shq_pro:       { setup: 399, monthly: 499, hasSensors: true,  hasSpeaker: true  },
+        shq_pro_plus:  { setup: 499, monthly: 699, hasSensors: true,  hasSpeaker: true  },
+        enterprise:    { setup: 0,   monthly: 0,   hasSensors: false, hasSpeaker: false }
+    };
+
+    var CONTRACT_DISCOUNT = { open: 0, '12': 0.25, '24': 0.50, '36': 1.00 };
+
+    function parseSensorCount(val) {
+        if (!val || val === '0' || val === '6+') return val === '6+' ? 6 : 0;
+        return parseInt(val, 10) || 0;
+    }
+
+    function onPlanChange() {
+        var plan = document.getElementById('a_plan').value;
+        var pd = PLAN_DATA[plan];
+        if (!pd) { hideSensorSpeakerSections(); updatePriceEstimate(); return; }
+        toggleSection('sensor-section', pd.hasSensors);
+        toggleSection('speaker-section', pd.hasSpeaker);
+        updatePriceEstimate();
+    }
+
+    function toggleSection(id, show) {
+        var el = document.getElementById(id);
+        if (show) el.classList.add('visible');
+        else el.classList.remove('visible');
+    }
+
+    function hideSensorSpeakerSections() {
+        toggleSection('sensor-section', false);
+        toggleSection('speaker-section', false);
+    }
+
+    function onSpeakerChange() {
+        var val = document.getElementById('a_speaker_required').value;
+        var cg = document.getElementById('speaker-count-group');
+        cg.style.display = (val === 'yes') ? 'block' : 'none';
+        updatePriceEstimate();
+    }
+
+    function onLightChange() {
+        var val = document.getElementById('a_light_required').value;
+        var cg = document.getElementById('light-count-group');
+        cg.style.display = (val === 'yes') ? 'block' : 'none';
+        updatePriceEstimate();
+    }
+
+    function updatePriceEstimate() {
+        var plan = document.getElementById('a_plan').value;
+        var pd = PLAN_DATA[plan];
+        var el = document.getElementById('price-estimate');
+        if (!pd || plan === 'enterprise' || plan === '') { el.classList.remove('visible'); return; }
+
+        var term = document.getElementById('a_contract_term').value;
+        var discountRate = CONTRACT_DISCOUNT[term] || 0;
+
+        /* Hardware costs */
+        var router = 150;
+        var setupFee = pd.setup;
+
+        /* Sensors */
+        var sensorBase = 0, sensorPerUnit = 0;
+        if (pd.hasSensors) {
+            var sensorUnsure = document.querySelector('[name="sensor_unsure"]');
+            if (!sensorUnsure || !sensorUnsure.checked) {
+                var pir = parseSensorCount(document.getElementById('a_pir_count').value);
+                var door = parseSensorCount(document.getElementById('a_door_count').value);
+                var vib = parseSensorCount(document.getElementById('a_vib_count').value);
+                var totalSensors = pir + door + vib;
+                if (totalSensors > 0) { sensorBase = 600; sensorPerUnit = totalSensors * 100; }
             }
-        });
-
-        /* ===== CAMERA COUNT PARSER ===== */
-        function parseCameraCount(val) {
-            if (!val) return null;
-            var map = { '1-4': 4, '5-8': 8, '9-12': 12, '13-20': 20, '13+': 20, '20+': 25 };
-            return map[val] || null;
         }
 
-        /* ===== FORM A: SELF-SERVE SIGNUP ===== */
-        function handleSignup(e) {
-            e.preventDefault();
-            var form = e.target;
+        /* Alert light */
+        var lightCost = 0;
+        var lightReq = document.getElementById('a_light_required').value;
+        if (lightReq === 'yes') {
+            var lc = parseInt(document.getElementById('a_light_count').value, 10) || 1;
+            lightCost = lc * 199;
+        }
 
-            // Honeypot check
-            if (form.website && form.website.value) return;
-
-            // Basic validation
-            var required = ['contact_name', 'business_name', 'email', 'phone', 'plan'];
-            for (var i = 0; i < required.length; i++) {
-                if (!form[required[i]] || !form[required[i]].value.trim()) {
-                    alert('Please fill in all required fields.');
-                    return;
-                }
+        /* Speaker */
+        var speakerHwCost = 0, speakerMonthly = 0;
+        if (pd.hasSpeaker) {
+            var spReq = document.getElementById('a_speaker_required').value;
+            if (spReq === 'yes') {
+                var sc = parseInt(document.getElementById('a_speaker_count').value, 10) || 1;
+                speakerHwCost = sc * 249; /* base model estimate */
+                speakerMonthly = sc * 20;
             }
-            if (!form.terms_accepted.checked) {
-                alert('Please agree to the Terms of Service and Privacy Policy to continue.');
+        }
+
+        var hardwareTotal = router + sensorBase + sensorPerUnit + lightCost + speakerHwCost;
+        var upfrontTotal = setupFee + hardwareTotal;
+        var discountAmount = Math.round(upfrontTotal * discountRate);
+        var finalUpfront = upfrontTotal - discountAmount;
+
+        /* Build rows */
+        var rows = '';
+        rows += peRow('Monthly subscription', '$' + pd.monthly + '/mo');
+        rows += peRow('Setup fee', '$' + setupFee);
+        rows += peRow('VPN Router (required)', '$' + router);
+        if (sensorBase > 0) rows += peRow('Sensor Kit (base + sensors)', '$' + (sensorBase + sensorPerUnit));
+        if (lightCost > 0) rows += peRow('Alert Light' + (parseInt(document.getElementById('a_light_count').value, 10) > 1 ? ' ×' + document.getElementById('a_light_count').value : ''), '$' + lightCost);
+        if (speakerHwCost > 0) rows += peRow('Audio Speaker(s) hardware', '~$' + speakerHwCost + '+');
+        if (speakerMonthly > 0) rows += peRow('Speaker service (monthly add-on)', '$' + speakerMonthly + '/mo');
+
+        if (discountAmount > 0) {
+            rows += peRow('Combined Setup + Hardware', '$' + upfrontTotal, false, 'muted');
+            rows += peRow(termLabel(term) + ' discount', '–$' + discountAmount, false, 'saving');
+        }
+        rows += peRowTotal('Total upfront (excl. GST)', '$' + finalUpfront + (discountAmount > 0 ? ' 🎉' : ''));
+
+        document.getElementById('pe-rows').innerHTML = rows;
+        el.classList.add('visible');
+    }
+
+    function peRow(label, val, isTotal, cls) {
+        var c = cls ? ' style="color:' + (cls === 'saving' ? '#4ade80' : 'rgba(255,255,255,0.5)') + ';font-weight:' + (cls === 'saving' ? '600' : '400') + ';"' : '';
+        return '<div class="pe-row"' + c + '><span>' + label + '</span><span>' + val + '</span></div>';
+    }
+    function peRowTotal(label, val) {
+        return '<div class="pe-row total"><span>' + label + '</span><span>' + val + '</span></div>';
+    }
+    function termLabel(term) {
+        return { open: '30-day rolling', '12': '12-month contract', '24': '24-month contract', '36': '36-month contract' }[term] || '';
+    }
+
+    /* === CAMERA COUNT PARSER === */
+    function parseCameraCount(val) {
+        if (!val) return null;
+        var map = { '1-4': 4, '5-8': 8, '9-12': 12, '13-20': 20, '13+': 20, '20+': 25 };
+        return map[val] || null;
+    }
+
+    /* === FORM A: SELF-SERVE SIGNUP === */
+    function handleSignup(e) {
+        e.preventDefault();
+        var form = e.target;
+        if (form.website && form.website.value) return;
+
+        var required = ['contact_name', 'business_name', 'email', 'phone', 'plan'];
+        for (var i = 0; i < required.length; i++) {
+            if (!form[required[i]] || !form[required[i]].value.trim()) {
+                alert('Please fill in all required fields.');
                 return;
             }
-            if (!document.getElementById('a_notrobot').checked) {
-                alert('Please confirm you are not a robot.');
-                return;
-            }
+        }
+        if (!form.terms_accepted.checked) { alert('Please agree to the Terms of Service and Privacy Policy.'); return; }
+        if (!document.getElementById('a_notrobot').checked) { alert('Please confirm you are not a robot.'); return; }
 
-            var btn = document.getElementById('submitBtnA');
-            btn.disabled = true;
-            btn.textContent = 'Submitting...';
+        var btn = document.getElementById('submitBtnA');
+        btn.disabled = true;
+        btn.textContent = 'Submitting...';
 
-            var payload = {
-                contact_name: form.contact_name.value.trim(),
-                business_name: form.business_name.value.trim(),
-                email: form.email.value.trim(),
-                phone: form.phone.value.trim(),
-                plan: form.plan.value,
-                business_category: form.business_category.value,
-                site_address: form.site_address.value.trim(),
-                camera_count: parseCameraCount(form.camera_count.value),
-                camera_type: form.camera_type.value,
-                connectivity: form.connectivity.value,
-                notes: form.notes.value.trim(),
-                terms_accepted: true,
-                source: 'business_signup_selfserve'
-            };
+        var pirCount = (document.getElementById('a_pir_count') || {}).value;
+        var doorCount = (document.getElementById('a_door_count') || {}).value;
+        var vibCount = (document.getElementById('a_vib_count') || {}).value;
 
-            var resultElA = document.getElementById('successA');
-            fetch('https://crm.securifyhq.com/api/business-signup', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify(payload)
-            })
-            .then(function(res) {
-                if (res.ok) {
-                    resultElA.className = 'form-result form-result-ok';
-                    resultElA.innerHTML = '&#9989; <strong>Application received!</strong> We\'ll be in touch within one business day to complete your setup. Your form has been reset.';
-                    form.reset();
-                    if (typeof gtag !== 'undefined') gtag('event', 'business_signup', { event_category: 'lead', plan: payload.plan, method: 'self_serve' });
-                } else {
-                    resultElA.className = 'form-result form-result-err';
-                    resultElA.innerHTML = '&#9888; <strong>Something went wrong</strong> &mdash; your sign-up may not have sent. Please email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
-                }
-                resultElA.style.display = 'block';
-                resultElA.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                btn.disabled = false;
-                btn.textContent = 'Complete Sign Up \u2192';
-            })
-            .catch(function() {
+        var payload = {
+            contact_name: form.contact_name.value.trim(),
+            business_name: form.business_name.value.trim(),
+            email: form.email.value.trim(),
+            phone: form.phone.value.trim(),
+            plan: form.plan.value,
+            business_category: form.business_category.value,
+            site_address: form.site_address.value.trim(),
+            camera_count: parseCameraCount(form.camera_count.value),
+            connectivity: form.connectivity.value,
+            contract_term: form.contract_term.value,
+            pir_sensor_count: pirCount || '0',
+            door_sensor_count: doorCount || '0',
+            vibration_sensor_count: vibCount || '0',
+            sensor_unsure: (document.querySelector('[name="sensor_unsure"]') || {}).checked || false,
+            speaker_required: (document.getElementById('a_speaker_required') || {}).value || 'no',
+            speaker_count: (document.getElementById('a_speaker_count') || {}).value || '0',
+            light_required: form.light_required.value,
+            light_count: (document.getElementById('a_light_count') || {}).value || '0',
+            ups_required: form.ups_required.value,
+            notes: form.notes.value.trim(),
+            terms_accepted: true,
+            source: 'business_signup_selfserve'
+        };
+
+        var resultElA = document.getElementById('successA');
+        fetch('https://crm.securifyhq.com/api/business-signup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(function(res) {
+            if (res.ok) {
+                resultElA.className = 'form-result form-result-ok';
+                resultElA.innerHTML = '&#9989; <strong>Application received!</strong> We\'ll be in touch within one business day to confirm your quote and complete your setup.';
+                form.reset();
+                hideSensorSpeakerSections();
+                document.getElementById('price-estimate').classList.remove('visible');
+                if (typeof gtag !== 'undefined') gtag('event', 'business_signup', { event_category: 'lead', plan: payload.plan });
+            } else {
                 resultElA.className = 'form-result form-result-err';
-                resultElA.innerHTML = '&#9888; <strong>Could not connect</strong> &mdash; please check your connection or email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
-                resultElA.style.display = 'block';
-                btn.disabled = false;
-                btn.textContent = 'Complete Sign Up \u2192';
-            });
-        }
-
-        /* ===== FORM B: ENQUIRY / LEAVE IT WITH US ===== */
-        function handleEnquiry(e) {
-            e.preventDefault();
-            var form = e.target;
-
-            // Honeypot check
-            if (form.website && form.website.value) return;
-
-            // Basic validation
-            if (!form.name.value.trim() || !form.email.value.trim()) {
-                alert('Please fill in your name and email to continue.');
-                return;
+                resultElA.innerHTML = '&#9888; <strong>Something went wrong</strong> &mdash; please email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
             }
-            if (!document.getElementById('b_notrobot').checked) {
-                alert('Please confirm you are not a robot.');
-                return;
-            }
+            resultElA.style.display = 'block';
+            resultElA.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            btn.disabled = false;
+            btn.textContent = 'Submit Application \u2192';
+        })
+        .catch(function() {
+            resultElA.className = 'form-result form-result-err';
+            resultElA.innerHTML = '&#9888; <strong>Could not connect</strong> &mdash; please email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
+            resultElA.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Submit Application \u2192';
+        });
+    }
 
-            var btn = document.getElementById('submitBtnB');
-            btn.disabled = true;
-            btn.textContent = 'Sending...';
+    /* === FORM B: ENQUIRY / LEAVE IT WITH US === */
+    function handleEnquiry(e) {
+        e.preventDefault();
+        var form = e.target;
+        if (form.website && form.website.value) return;
+        if (!form.name.value.trim() || !form.email.value.trim()) { alert('Please fill in your name and email.'); return; }
+        if (!document.getElementById('b_notrobot').checked) { alert('Please confirm you are not a robot.'); return; }
 
-            var payload = {
-                name: form.name.value.trim(),
-                business: form.business.value.trim(),
-                email: form.email.value.trim(),
-                phone: form.phone.value.trim(),
-                plan: form.plan.value,
-                business_category: form.business_category.value,
-                camera_count: parseCameraCount(form.camera_count.value),
-                message: form.message.value.trim(),
-                source: 'business_signup_enquiry'
-            };
+        var btn = document.getElementById('submitBtnB');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
 
-            var resultElB = document.getElementById('successB');
-            fetch('https://crm.securifyhq.com/api/business-enquiry', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                body: JSON.stringify(payload)
-            })
-            .then(function(res) {
-                if (res.ok) {
-                    resultElB.className = 'form-result form-result-ok';
-                    resultElB.innerHTML = '&#9989; <strong>Details received!</strong> We\'ll call you within one business day. Your form has been reset.';
-                    form.reset();
-                    if (typeof gtag !== 'undefined') gtag('event', 'business_enquiry', { event_category: 'lead', plan: payload.plan, method: 'leave_with_us' });
-                } else {
-                    resultElB.className = 'form-result form-result-err';
-                    resultElB.innerHTML = '&#9888; <strong>Something went wrong</strong> &mdash; your details may not have sent. Please email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
-                }
-                resultElB.style.display = 'block';
-                resultElB.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                btn.disabled = false;
-                btn.textContent = 'Send My Details \u2192';
-            })
-            .catch(function() {
+        var payload = {
+            name: form.name.value.trim(),
+            business: form.business.value.trim(),
+            email: form.email.value.trim(),
+            phone: form.phone.value.trim(),
+            plan: form.plan.value,
+            business_category: form.business_category.value,
+            camera_count: parseCameraCount(form.camera_count.value),
+            concerns: {
+                afterhours: (form.concern_afterhours || {}).checked || false,
+                vandalism: (form.concern_vandalism || {}).checked || false,
+                sensors: (form.concern_sensors || {}).checked || false,
+                deterrent: (form.concern_deterrent || {}).checked || false,
+                insurance: (form.concern_insurance || {}).checked || false,
+                always_on: (form.concern_24_7 || {}).checked || false
+            },
+            message: form.message.value.trim(),
+            source: 'business_signup_enquiry'
+        };
+
+        var resultElB = document.getElementById('successB');
+        fetch('https://crm.securifyhq.com/api/business-enquiry', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+            body: JSON.stringify(payload)
+        })
+        .then(function(res) {
+            if (res.ok) {
+                resultElB.className = 'form-result form-result-ok';
+                resultElB.innerHTML = '&#9989; <strong>Details received!</strong> We\'ll call you within one business day. Your form has been reset.';
+                form.reset();
+                if (typeof gtag !== 'undefined') gtag('event', 'business_enquiry', { event_category: 'lead', plan: payload.plan });
+            } else {
                 resultElB.className = 'form-result form-result-err';
-                resultElB.innerHTML = '&#9888; <strong>Could not connect</strong> &mdash; please check your connection or email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
-                resultElB.style.display = 'block';
-                btn.disabled = false;
-                btn.textContent = 'Send My Details \u2192';
-            });
-        }
-    </script>
+                resultElB.innerHTML = '&#9888; <strong>Something went wrong</strong> &mdash; please email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
+            }
+            resultElB.style.display = 'block';
+            resultElB.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            btn.disabled = false;
+            btn.textContent = 'Send My Details \u2192';
+        })
+        .catch(function() {
+            resultElB.className = 'form-result form-result-err';
+            resultElB.innerHTML = '&#9888; <strong>Could not connect</strong> &mdash; please email <a href="mailto:hello@securifyhq.com" style="color:inherit;font-weight:700;">hello@securifyhq.com</a> directly.';
+            resultElB.style.display = 'block';
+            btn.disabled = false;
+            btn.textContent = 'Send My Details \u2192';
+        });
+    }
+</script>
 </body>
 </html>
